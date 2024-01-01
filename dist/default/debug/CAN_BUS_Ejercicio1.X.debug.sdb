@@ -1,0 +1,581 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"38 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\main.c
+[e E1029 . `uc
+CAN_NOBPS 0
+CAN_5KBPS 1
+CAN_10KBPS 2
+CAN_20KBPS 3
+CAN_25KBPS 4
+CAN_31K25BPS 5
+CAN_33KBPS 6
+CAN_40KBPS 7
+CAN_50KBPS 8
+CAN_80KBPS 9
+CAN_83K3BPS 10
+CAN_95KBPS 11
+CAN_100KBPS 12
+CAN_125KBPS 13
+CAN_200KBPS 14
+CAN_250KBPS 15
+CAN_500KBPS 16
+CAN_666KBPS 17
+CAN_800KBPS 18
+CAN_1000KBPS 19
+]
+[e E1020 . `uc
+MCP_NO_MHz 0
+MCP_16MHz 1
+MCP_12MHz 2
+MCP_8MHz 3
+MCP2518FD_40MHz 1
+MCP2518FD_20MHz 2
+MCP2518FD_10MHz 3
+]
+"533 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\mcp2515_can.c
+[e E1029 . `uc
+CAN_NOBPS 0
+CAN_5KBPS 1
+CAN_10KBPS 2
+CAN_20KBPS 3
+CAN_25KBPS 4
+CAN_31K25BPS 5
+CAN_33KBPS 6
+CAN_40KBPS 7
+CAN_50KBPS 8
+CAN_80KBPS 9
+CAN_83K3BPS 10
+CAN_95KBPS 11
+CAN_100KBPS 12
+CAN_125KBPS 13
+CAN_200KBPS 14
+CAN_250KBPS 15
+CAN_500KBPS 16
+CAN_666KBPS 17
+CAN_800KBPS 18
+CAN_1000KBPS 19
+]
+"734
+[e E1020 . `uc
+MCP_NO_MHz 0
+MCP_16MHz 1
+MCP_12MHz 2
+MCP_8MHz 3
+MCP2518FD_40MHz 1
+MCP2518FD_20MHz 2
+MCP2518FD_10MHz 3
+]
+"10 E:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 E:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 E:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"23 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\main.c
+[v _readMsgBuf readMsgBuf `(uc  1 e 1 0 ]
+"27
+[v _getCanId getCanId `(ul  1 e 4 0 ]
+"29
+[v _main main `(v  1 e 1 0 ]
+"62 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\mcp2515_can.c
+[v _txCtrlReg txCtrlReg `(uc  1 e 1 0 ]
+"89
+[v _statusToTxSidh statusToTxSidh `(uc  1 e 1 0 ]
+"103
+[v _txSidhToRTS txSidhToRTS `(uc  1 e 1 0 ]
+"116
+[v _txSidhToTxLoad txSidhToTxLoad `(uc  1 e 1 0 ]
+"129
+[v _txIfFlag txIfFlag `(uc  1 e 1 0 ]
+"142
+[v _txStatusPendingFlag txStatusPendingFlag `(uc  1 e 1 0 ]
+"155
+[v _mcp2515_reset mcp2515_reset `(v  1 e 1 0 ]
+"172
+[v _mcp2515_readRegister mcp2515_readRegister `(uc  1 e 1 0 ]
+"194
+[v _mcp2515_readRegisterS mcp2515_readRegisterS `(v  1 e 1 0 ]
+"216
+[v _mcp2515_setRegister mcp2515_setRegister `(v  1 e 1 0 ]
+"234
+[v _mcp2515_setRegisterS mcp2515_setRegisterS `(v  1 e 1 0 ]
+"256
+[v _mcp2515_modifyRegister mcp2515_modifyRegister `(v  1 e 1 0 ]
+"275
+[v _mcp2515_readStatus mcp2515_readStatus `(uc  1 e 1 0 ]
+"328
+[v _setMode setMode `(uc  1 e 1 0 ]
+"338
+[v _getMode getMode `(uc  1 e 1 0 ]
+"346
+[v _mcp2515_setCANCTRL_Mode mcp2515_setCANCTRL_Mode `(uc  1 e 1 0 ]
+"386
+[v _mcp2515_requestNewMode mcp2515_requestNewMode `(uc  1 e 1 0 ]
+"410
+[v _mcp2515_configRate mcp2515_configRate `(uc  1 e 1 0 ]
+"750
+[v _mcp2515_initCANBuffers mcp2515_initCANBuffers `(v  1 e 1 0 ]
+"772
+[v _mcp2515_init mcp2515_init `(uc  1 e 1 0 ]
+"858
+[v _mcp2515_id_to_buf mcp2515_id_to_buf `(v  1 e 1 0 ]
+"883
+[v _mcp2515_write_id mcp2515_write_id `(v  1 e 1 0 ]
+"918
+[v _mcp2515_write_canMsg mcp2515_write_canMsg `(v  1 e 1 0 ]
+"954
+[v _mcp2515_read_canMsg mcp2515_read_canMsg `(v  1 e 1 0 ]
+"990
+[v _mcp2515_start_transmit mcp2515_start_transmit `(v  1 e 1 0 ]
+"1006
+[v _mcp2515_isTXBufFree mcp2515_isTXBufFree `(uc  1 e 1 0 ]
+"1024
+[v _mcp2515_getNextFreeTXBuf mcp2515_getNextFreeTXBuf `(uc  1 e 1 0 ]
+"1049
+[v _begin begin `(uc  1 e 1 0 ]
+"1231
+[v _sendMsg sendMsg `(uc  1 e 1 0 ]
+"1276
+[v _sendMsgBuf sendMsgBuf `(uc  1 e 1 0 ]
+"1285
+[v _readMsgBufID readMsgBufID `(uc  1 e 1 0 ]
+"1316
+[v _readRxTxStatus readRxTxStatus `(uc  1 e 1 0 ]
+"1387
+[v _checkReceive checkReceive `(uc  1 e 1 0 ]
+"17 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\mcp_can.c
+[v _init_CS init_CS `(v  1 e 1 0 ]
+"106 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\spi16.c
+[v _OpenSPI OpenSPI `(v  1 e 1 0 ]
+"176
+[v _ReadSPI ReadSPI `(uc  1 e 1 0 ]
+"192
+[v _WriteSPI WriteSPI `(uc  1 e 1 0 ]
+"60 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X/mcp_can.h
+[v _ext_flg ext_flg `uc  1 e 1 0 ]
+"62
+[v _can_id can_id `ul  1 e 4 0 ]
+"63
+[v _rtr rtr `uc  1 e 1 0 ]
+"64
+[v _mcpMode mcpMode `uc  1 e 1 0 ]
+"808 E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+[s S43 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1516
+[u S52 . 1 `S43 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES52  1 e 1 @136 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2417
+[v _BF BF `VEb  1 e 0 @1184 ]
+"2498
+[v _CKE CKE `VEb  1 e 0 @1190 ]
+"2501
+[v _CKP CKP `VEb  1 e 0 @164 ]
+"2753
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2762
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2813
+[v _SMP SMP `VEb  1 e 0 @1191 ]
+"2822
+[v _SSPEN SSPEN `VEb  1 e 0 @165 ]
+"2936
+[v _TRISA5 TRISA5 `VEb  1 e 0 @1069 ]
+"2972
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2975
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"2978
+[v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
+"2987
+[v _TRISD0 TRISD0 `VEb  1 e 0 @1088 ]
+"3047
+[v _WCOL WCOL `VEb  1 e 0 @167 ]
+"21 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\main.c
+[v _stmp stmp `[8]uc  1 e 8 0 ]
+"29
+[v _main main `(v  1 e 1 0 ]
+{
+"60
+[v main@i i `i  1 a 2 58 ]
+"58
+[v main@canId canId `ul  1 a 4 54 ]
+"53
+[v main@buf buf `[8]uc  1 a 8 46 ]
+"52
+[v main@len len `uc  1 a 1 60 ]
+"74
+} 0
+"1276 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\mcp2515_can.c
+[v _sendMsgBuf sendMsgBuf `(uc  1 e 1 0 ]
+{
+[v sendMsgBuf@id id `ul  1 p 4 34 ]
+[v sendMsgBuf@ext ext `uc  1 p 1 38 ]
+[v sendMsgBuf@rtrBit rtrBit `uc  1 p 1 39 ]
+[v sendMsgBuf@len len `uc  1 p 1 40 ]
+[v sendMsgBuf@buf buf `*.4DCuc  1 p 1 41 ]
+[v sendMsgBuf@wait_sent wait_sent `uc  1 p 1 42 ]
+"1278
+} 0
+"1231
+[v _sendMsg sendMsg `(uc  1 e 1 0 ]
+{
+"1233
+[v sendMsg@uiTimeOut uiTimeOut `us  1 a 2 32 ]
+"1232
+[v sendMsg@txbuf_n txbuf_n `uc  1 a 1 31 ]
+[v sendMsg@res1 res1 `uc  1 a 1 30 ]
+[v sendMsg@res res `uc  1 a 1 29 ]
+"1231
+[v sendMsg@id id `ul  1 p 4 18 ]
+[v sendMsg@ext ext `uc  1 p 1 22 ]
+[v sendMsg@rtrBit rtrBit `uc  1 p 1 23 ]
+[v sendMsg@len len `uc  1 p 1 24 ]
+[v sendMsg@buf buf `*.4DCuc  1 p 1 25 ]
+[v sendMsg@wait_sent wait_sent `uc  1 p 1 26 ]
+"1270
+} 0
+"918
+[v _mcp2515_write_canMsg mcp2515_write_canMsg `(v  1 e 1 0 ]
+{
+[v mcp2515_write_canMsg@buffer_sidh_addr buffer_sidh_addr `DCuc  1 a 1 wreg ]
+"922
+[v mcp2515_write_canMsg@tbufdata tbufdata `[4]uc  1 a 4 12 ]
+"924
+[v mcp2515_write_canMsg@i i `uc  1 a 1 17 ]
+"923
+[v mcp2515_write_canMsg@dlc dlc `uc  1 a 1 11 ]
+"920
+[v mcp2515_write_canMsg@load_addr load_addr `uc  1 a 1 10 ]
+"918
+[v mcp2515_write_canMsg@buffer_sidh_addr buffer_sidh_addr `DCuc  1 a 1 wreg ]
+[v mcp2515_write_canMsg@id id `ul  1 p 4 0 ]
+[v mcp2515_write_canMsg@ext ext `uc  1 p 1 4 ]
+[v mcp2515_write_canMsg@rtrBit rtrBit `uc  1 p 1 5 ]
+[v mcp2515_write_canMsg@len len `uc  1 p 1 6 ]
+"919
+[v mcp2515_write_canMsg@buf buf `*.4DVECuc  1 p 1 7 ]
+[v mcp2515_write_canMsg@buffer_sidh_addr buffer_sidh_addr `DCuc  1 a 1 16 ]
+"948
+} 0
+"116
+[v _txSidhToTxLoad txSidhToTxLoad `(uc  1 e 1 0 ]
+{
+[v txSidhToTxLoad@sidh sidh `uc  1 a 1 wreg ]
+[v txSidhToTxLoad@sidh sidh `uc  1 a 1 wreg ]
+[v txSidhToTxLoad@sidh sidh `uc  1 a 1 2 ]
+"123
+} 0
+"990
+[v _mcp2515_start_transmit mcp2515_start_transmit `(v  1 e 1 0 ]
+{
+[v mcp2515_start_transmit@mcp_addr mcp_addr `DCuc  1 a 1 wreg ]
+[v mcp2515_start_transmit@mcp_addr mcp_addr `DCuc  1 a 1 wreg ]
+"994
+[v mcp2515_start_transmit@mcp_addr mcp_addr `DCuc  1 a 1 3 ]
+"1000
+} 0
+"103
+[v _txSidhToRTS txSidhToRTS `(uc  1 e 1 0 ]
+{
+[v txSidhToRTS@sidh sidh `uc  1 a 1 wreg ]
+[v txSidhToRTS@sidh sidh `uc  1 a 1 wreg ]
+[v txSidhToRTS@sidh sidh `uc  1 a 1 2 ]
+"110
+} 0
+"858
+[v _mcp2515_id_to_buf mcp2515_id_to_buf `(v  1 e 1 0 ]
+{
+[v mcp2515_id_to_buf@ext ext `DCuc  1 a 1 wreg ]
+"859
+[v mcp2515_id_to_buf@canid canid `us  1 a 2 10 ]
+"858
+[v mcp2515_id_to_buf@ext ext `DCuc  1 a 1 wreg ]
+[v mcp2515_id_to_buf@id id `DCul  1 p 4 0 ]
+[v mcp2515_id_to_buf@tbufdata tbufdata `*.4uc  1 p 1 4 ]
+"861
+[v mcp2515_id_to_buf@ext ext `DCuc  1 a 1 9 ]
+"877
+} 0
+"1024
+[v _mcp2515_getNextFreeTXBuf mcp2515_getNextFreeTXBuf `(uc  1 e 1 0 ]
+{
+[v mcp2515_getNextFreeTXBuf@txbuf_n txbuf_n `*.4uc  1 a 1 wreg ]
+"1026
+[v mcp2515_getNextFreeTXBuf@i i `uc  1 a 1 8 ]
+"1025
+[v mcp2515_getNextFreeTXBuf@status status `uc  1 a 1 6 ]
+"1024
+[v mcp2515_getNextFreeTXBuf@txbuf_n txbuf_n `*.4uc  1 a 1 wreg ]
+[v mcp2515_getNextFreeTXBuf@txbuf_n txbuf_n `*.4uc  1 a 1 7 ]
+"1044
+} 0
+"142
+[v _txStatusPendingFlag txStatusPendingFlag `(uc  1 e 1 0 ]
+{
+[v txStatusPendingFlag@i i `uc  1 a 1 wreg ]
+[v txStatusPendingFlag@i i `uc  1 a 1 wreg ]
+[v txStatusPendingFlag@i i `uc  1 a 1 2 ]
+"149
+} 0
+"129
+[v _txIfFlag txIfFlag `(uc  1 e 1 0 ]
+{
+[v txIfFlag@i i `uc  1 a 1 wreg ]
+[v txIfFlag@i i `uc  1 a 1 wreg ]
+[v txIfFlag@i i `uc  1 a 1 2 ]
+"136
+} 0
+"62
+[v _txCtrlReg txCtrlReg `(uc  1 e 1 0 ]
+{
+[v txCtrlReg@i i `uc  1 a 1 wreg ]
+[v txCtrlReg@i i `uc  1 a 1 wreg ]
+[v txCtrlReg@i i `uc  1 a 1 2 ]
+"69
+} 0
+"23 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\main.c
+[v _readMsgBuf readMsgBuf `(uc  1 e 1 0 ]
+{
+[v readMsgBuf@len len `*.4uc  1 a 1 wreg ]
+[v readMsgBuf@len len `*.4uc  1 a 1 wreg ]
+[v readMsgBuf@buf buf `*.4uc  1 p 1 16 ]
+[v readMsgBuf@len len `*.4uc  1 a 1 17 ]
+"25
+} 0
+"1316 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\mcp2515_can.c
+[v _readRxTxStatus readRxTxStatus `(uc  1 e 1 0 ]
+{
+"1317
+[v readRxTxStatus@ret ret `uc  1 a 1 8 ]
+"1323
+} 0
+"1285
+[v _readMsgBufID readMsgBufID `(uc  1 e 1 0 ]
+{
+[v readMsgBufID@status status `uc  1 a 1 wreg ]
+"1287
+[v readMsgBufID@rc rc `uc  1 a 1 15 ]
+"1285
+[v readMsgBufID@status status `uc  1 a 1 wreg ]
+[v readMsgBufID@id id `*.4VEul  1 p 1 9 ]
+[v readMsgBufID@ext ext `*.4VEuc  1 p 1 10 ]
+[v readMsgBufID@rtrBit rtrBit `*.4VEuc  1 p 1 11 ]
+"1286
+[v readMsgBufID@len len `*.4VEuc  1 p 1 12 ]
+[v readMsgBufID@buf buf `*.4VEuc  1 p 1 13 ]
+[v readMsgBufID@status status `uc  1 a 1 14 ]
+"1307
+} 0
+"954
+[v _mcp2515_read_canMsg mcp2515_read_canMsg `(v  1 e 1 0 ]
+{
+[v mcp2515_read_canMsg@buffer_load_addr buffer_load_addr `DCuc  1 a 1 wreg ]
+"956
+[v mcp2515_read_canMsg@tbufdata tbufdata `[4]uc  1 a 4 7 ]
+"957
+[v mcp2515_read_canMsg@i i `uc  1 a 1 12 ]
+"976
+[v mcp2515_read_canMsg@pMsgSize pMsgSize `uc  1 a 1 11 ]
+"954
+[v mcp2515_read_canMsg@buffer_load_addr buffer_load_addr `DCuc  1 a 1 wreg ]
+[v mcp2515_read_canMsg@id id `*.4VEul  1 p 1 1 ]
+[v mcp2515_read_canMsg@ext ext `*.4VEuc  1 p 1 2 ]
+"955
+[v mcp2515_read_canMsg@rtrBit rtrBit `*.4VEuc  1 p 1 3 ]
+[v mcp2515_read_canMsg@len len `*.4VEuc  1 p 1 4 ]
+[v mcp2515_read_canMsg@buf buf `*.4VEuc  1 p 1 5 ]
+"959
+[v mcp2515_read_canMsg@buffer_load_addr buffer_load_addr `DCuc  1 a 1 6 ]
+"984
+} 0
+"17 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\mcp_can.c
+[v _init_CS init_CS `(v  1 e 1 0 ]
+{
+"26
+} 0
+"27 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\main.c
+[v _getCanId getCanId `(ul  1 e 4 0 ]
+{
+} 0
+"1387 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\mcp2515_can.c
+[v _checkReceive checkReceive `(uc  1 e 1 0 ]
+{
+"1388
+[v checkReceive@res res `uc  1 a 1 4 ]
+"1391
+} 0
+"275
+[v _mcp2515_readStatus mcp2515_readStatus `(uc  1 e 1 0 ]
+{
+"276
+[v mcp2515_readStatus@i i `uc  1 a 1 1 ]
+"289
+} 0
+"1049
+[v _begin begin `(uc  1 e 1 0 ]
+{
+"1051
+[v begin@res res `uc  1 a 1 11 ]
+"1049
+[v begin@speedset speedset `ul  1 p 4 6 ]
+[v begin@clockset clockset `DCuc  1 p 1 10 ]
+"1054
+} 0
+"772
+[v _mcp2515_init mcp2515_init `(uc  1 e 1 0 ]
+{
+[v mcp2515_init@canSpeed canSpeed `DCuc  1 a 1 wreg ]
+"774
+[v mcp2515_init@res res `uc  1 a 1 5 ]
+"772
+[v mcp2515_init@canSpeed canSpeed `DCuc  1 a 1 wreg ]
+[v mcp2515_init@clock clock `DCuc  1 p 1 1 ]
+"776
+[v mcp2515_init@canSpeed canSpeed `DCuc  1 a 1 4 ]
+"852
+} 0
+"328
+[v _setMode setMode `(uc  1 e 1 0 ]
+{
+[v setMode@opMode opMode `DCuc  1 a 1 wreg ]
+[v setMode@opMode opMode `DCuc  1 a 1 wreg ]
+[v setMode@opMode opMode `DCuc  1 a 1 0 ]
+"332
+} 0
+"346
+[v _mcp2515_setCANCTRL_Mode mcp2515_setCANCTRL_Mode `(uc  1 e 1 0 ]
+{
+[v mcp2515_setCANCTRL_Mode@newmode newmode `DCuc  1 a 1 wreg ]
+"352
+[v mcp2515_setCANCTRL_Mode@wakeIntEnabled wakeIntEnabled `uc  1 a 1 12 ]
+"346
+[v mcp2515_setCANCTRL_Mode@newmode newmode `DCuc  1 a 1 wreg ]
+"350
+[v mcp2515_setCANCTRL_Mode@newmode newmode `DCuc  1 a 1 11 ]
+"380
+} 0
+"386
+[v _mcp2515_requestNewMode mcp2515_requestNewMode `(uc  1 e 1 0 ]
+{
+[v mcp2515_requestNewMode@newmode newmode `DCuc  1 a 1 wreg ]
+"394
+[v mcp2515_requestNewMode@statReg statReg `uc  1 a 1 9 ]
+"387
+[v mcp2515_requestNewMode@Count Count `i  1 a 2 7 ]
+"386
+[v mcp2515_requestNewMode@newmode newmode `DCuc  1 a 1 wreg ]
+[v mcp2515_requestNewMode@newmode newmode `DCuc  1 a 1 10 ]
+"404
+} 0
+"256
+[v _mcp2515_modifyRegister mcp2515_modifyRegister `(v  1 e 1 0 ]
+{
+[v mcp2515_modifyRegister@address address `DCuc  1 a 1 wreg ]
+[v mcp2515_modifyRegister@address address `DCuc  1 a 1 wreg ]
+[v mcp2515_modifyRegister@mask mask `DCuc  1 p 1 3 ]
+[v mcp2515_modifyRegister@data data `DCuc  1 p 1 4 ]
+"260
+[v mcp2515_modifyRegister@address address `DCuc  1 a 1 5 ]
+"269
+} 0
+"338
+[v _getMode getMode `(uc  1 e 1 0 ]
+{
+"340
+} 0
+"172
+[v _mcp2515_readRegister mcp2515_readRegister `(uc  1 e 1 0 ]
+{
+[v mcp2515_readRegister@address address `DCuc  1 a 1 wreg ]
+"173
+[v mcp2515_readRegister@ret ret `uc  1 a 1 2 ]
+"172
+[v mcp2515_readRegister@address address `DCuc  1 a 1 wreg ]
+"178
+[v mcp2515_readRegister@address address `DCuc  1 a 1 1 ]
+"188
+} 0
+"176 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\spi16.c
+[v _ReadSPI ReadSPI `(uc  1 e 1 0 ]
+{
+"181
+} 0
+"155 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\mcp2515_can.c
+[v _mcp2515_reset mcp2515_reset `(v  1 e 1 0 ]
+{
+"166
+} 0
+"750
+[v _mcp2515_initCANBuffers mcp2515_initCANBuffers `(v  1 e 1 0 ]
+{
+"751
+[v mcp2515_initCANBuffers@i i `uc  1 a 1 6 ]
+[v mcp2515_initCANBuffers@a3 a3 `uc  1 a 1 5 ]
+[v mcp2515_initCANBuffers@a2 a2 `uc  1 a 1 4 ]
+[v mcp2515_initCANBuffers@a1 a1 `uc  1 a 1 3 ]
+"766
+} 0
+"410
+[v _mcp2515_configRate mcp2515_configRate `(uc  1 e 1 0 ]
+{
+[v mcp2515_configRate@canSpeed canSpeed `DCuc  1 a 1 wreg ]
+"411
+[v mcp2515_configRate@cfg3 cfg3 `uc  1 a 1 10 ]
+[v mcp2515_configRate@cfg2 cfg2 `uc  1 a 1 9 ]
+[v mcp2515_configRate@cfg1 cfg1 `uc  1 a 1 8 ]
+[v mcp2515_configRate@set set `uc  1 a 1 6 ]
+"410
+[v mcp2515_configRate@canSpeed canSpeed `DCuc  1 a 1 wreg ]
+[v mcp2515_configRate@clock clock `DCuc  1 p 1 3 ]
+"412
+[v mcp2515_configRate@canSpeed canSpeed `DCuc  1 a 1 7 ]
+"744
+} 0
+"216
+[v _mcp2515_setRegister mcp2515_setRegister `(v  1 e 1 0 ]
+{
+[v mcp2515_setRegister@address address `DCuc  1 a 1 wreg ]
+[v mcp2515_setRegister@address address `DCuc  1 a 1 wreg ]
+[v mcp2515_setRegister@value value `DCuc  1 p 1 1 ]
+"220
+[v mcp2515_setRegister@address address `DCuc  1 a 1 2 ]
+"228
+} 0
+"192 C:\Users\Paul\MPLABXProjects\CAN_BUS_Ejercicio1.X\spi16.c
+[v _WriteSPI WriteSPI `(uc  1 e 1 0 ]
+{
+[v WriteSPI@data_out data_out `uc  1 a 1 wreg ]
+[v WriteSPI@data_out data_out `uc  1 a 1 wreg ]
+"194
+[v WriteSPI@data_out data_out `uc  1 a 1 0 ]
+"202
+} 0
+"106
+[v _OpenSPI OpenSPI `(v  1 e 1 0 ]
+{
+[v OpenSPI@sync_mode sync_mode `uc  1 a 1 wreg ]
+[v OpenSPI@sync_mode sync_mode `uc  1 a 1 wreg ]
+[v OpenSPI@bus_mode bus_mode `uc  1 p 1 0 ]
+[v OpenSPI@smp_phase smp_phase `uc  1 p 1 1 ]
+"108
+[v OpenSPI@sync_mode sync_mode `uc  1 a 1 4 ]
+"148
+} 0

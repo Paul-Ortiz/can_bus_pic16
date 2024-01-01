@@ -1,0 +1,4137 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"2753 E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2753: extern volatile __bit RD0 __attribute__((address(0x40)));
+[v _RD0 `Vb ~T0 @X0 0 e@64 ]
+"65 ./spi16.h
+[; ;./spi16.h: 65: unsigned char WriteSPI( unsigned char data_out );
+[v _WriteSPI `(uc ~T0 @X0 0 ef1`uc ]
+[v F164 `(v ~T0 @X0 1 tf1`ul ]
+"12 E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\builtins.h
+[v __delay `JF164 ~T0 @X0 0 e ]
+[p i __delay ]
+"63 ./spi16.h
+[; ;./spi16.h: 63: unsigned char ReadSPI( void );
+[v _ReadSPI `(uc ~T0 @X0 0 ef ]
+"80 ./mcp2515_can.h
+[; ;./mcp2515_can.h: 80: unsigned char getMode();
+[v _getMode `(uc ~T0 @X0 0 e? ]
+"81
+[; ;./mcp2515_can.h: 81: unsigned char mcp2515_setCANCTRL_Mode(const unsigned char newmode);
+[v _mcp2515_setCANCTRL_Mode `(uc ~T0 @X0 0 ef1`Cuc ]
+"82
+[; ;./mcp2515_can.h: 82: unsigned char mcp2515_requestNewMode(const unsigned char newmode);
+[v _mcp2515_requestNewMode `(uc ~T0 @X0 0 ef1`Cuc ]
+"533 mcp2515_can.c
+[; ;mcp2515_can.c: 533:             }
+[c E1029 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 .. ]
+[n E1029 . CAN_NOBPS CAN_5KBPS CAN_10KBPS CAN_20KBPS CAN_25KBPS CAN_31K25BPS CAN_33KBPS CAN_40KBPS CAN_50KBPS CAN_80KBPS CAN_83K3BPS CAN_95KBPS CAN_100KBPS CAN_125KBPS CAN_200KBPS CAN_250KBPS CAN_500KBPS CAN_666KBPS CAN_800KBPS CAN_1000KBPS  ]
+"734
+[; ;mcp2515_can.c: 734:     }
+[c E1020 0 1 2 3 1 2 3 .. ]
+[n E1020 . MCP_NO_MHz MCP_16MHz MCP_12MHz MCP_8MHz MCP2518FD_40MHz MCP2518FD_20MHz MCP2518FD_10MHz  ]
+"93 ./mcp2515_can.h
+[; ;./mcp2515_can.h: 93: void mcp2515_start_transmit(const unsigned char mcp_addr);
+[v _mcp2515_start_transmit `(v ~T0 @X0 0 ef1`Cuc ]
+"64 ./spi16.h
+[; ;./spi16.h: 64: void OpenSPI( unsigned char sync_mode, unsigned char bus_mode, unsigned char smp_phase );
+[v _OpenSPI `(v ~T0 @X0 0 ef3`uc`uc`uc ]
+"54 E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"60 ./mcp_can.h
+[; ;./mcp_can.h: 60: unsigned char ext_flg;
+[v _ext_flg `uc ~T0 @X0 1 e ]
+"62
+[; ;./mcp_can.h: 62: unsigned long can_id;
+[v _can_id `ul ~T0 @X0 1 e ]
+"63
+[; ;./mcp_can.h: 63: unsigned char rtr;
+[v _rtr `uc ~T0 @X0 1 e ]
+"64
+[; ;./mcp_can.h: 64: unsigned char mcpMode;
+[v _mcpMode `uc ~T0 @X0 1 e ]
+"57 ./mcp2515_can.h
+[; ;./mcp2515_can.h: 57: unsigned char nReservedTx = (0 < (3) ? 0 : (3) - 1);
+[v _nReservedTx `uc ~T0 @X0 1 e ]
+[i _nReservedTx
+-> ? < -> 0 `i -> 3 `i : -> 0 `i - -> 3 `i -> 1 `i `uc
+]
+"62 mcp2515_can.c
+[; ;mcp2515_can.c: 62: unsigned char txCtrlReg(unsigned char i) {
+[v _txCtrlReg `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _txCtrlReg ]
+[v _i `uc ~T0 @X0 1 r1 ]
+[f ]
+"63
+[; ;mcp2515_can.c: 63:     switch (i) {
+[e $U 102  ]
+{
+"64
+[; ;mcp2515_can.c: 64:         case 0: return 0x30;
+[e :U 103 ]
+[e ) -> -> 48 `i `uc ]
+[e $UE 100  ]
+"65
+[; ;mcp2515_can.c: 65:         case 1: return 0x40;
+[e :U 104 ]
+[e ) -> -> 64 `i `uc ]
+[e $UE 100  ]
+"66
+[; ;mcp2515_can.c: 66:         case 2: return 0x50;
+[e :U 105 ]
+[e ) -> -> 80 `i `uc ]
+[e $UE 100  ]
+"67
+[; ;mcp2515_can.c: 67:     }
+}
+[e $U 101  ]
+[e :U 102 ]
+[e [\ -> _i `i , $ -> 0 `i 103
+ , $ -> 1 `i 104
+ , $ -> 2 `i 105
+ 101 ]
+[e :U 101 ]
+"68
+[; ;mcp2515_can.c: 68:     return 0x50;
+[e ) -> -> 80 `i `uc ]
+[e $UE 100  ]
+"69
+[; ;mcp2515_can.c: 69: }
+[e :UE 100 ]
+}
+"75
+[; ;mcp2515_can.c: 75: unsigned char statusToTxBuffer(unsigned char status) {
+[v _statusToTxBuffer `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _statusToTxBuffer ]
+[v _status `uc ~T0 @X0 1 r1 ]
+[f ]
+"76
+[; ;mcp2515_can.c: 76:     switch (status) {
+[e $U 108  ]
+{
+"77
+[; ;mcp2515_can.c: 77:         case 0x04 : return 0;
+[e :U 109 ]
+[e ) -> -> 0 `i `uc ]
+[e $UE 106  ]
+"78
+[; ;mcp2515_can.c: 78:         case 0x08 : return 1;
+[e :U 110 ]
+[e ) -> -> 1 `i `uc ]
+[e $UE 106  ]
+"79
+[; ;mcp2515_can.c: 79:         case 0x10 : return 2;
+[e :U 111 ]
+[e ) -> -> 2 `i `uc ]
+[e $UE 106  ]
+"80
+[; ;mcp2515_can.c: 80:     }
+}
+[e $U 107  ]
+[e :U 108 ]
+[e [\ -> _status `i , $ -> 4 `i 109
+ , $ -> 8 `i 110
+ , $ -> 16 `i 111
+ 107 ]
+[e :U 107 ]
+"82
+[; ;mcp2515_can.c: 82:     return 0xff;
+[e ) -> -> 255 `i `uc ]
+[e $UE 106  ]
+"83
+[; ;mcp2515_can.c: 83: }
+[e :UE 106 ]
+}
+"89
+[; ;mcp2515_can.c: 89: unsigned char statusToTxSidh(unsigned char status) {
+[v _statusToTxSidh `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _statusToTxSidh ]
+[v _status `uc ~T0 @X0 1 r1 ]
+[f ]
+"90
+[; ;mcp2515_can.c: 90:     switch (status) {
+[e $U 114  ]
+{
+"91
+[; ;mcp2515_can.c: 91:         case 0x04 : return 0x31;
+[e :U 115 ]
+[e ) -> -> 49 `i `uc ]
+[e $UE 112  ]
+"92
+[; ;mcp2515_can.c: 92:         case 0x08 : return 0x41;
+[e :U 116 ]
+[e ) -> -> 65 `i `uc ]
+[e $UE 112  ]
+"93
+[; ;mcp2515_can.c: 93:         case 0x10 : return 0x51;
+[e :U 117 ]
+[e ) -> -> 81 `i `uc ]
+[e $UE 112  ]
+"94
+[; ;mcp2515_can.c: 94:     }
+}
+[e $U 113  ]
+[e :U 114 ]
+[e [\ -> _status `i , $ -> 4 `i 115
+ , $ -> 8 `i 116
+ , $ -> 16 `i 117
+ 113 ]
+[e :U 113 ]
+"96
+[; ;mcp2515_can.c: 96:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 112  ]
+"97
+[; ;mcp2515_can.c: 97: }
+[e :UE 112 ]
+}
+"103
+[; ;mcp2515_can.c: 103: unsigned char txSidhToRTS(unsigned char sidh) {
+[v _txSidhToRTS `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _txSidhToRTS ]
+[v _sidh `uc ~T0 @X0 1 r1 ]
+[f ]
+"104
+[; ;mcp2515_can.c: 104:     switch (sidh) {
+[e $U 120  ]
+{
+"105
+[; ;mcp2515_can.c: 105:         case 0x31: return 0x81;
+[e :U 121 ]
+[e ) -> -> 129 `i `uc ]
+[e $UE 118  ]
+"106
+[; ;mcp2515_can.c: 106:         case 0x41: return 0x82;
+[e :U 122 ]
+[e ) -> -> 130 `i `uc ]
+[e $UE 118  ]
+"107
+[; ;mcp2515_can.c: 107:         case 0x51: return 0x84;
+[e :U 123 ]
+[e ) -> -> 132 `i `uc ]
+[e $UE 118  ]
+"108
+[; ;mcp2515_can.c: 108:     }
+}
+[e $U 119  ]
+[e :U 120 ]
+[e [\ -> _sidh `i , $ -> 49 `i 121
+ , $ -> 65 `i 122
+ , $ -> 81 `i 123
+ 119 ]
+[e :U 119 ]
+"109
+[; ;mcp2515_can.c: 109:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 118  ]
+"110
+[; ;mcp2515_can.c: 110: }
+[e :UE 118 ]
+}
+"116
+[; ;mcp2515_can.c: 116: unsigned char txSidhToTxLoad(unsigned char sidh) {
+[v _txSidhToTxLoad `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _txSidhToTxLoad ]
+[v _sidh `uc ~T0 @X0 1 r1 ]
+[f ]
+"117
+[; ;mcp2515_can.c: 117:     switch (sidh) {
+[e $U 126  ]
+{
+"118
+[; ;mcp2515_can.c: 118:         case 0x31: return 0x40;
+[e :U 127 ]
+[e ) -> -> 64 `i `uc ]
+[e $UE 124  ]
+"119
+[; ;mcp2515_can.c: 119:         case 0x41: return 0x42;
+[e :U 128 ]
+[e ) -> -> 66 `i `uc ]
+[e $UE 124  ]
+"120
+[; ;mcp2515_can.c: 120:         case 0x51: return 0x44;
+[e :U 129 ]
+[e ) -> -> 68 `i `uc ]
+[e $UE 124  ]
+"121
+[; ;mcp2515_can.c: 121:     }
+}
+[e $U 125  ]
+[e :U 126 ]
+[e [\ -> _sidh `i , $ -> 49 `i 127
+ , $ -> 65 `i 128
+ , $ -> 81 `i 129
+ 125 ]
+[e :U 125 ]
+"122
+[; ;mcp2515_can.c: 122:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 124  ]
+"123
+[; ;mcp2515_can.c: 123: }
+[e :UE 124 ]
+}
+"129
+[; ;mcp2515_can.c: 129: unsigned char txIfFlag(unsigned char i) {
+[v _txIfFlag `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _txIfFlag ]
+[v _i `uc ~T0 @X0 1 r1 ]
+[f ]
+"130
+[; ;mcp2515_can.c: 130:     switch (i) {
+[e $U 132  ]
+{
+"131
+[; ;mcp2515_can.c: 131:         case 0: return 0x04;
+[e :U 133 ]
+[e ) -> -> 4 `i `uc ]
+[e $UE 130  ]
+"132
+[; ;mcp2515_can.c: 132:         case 1: return 0x08;
+[e :U 134 ]
+[e ) -> -> 8 `i `uc ]
+[e $UE 130  ]
+"133
+[; ;mcp2515_can.c: 133:         case 2: return 0x10;
+[e :U 135 ]
+[e ) -> -> 16 `i `uc ]
+[e $UE 130  ]
+"134
+[; ;mcp2515_can.c: 134:     }
+}
+[e $U 131  ]
+[e :U 132 ]
+[e [\ -> _i `i , $ -> 0 `i 133
+ , $ -> 1 `i 134
+ , $ -> 2 `i 135
+ 131 ]
+[e :U 131 ]
+"135
+[; ;mcp2515_can.c: 135:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 130  ]
+"136
+[; ;mcp2515_can.c: 136: }
+[e :UE 130 ]
+}
+"142
+[; ;mcp2515_can.c: 142: unsigned char txStatusPendingFlag(unsigned char i) {
+[v _txStatusPendingFlag `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _txStatusPendingFlag ]
+[v _i `uc ~T0 @X0 1 r1 ]
+[f ]
+"143
+[; ;mcp2515_can.c: 143:     switch (i) {
+[e $U 138  ]
+{
+"144
+[; ;mcp2515_can.c: 144:         case 0: return (0x04);
+[e :U 139 ]
+[e ) -> -> 4 `i `uc ]
+[e $UE 136  ]
+"145
+[; ;mcp2515_can.c: 145:         case 1: return (0x10);
+[e :U 140 ]
+[e ) -> -> 16 `i `uc ]
+[e $UE 136  ]
+"146
+[; ;mcp2515_can.c: 146:         case 2: return (0x40);
+[e :U 141 ]
+[e ) -> -> 64 `i `uc ]
+[e $UE 136  ]
+"147
+[; ;mcp2515_can.c: 147:     }
+}
+[e $U 137  ]
+[e :U 138 ]
+[e [\ -> _i `i , $ -> 0 `i 139
+ , $ -> 1 `i 140
+ , $ -> 2 `i 141
+ 137 ]
+[e :U 137 ]
+"148
+[; ;mcp2515_can.c: 148:     return 0xff;
+[e ) -> -> 255 `i `uc ]
+[e $UE 136  ]
+"149
+[; ;mcp2515_can.c: 149: }
+[e :UE 136 ]
+}
+"155
+[; ;mcp2515_can.c: 155: void mcp2515_reset(void) {
+[v _mcp2515_reset `(v ~T0 @X0 1 ef ]
+{
+[e :U _mcp2515_reset ]
+[f ]
+"159
+[; ;mcp2515_can.c: 159:     RD0 = 0;;
+[e = _RD0 -> -> 0 `i `b ]
+"160
+[; ;mcp2515_can.c: 160:     WriteSPI(0xC0);
+[e ( _WriteSPI (1 -> -> 192 `i `uc ]
+"161
+[; ;mcp2515_can.c: 161:     RD0 = 1;;
+[e = _RD0 -> -> 1 `i `b ]
+"165
+[; ;mcp2515_can.c: 165:     _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"166
+[; ;mcp2515_can.c: 166: }
+[e :UE 142 ]
+}
+"172
+[; ;mcp2515_can.c: 172: unsigned char mcp2515_readRegister(const unsigned char address) {
+[v _mcp2515_readRegister `(uc ~T0 @X0 1 ef1`Cuc ]
+{
+[e :U _mcp2515_readRegister ]
+[v _address `Cuc ~T0 @X0 1 r1 ]
+[f ]
+"173
+[; ;mcp2515_can.c: 173:     unsigned char ret;
+[v _ret `uc ~T0 @X0 1 a ]
+"178
+[; ;mcp2515_can.c: 178:     RD0 = 0;;
+[e = _RD0 -> -> 0 `i `b ]
+"179
+[; ;mcp2515_can.c: 179:     WriteSPI(0x03);
+[e ( _WriteSPI (1 -> -> 3 `i `uc ]
+"180
+[; ;mcp2515_can.c: 180:     WriteSPI(address);
+[e ( _WriteSPI (1 _address ]
+"181
+[; ;mcp2515_can.c: 181:     ret = ReadSPI();
+[e = _ret ( _ReadSPI ..  ]
+"182
+[; ;mcp2515_can.c: 182:     RD0 = 1;;
+[e = _RD0 -> -> 1 `i `b ]
+"187
+[; ;mcp2515_can.c: 187:     return ret;
+[e ) _ret ]
+[e $UE 143  ]
+"188
+[; ;mcp2515_can.c: 188: }
+[e :UE 143 ]
+}
+"194
+[; ;mcp2515_can.c: 194: void mcp2515_readRegisterS(const unsigned char address, unsigned char values[], const unsigned char n) {
+[v _mcp2515_readRegisterS `(v ~T0 @X0 1 ef3`Cuc`*uc`Cuc ]
+{
+[e :U _mcp2515_readRegisterS ]
+[v _address `Cuc ~T0 @X0 1 r1 ]
+[v _values `*uc ~T0 @X0 1 r2 ]
+[v _n `Cuc ~T0 @X0 1 r3 ]
+[f ]
+"195
+[; ;mcp2515_can.c: 195:     unsigned char i;
+[v _i `uc ~T0 @X0 1 a ]
+"199
+[; ;mcp2515_can.c: 199:     RD0 = 0;;
+[e = _RD0 -> -> 0 `i `b ]
+"200
+[; ;mcp2515_can.c: 200:     WriteSPI(0x03);
+[e ( _WriteSPI (1 -> -> 3 `i `uc ]
+"201
+[; ;mcp2515_can.c: 201:     WriteSPI(address);
+[e ( _WriteSPI (1 _address ]
+"203
+[; ;mcp2515_can.c: 203:     for (i = 0; i < n && i < (8); i++) {
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 148  ]
+[e :U 145 ]
+{
+"204
+[; ;mcp2515_can.c: 204:         values[i] = ReadSPI();
+[e = *U + _values * -> _i `ux -> -> # *U _values `ui `ux ( _ReadSPI ..  ]
+"205
+[; ;mcp2515_can.c: 205:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 148 ]
+[e $ && < -> _i `i -> _n `i < -> _i `i -> 8 `i 145  ]
+[e :U 146 ]
+}
+"206
+[; ;mcp2515_can.c: 206:     RD0 = 1;;
+[e = _RD0 -> -> 1 `i `b ]
+"210
+[; ;mcp2515_can.c: 210: }
+[e :UE 144 ]
+}
+"216
+[; ;mcp2515_can.c: 216: void mcp2515_setRegister(const unsigned char address, const unsigned char value) {
+[v _mcp2515_setRegister `(v ~T0 @X0 1 ef2`Cuc`Cuc ]
+{
+[e :U _mcp2515_setRegister ]
+[v _address `Cuc ~T0 @X0 1 r1 ]
+[v _value `Cuc ~T0 @X0 1 r2 ]
+[f ]
+"220
+[; ;mcp2515_can.c: 220:     RD0 = 0;;
+[e = _RD0 -> -> 0 `i `b ]
+"221
+[; ;mcp2515_can.c: 221:     WriteSPI(0x02);
+[e ( _WriteSPI (1 -> -> 2 `i `uc ]
+"222
+[; ;mcp2515_can.c: 222:     WriteSPI(address);
+[e ( _WriteSPI (1 _address ]
+"223
+[; ;mcp2515_can.c: 223:     WriteSPI(value);
+[e ( _WriteSPI (1 _value ]
+"224
+[; ;mcp2515_can.c: 224:     RD0 = 1;;
+[e = _RD0 -> -> 1 `i `b ]
+"228
+[; ;mcp2515_can.c: 228: }
+[e :UE 149 ]
+}
+"234
+[; ;mcp2515_can.c: 234: void mcp2515_setRegisterS(const unsigned char address, const unsigned char values[], const unsigned char n) {
+[v _mcp2515_setRegisterS `(v ~T0 @X0 1 ef3`Cuc`*Cuc`Cuc ]
+{
+[e :U _mcp2515_setRegisterS ]
+[v _address `Cuc ~T0 @X0 1 r1 ]
+[v _values `*Cuc ~T0 @X0 1 r2 ]
+[v _n `Cuc ~T0 @X0 1 r3 ]
+[f ]
+"235
+[; ;mcp2515_can.c: 235:     unsigned char i;
+[v _i `uc ~T0 @X0 1 a ]
+"239
+[; ;mcp2515_can.c: 239:     RD0 = 0;;
+[e = _RD0 -> -> 0 `i `b ]
+"240
+[; ;mcp2515_can.c: 240:     WriteSPI(0x02);
+[e ( _WriteSPI (1 -> -> 2 `i `uc ]
+"241
+[; ;mcp2515_can.c: 241:     WriteSPI(address);
+[e ( _WriteSPI (1 _address ]
+"243
+[; ;mcp2515_can.c: 243:     for (i = 0; i < n; i++) {
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> _n `i 151  ]
+[e $U 152  ]
+[e :U 151 ]
+{
+"244
+[; ;mcp2515_can.c: 244:         WriteSPI(values[i]);
+[e ( _WriteSPI (1 *U + _values * -> _i `ux -> -> # *U _values `ui `ux ]
+"245
+[; ;mcp2515_can.c: 245:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> _n `i 151  ]
+[e :U 152 ]
+}
+"246
+[; ;mcp2515_can.c: 246:     RD0 = 1;;
+[e = _RD0 -> -> 1 `i `b ]
+"250
+[; ;mcp2515_can.c: 250: }
+[e :UE 150 ]
+}
+"256
+[; ;mcp2515_can.c: 256: void mcp2515_modifyRegister(const unsigned char address, const unsigned char mask, const unsigned char data) {
+[v _mcp2515_modifyRegister `(v ~T0 @X0 1 ef3`Cuc`Cuc`Cuc ]
+{
+[e :U _mcp2515_modifyRegister ]
+[v _address `Cuc ~T0 @X0 1 r1 ]
+[v _mask `Cuc ~T0 @X0 1 r2 ]
+[v _data `Cuc ~T0 @X0 1 r3 ]
+[f ]
+"260
+[; ;mcp2515_can.c: 260:     RD0 = 0;;
+[e = _RD0 -> -> 0 `i `b ]
+"261
+[; ;mcp2515_can.c: 261:     WriteSPI(0x05);
+[e ( _WriteSPI (1 -> -> 5 `i `uc ]
+"262
+[; ;mcp2515_can.c: 262:     WriteSPI(address);
+[e ( _WriteSPI (1 _address ]
+"263
+[; ;mcp2515_can.c: 263:     WriteSPI(mask);
+[e ( _WriteSPI (1 _mask ]
+"264
+[; ;mcp2515_can.c: 264:     WriteSPI(data);
+[e ( _WriteSPI (1 _data ]
+"265
+[; ;mcp2515_can.c: 265:     RD0 = 1;;
+[e = _RD0 -> -> 1 `i `b ]
+"269
+[; ;mcp2515_can.c: 269: }
+[e :UE 154 ]
+}
+"275
+[; ;mcp2515_can.c: 275: unsigned char mcp2515_readStatus(void) {
+[v _mcp2515_readStatus `(uc ~T0 @X0 1 ef ]
+{
+[e :U _mcp2515_readStatus ]
+[f ]
+"276
+[; ;mcp2515_can.c: 276:     unsigned char i;
+[v _i `uc ~T0 @X0 1 a ]
+"280
+[; ;mcp2515_can.c: 280:     RD0 = 0;;
+[e = _RD0 -> -> 0 `i `b ]
+"281
+[; ;mcp2515_can.c: 281:     WriteSPI(0xA0);
+[e ( _WriteSPI (1 -> -> 160 `i `uc ]
+"282
+[; ;mcp2515_can.c: 282:     i = ReadSPI();
+[e = _i ( _ReadSPI ..  ]
+"283
+[; ;mcp2515_can.c: 283:     RD0 = 1;;
+[e = _RD0 -> -> 1 `i `b ]
+"288
+[; ;mcp2515_can.c: 288:     return i;
+[e ) _i ]
+[e $UE 155  ]
+"289
+[; ;mcp2515_can.c: 289: }
+[e :UE 155 ]
+}
+"295
+[; ;mcp2515_can.c: 295: void setSleepWakeup(const unsigned char enable) {
+[v _setSleepWakeup `(v ~T0 @X0 1 ef1`Cuc ]
+{
+[e :U _setSleepWakeup ]
+[v _enable `Cuc ~T0 @X0 1 r1 ]
+[f ]
+"296
+[; ;mcp2515_can.c: 296:     mcp2515_modifyRegister(0x2B, 0x40, enable ? 0x40 : 0);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 43 `i `uc -> -> 64 `i `uc -> ? != -> _enable `i -> 0 `i : -> 64 `i -> 0 `i `uc ]
+"297
+[; ;mcp2515_can.c: 297: }
+[e :UE 156 ]
+}
+"303
+[; ;mcp2515_can.c: 303: unsigned char sleep() {
+[v _sleep `(uc ~T0 @X0 1 ef ]
+{
+[e :U _sleep ]
+[f ]
+"304
+[; ;mcp2515_can.c: 304:     if (getMode() != 0x20) {
+[e $ ! != -> ( _getMode ..  `i -> 32 `i 158  ]
+{
+"305
+[; ;mcp2515_can.c: 305:         return mcp2515_setCANCTRL_Mode(0x20);
+[e ) ( _mcp2515_setCANCTRL_Mode (1 -> -> 32 `i `uc ]
+[e $UE 157  ]
+"306
+[; ;mcp2515_can.c: 306:     } else {
+}
+[e $U 159  ]
+[e :U 158 ]
+{
+"307
+[; ;mcp2515_can.c: 307:         return (0);
+[e ) -> -> 0 `i `uc ]
+[e $UE 157  ]
+"308
+[; ;mcp2515_can.c: 308:     }
+}
+[e :U 159 ]
+"309
+[; ;mcp2515_can.c: 309: }
+[e :UE 157 ]
+}
+"315
+[; ;mcp2515_can.c: 315: unsigned char wake() {
+[v _wake `(uc ~T0 @X0 1 ef ]
+{
+[e :U _wake ]
+[f ]
+"316
+[; ;mcp2515_can.c: 316:     unsigned char currMode = getMode();
+[v _currMode `uc ~T0 @X0 1 a ]
+[e = _currMode ( _getMode ..  ]
+"317
+[; ;mcp2515_can.c: 317:     if (currMode != mcpMode) {
+[e $ ! != -> _currMode `i -> _mcpMode `i 161  ]
+{
+"318
+[; ;mcp2515_can.c: 318:         return mcp2515_setCANCTRL_Mode(mcpMode);
+[e ) ( _mcp2515_setCANCTRL_Mode (1 _mcpMode ]
+[e $UE 160  ]
+"319
+[; ;mcp2515_can.c: 319:     } else {
+}
+[e $U 162  ]
+[e :U 161 ]
+{
+"320
+[; ;mcp2515_can.c: 320:         return (0);
+[e ) -> -> 0 `i `uc ]
+[e $UE 160  ]
+"321
+[; ;mcp2515_can.c: 321:     }
+}
+[e :U 162 ]
+"322
+[; ;mcp2515_can.c: 322: }
+[e :UE 160 ]
+}
+"328
+[; ;mcp2515_can.c: 328: unsigned char setMode(const unsigned char opMode) {
+[v _setMode `(uc ~T0 @X0 1 ef1`Cuc ]
+{
+[e :U _setMode ]
+[v _opMode `Cuc ~T0 @X0 1 r1 ]
+[f ]
+"329
+[; ;mcp2515_can.c: 329:     if (opMode != 0x20)
+[e $ ! != -> _opMode `i -> 32 `i 164  ]
+"330
+[; ;mcp2515_can.c: 330:         mcpMode = opMode;
+[e = _mcpMode _opMode ]
+[e :U 164 ]
+"331
+[; ;mcp2515_can.c: 331:     return mcp2515_setCANCTRL_Mode(opMode);
+[e ) ( _mcp2515_setCANCTRL_Mode (1 _opMode ]
+[e $UE 163  ]
+"332
+[; ;mcp2515_can.c: 332: }
+[e :UE 163 ]
+}
+"338
+[; ;mcp2515_can.c: 338: unsigned char getMode() {
+[v _getMode `(uc ~T0 @X0 1 ef ]
+{
+[e :U _getMode ]
+[f ]
+"339
+[; ;mcp2515_can.c: 339:     return (mcp2515_readRegister(0x0E) & 0xE0);
+[e ) -> & -> ( _mcp2515_readRegister (1 -> -> 14 `i `uc `i -> 224 `i `uc ]
+[e $UE 165  ]
+"340
+[; ;mcp2515_can.c: 340: }
+[e :UE 165 ]
+}
+"346
+[; ;mcp2515_can.c: 346: unsigned char mcp2515_setCANCTRL_Mode(const unsigned char newmode) {
+[v _mcp2515_setCANCTRL_Mode `(uc ~T0 @X0 1 ef1`Cuc ]
+{
+[e :U _mcp2515_setCANCTRL_Mode ]
+[v _newmode `Cuc ~T0 @X0 1 r1 ]
+[f ]
+"350
+[; ;mcp2515_can.c: 350:     if ((getMode()) == 0x20 && newmode != 0x20) {
+[e $ ! && == -> ( _getMode ..  `i -> 32 `i != -> _newmode `i -> 32 `i 167  ]
+{
+"352
+[; ;mcp2515_can.c: 352:         unsigned char wakeIntEnabled = (mcp2515_readRegister(0x2B) & 0x40);
+[v _wakeIntEnabled `uc ~T0 @X0 1 a ]
+[e = _wakeIntEnabled -> & -> ( _mcp2515_readRegister (1 -> -> 43 `i `uc `i -> 64 `i `uc ]
+"353
+[; ;mcp2515_can.c: 353:         if (!wakeIntEnabled) {
+[e $ ! ! != -> _wakeIntEnabled `i -> 0 `i 168  ]
+{
+"354
+[; ;mcp2515_can.c: 354:             mcp2515_modifyRegister(0x2B, 0x40, 0x40);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 43 `i `uc -> -> 64 `i `uc -> -> 64 `i `uc ]
+"355
+[; ;mcp2515_can.c: 355:         }
+}
+[e :U 168 ]
+"358
+[; ;mcp2515_can.c: 358:         mcp2515_modifyRegister(0x2C, 0x40, 0x40);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 44 `i `uc -> -> 64 `i `uc -> -> 64 `i `uc ]
+"366
+[; ;mcp2515_can.c: 366:         if (mcp2515_requestNewMode(0x60) != (0)) {
+[e $ ! != -> ( _mcp2515_requestNewMode (1 -> -> 96 `i `uc `i -> 0 `i 169  ]
+{
+"367
+[; ;mcp2515_can.c: 367:             return (1);
+[e ) -> -> 1 `i `uc ]
+[e $UE 166  ]
+"368
+[; ;mcp2515_can.c: 368:         }
+}
+[e :U 169 ]
+"371
+[; ;mcp2515_can.c: 371:         if (!wakeIntEnabled) {
+[e $ ! ! != -> _wakeIntEnabled `i -> 0 `i 170  ]
+{
+"372
+[; ;mcp2515_can.c: 372:             mcp2515_modifyRegister(0x2B, 0x40, 0);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 43 `i `uc -> -> 64 `i `uc -> -> 0 `i `uc ]
+"373
+[; ;mcp2515_can.c: 373:         }
+}
+[e :U 170 ]
+"374
+[; ;mcp2515_can.c: 374:     }
+}
+[e :U 167 ]
+"377
+[; ;mcp2515_can.c: 377:     mcp2515_modifyRegister(0x2C, 0x40, 0);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 44 `i `uc -> -> 64 `i `uc -> -> 0 `i `uc ]
+"379
+[; ;mcp2515_can.c: 379:     return mcp2515_requestNewMode(newmode);
+[e ) ( _mcp2515_requestNewMode (1 _newmode ]
+[e $UE 166  ]
+"380
+[; ;mcp2515_can.c: 380: }
+[e :UE 166 ]
+}
+"386
+[; ;mcp2515_can.c: 386: unsigned char mcp2515_requestNewMode(const unsigned char newmode) {
+[v _mcp2515_requestNewMode `(uc ~T0 @X0 1 ef1`Cuc ]
+{
+[e :U _mcp2515_requestNewMode ]
+[v _newmode `Cuc ~T0 @X0 1 r1 ]
+[f ]
+"387
+[; ;mcp2515_can.c: 387:     int Count = 0;
+[v _Count `i ~T0 @X0 1 a ]
+[e = _Count -> 0 `i ]
+"389
+[; ;mcp2515_can.c: 389:     while (1) {
+[e :U 173 ]
+{
+"392
+[; ;mcp2515_can.c: 392:         mcp2515_modifyRegister(0x0F, 0xE0, newmode);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 15 `i `uc -> -> 224 `i `uc _newmode ]
+"394
+[; ;mcp2515_can.c: 394:         unsigned char statReg = mcp2515_readRegister(0x0E);
+[v _statReg `uc ~T0 @X0 1 a ]
+[e = _statReg ( _mcp2515_readRegister (1 -> -> 14 `i `uc ]
+"395
+[; ;mcp2515_can.c: 395:         if ((statReg & 0xE0) == newmode) {
+[e $ ! == & -> _statReg `i -> 224 `i -> _newmode `i 175  ]
+{
+"396
+[; ;mcp2515_can.c: 396:             return (0);
+[e ) -> -> 0 `i `uc ]
+[e $UE 171  ]
+"397
+[; ;mcp2515_can.c: 397:         } else if ( Count > 200) {
+}
+[e $U 176  ]
+[e :U 175 ]
+[e $ ! > _Count -> 200 `i 177  ]
+{
+"398
+[; ;mcp2515_can.c: 398:             return (1);
+[e ) -> -> 1 `i `uc ]
+[e $UE 171  ]
+"399
+[; ;mcp2515_can.c: 399:         } else {
+}
+[e $U 178  ]
+[e :U 177 ]
+{
+"400
+[; ;mcp2515_can.c: 400:             _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"401
+[; ;mcp2515_can.c: 401:             Count++;
+[e ++ _Count -> 1 `i ]
+"402
+[; ;mcp2515_can.c: 402:         }
+}
+[e :U 178 ]
+[e :U 176 ]
+"403
+[; ;mcp2515_can.c: 403:     }
+}
+[e :U 172 ]
+[e $U 173  ]
+[e :U 174 ]
+"404
+[; ;mcp2515_can.c: 404: }
+[e :UE 171 ]
+}
+"410
+[; ;mcp2515_can.c: 410: unsigned char mcp2515_configRate(const unsigned char canSpeed, const unsigned char clock) {
+[v _mcp2515_configRate `(uc ~T0 @X0 1 ef2`Cuc`Cuc ]
+{
+[e :U _mcp2515_configRate ]
+[v _canSpeed `Cuc ~T0 @X0 1 r1 ]
+[v _clock `Cuc ~T0 @X0 1 r2 ]
+[f ]
+"411
+[; ;mcp2515_can.c: 411:     unsigned char set, cfg1, cfg2, cfg3;
+[v _set `uc ~T0 @X0 1 a ]
+[v _cfg1 `uc ~T0 @X0 1 a ]
+[v _cfg2 `uc ~T0 @X0 1 a ]
+[v _cfg3 `uc ~T0 @X0 1 a ]
+"412
+[; ;mcp2515_can.c: 412:     set = 1;
+[e = _set -> -> 1 `i `uc ]
+"413
+[; ;mcp2515_can.c: 413:     switch (clock) {
+[e $U 181  ]
+{
+"414
+[; ;mcp2515_can.c: 414:         case (MCP_16MHz) :
+[e :U 182 ]
+"415
+[; ;mcp2515_can.c: 415:             switch (canSpeed) {
+[e $U 184  ]
+{
+"416
+[; ;mcp2515_can.c: 416:                 case (CAN_5KBPS):
+[e :U 185 ]
+"417
+[; ;mcp2515_can.c: 417:                     cfg1 = (0x3F);
+[e = _cfg1 -> -> 63 `i `uc ]
+"418
+[; ;mcp2515_can.c: 418:                     cfg2 = (0xFF);
+[e = _cfg2 -> -> 255 `i `uc ]
+"419
+[; ;mcp2515_can.c: 419:                     cfg3 = (0x87);
+[e = _cfg3 -> -> 135 `i `uc ]
+"420
+[; ;mcp2515_can.c: 420:                     break;
+[e $U 183  ]
+"422
+[; ;mcp2515_can.c: 422:                 case (CAN_10KBPS):
+[e :U 186 ]
+"423
+[; ;mcp2515_can.c: 423:                     cfg1 = (0x1F);
+[e = _cfg1 -> -> 31 `i `uc ]
+"424
+[; ;mcp2515_can.c: 424:                     cfg2 = (0xFF);
+[e = _cfg2 -> -> 255 `i `uc ]
+"425
+[; ;mcp2515_can.c: 425:                     cfg3 = (0x87);
+[e = _cfg3 -> -> 135 `i `uc ]
+"426
+[; ;mcp2515_can.c: 426:                     break;
+[e $U 183  ]
+"428
+[; ;mcp2515_can.c: 428:                 case (CAN_20KBPS):
+[e :U 187 ]
+"429
+[; ;mcp2515_can.c: 429:                     cfg1 = (0x0F);
+[e = _cfg1 -> -> 15 `i `uc ]
+"430
+[; ;mcp2515_can.c: 430:                     cfg2 = (0xFF);
+[e = _cfg2 -> -> 255 `i `uc ]
+"431
+[; ;mcp2515_can.c: 431:                     cfg3 = (0x87);
+[e = _cfg3 -> -> 135 `i `uc ]
+"432
+[; ;mcp2515_can.c: 432:                     break;
+[e $U 183  ]
+"434
+[; ;mcp2515_can.c: 434:                 case (CAN_25KBPS):
+[e :U 188 ]
+"435
+[; ;mcp2515_can.c: 435:                     cfg1 = (0X0F);
+[e = _cfg1 -> -> 15 `i `uc ]
+"436
+[; ;mcp2515_can.c: 436:                     cfg2 = (0XBA);
+[e = _cfg2 -> -> 186 `i `uc ]
+"437
+[; ;mcp2515_can.c: 437:                     cfg3 = (0X07);
+[e = _cfg3 -> -> 7 `i `uc ]
+"438
+[; ;mcp2515_can.c: 438:                     break;
+[e $U 183  ]
+"440
+[; ;mcp2515_can.c: 440:                 case (CAN_31K25BPS):
+[e :U 189 ]
+"441
+[; ;mcp2515_can.c: 441:                     cfg1 = (0x0F);
+[e = _cfg1 -> -> 15 `i `uc ]
+"442
+[; ;mcp2515_can.c: 442:                     cfg2 = (0xF1);
+[e = _cfg2 -> -> 241 `i `uc ]
+"443
+[; ;mcp2515_can.c: 443:                     cfg3 = (0x85);
+[e = _cfg3 -> -> 133 `i `uc ]
+"444
+[; ;mcp2515_can.c: 444:                     break;
+[e $U 183  ]
+"446
+[; ;mcp2515_can.c: 446:                 case (CAN_33KBPS):
+[e :U 190 ]
+"447
+[; ;mcp2515_can.c: 447:                     cfg1 = (0x09);
+[e = _cfg1 -> -> 9 `i `uc ]
+"448
+[; ;mcp2515_can.c: 448:                     cfg2 = (0xBE);
+[e = _cfg2 -> -> 190 `i `uc ]
+"449
+[; ;mcp2515_can.c: 449:                     cfg3 = (0x07);
+[e = _cfg3 -> -> 7 `i `uc ]
+"450
+[; ;mcp2515_can.c: 450:                     break;
+[e $U 183  ]
+"452
+[; ;mcp2515_can.c: 452:                 case (CAN_40KBPS):
+[e :U 191 ]
+"453
+[; ;mcp2515_can.c: 453:                     cfg1 = (0x07);
+[e = _cfg1 -> -> 7 `i `uc ]
+"454
+[; ;mcp2515_can.c: 454:                     cfg2 = (0xFF);
+[e = _cfg2 -> -> 255 `i `uc ]
+"455
+[; ;mcp2515_can.c: 455:                     cfg3 = (0x87);
+[e = _cfg3 -> -> 135 `i `uc ]
+"456
+[; ;mcp2515_can.c: 456:                     break;
+[e $U 183  ]
+"458
+[; ;mcp2515_can.c: 458:                 case (CAN_50KBPS):
+[e :U 192 ]
+"459
+[; ;mcp2515_can.c: 459:                     cfg1 = (0x07);
+[e = _cfg1 -> -> 7 `i `uc ]
+"460
+[; ;mcp2515_can.c: 460:                     cfg2 = (0xFA);
+[e = _cfg2 -> -> 250 `i `uc ]
+"461
+[; ;mcp2515_can.c: 461:                     cfg3 = (0x87);
+[e = _cfg3 -> -> 135 `i `uc ]
+"462
+[; ;mcp2515_can.c: 462:                     break;
+[e $U 183  ]
+"464
+[; ;mcp2515_can.c: 464:                 case (CAN_80KBPS):
+[e :U 193 ]
+"465
+[; ;mcp2515_can.c: 465:                     cfg1 = (0x03);
+[e = _cfg1 -> -> 3 `i `uc ]
+"466
+[; ;mcp2515_can.c: 466:                     cfg2 = (0xFF);
+[e = _cfg2 -> -> 255 `i `uc ]
+"467
+[; ;mcp2515_can.c: 467:                     cfg3 = (0x87);
+[e = _cfg3 -> -> 135 `i `uc ]
+"468
+[; ;mcp2515_can.c: 468:                     break;
+[e $U 183  ]
+"470
+[; ;mcp2515_can.c: 470:                 case (CAN_83K3BPS):
+[e :U 194 ]
+"471
+[; ;mcp2515_can.c: 471:                     cfg1 = (0x03);
+[e = _cfg1 -> -> 3 `i `uc ]
+"472
+[; ;mcp2515_can.c: 472:                     cfg2 = (0xBE);
+[e = _cfg2 -> -> 190 `i `uc ]
+"473
+[; ;mcp2515_can.c: 473:                     cfg3 = (0x07);
+[e = _cfg3 -> -> 7 `i `uc ]
+"474
+[; ;mcp2515_can.c: 474:                     break;
+[e $U 183  ]
+"476
+[; ;mcp2515_can.c: 476:                 case (CAN_95KBPS):
+[e :U 195 ]
+"477
+[; ;mcp2515_can.c: 477:                     cfg1 = (0x03);
+[e = _cfg1 -> -> 3 `i `uc ]
+"478
+[; ;mcp2515_can.c: 478:                     cfg2 = (0xAD);
+[e = _cfg2 -> -> 173 `i `uc ]
+"479
+[; ;mcp2515_can.c: 479:                     cfg3 = (0x07);
+[e = _cfg3 -> -> 7 `i `uc ]
+"480
+[; ;mcp2515_can.c: 480:                     break;
+[e $U 183  ]
+"482
+[; ;mcp2515_can.c: 482:                 case (CAN_100KBPS):
+[e :U 196 ]
+"483
+[; ;mcp2515_can.c: 483:                     cfg1 = (0x03);
+[e = _cfg1 -> -> 3 `i `uc ]
+"484
+[; ;mcp2515_can.c: 484:                     cfg2 = (0xFA);
+[e = _cfg2 -> -> 250 `i `uc ]
+"485
+[; ;mcp2515_can.c: 485:                     cfg3 = (0x87);
+[e = _cfg3 -> -> 135 `i `uc ]
+"486
+[; ;mcp2515_can.c: 486:                     break;
+[e $U 183  ]
+"488
+[; ;mcp2515_can.c: 488:                 case (CAN_125KBPS):
+[e :U 197 ]
+"489
+[; ;mcp2515_can.c: 489:                     cfg1 = (0x03);
+[e = _cfg1 -> -> 3 `i `uc ]
+"490
+[; ;mcp2515_can.c: 490:                     cfg2 = (0xF0);
+[e = _cfg2 -> -> 240 `i `uc ]
+"491
+[; ;mcp2515_can.c: 491:                     cfg3 = (0x86);
+[e = _cfg3 -> -> 134 `i `uc ]
+"492
+[; ;mcp2515_can.c: 492:                     break;
+[e $U 183  ]
+"494
+[; ;mcp2515_can.c: 494:                 case (CAN_200KBPS):
+[e :U 198 ]
+"495
+[; ;mcp2515_can.c: 495:                     cfg1 = (0x01);
+[e = _cfg1 -> -> 1 `i `uc ]
+"496
+[; ;mcp2515_can.c: 496:                     cfg2 = (0xFA);
+[e = _cfg2 -> -> 250 `i `uc ]
+"497
+[; ;mcp2515_can.c: 497:                     cfg3 = (0x87);
+[e = _cfg3 -> -> 135 `i `uc ]
+"498
+[; ;mcp2515_can.c: 498:                     break;
+[e $U 183  ]
+"500
+[; ;mcp2515_can.c: 500:                 case (CAN_250KBPS):
+[e :U 199 ]
+"501
+[; ;mcp2515_can.c: 501:                     cfg1 = (0x41);
+[e = _cfg1 -> -> 65 `i `uc ]
+"502
+[; ;mcp2515_can.c: 502:                     cfg2 = (0xF1);
+[e = _cfg2 -> -> 241 `i `uc ]
+"503
+[; ;mcp2515_can.c: 503:                     cfg3 = (0x85);
+[e = _cfg3 -> -> 133 `i `uc ]
+"504
+[; ;mcp2515_can.c: 504:                     break;
+[e $U 183  ]
+"506
+[; ;mcp2515_can.c: 506:                 case (CAN_500KBPS):
+[e :U 200 ]
+"507
+[; ;mcp2515_can.c: 507:                     cfg1 = (0x00);
+[e = _cfg1 -> -> 0 `i `uc ]
+"508
+[; ;mcp2515_can.c: 508:                     cfg2 = (0xF0);
+[e = _cfg2 -> -> 240 `i `uc ]
+"509
+[; ;mcp2515_can.c: 509:                     cfg3 = (0x86);
+[e = _cfg3 -> -> 134 `i `uc ]
+"510
+[; ;mcp2515_can.c: 510:                     break;
+[e $U 183  ]
+"512
+[; ;mcp2515_can.c: 512:                 case (CAN_666KBPS):
+[e :U 201 ]
+"513
+[; ;mcp2515_can.c: 513:                     cfg1 = (0x00);
+[e = _cfg1 -> -> 0 `i `uc ]
+"514
+[; ;mcp2515_can.c: 514:                     cfg2 = (0xA0);
+[e = _cfg2 -> -> 160 `i `uc ]
+"515
+[; ;mcp2515_can.c: 515:                     cfg3 = (0x04);
+[e = _cfg3 -> -> 4 `i `uc ]
+"516
+[; ;mcp2515_can.c: 516:                     break;
+[e $U 183  ]
+"518
+[; ;mcp2515_can.c: 518:                 case (CAN_800KBPS) :
+[e :U 202 ]
+"519
+[; ;mcp2515_can.c: 519:                     cfg1 = (0x40);
+[e = _cfg1 -> -> 64 `i `uc ]
+"520
+[; ;mcp2515_can.c: 520:                     cfg2 = (0x92);
+[e = _cfg2 -> -> 146 `i `uc ]
+"521
+[; ;mcp2515_can.c: 521:                     cfg3 = (0x02);
+[e = _cfg3 -> -> 2 `i `uc ]
+"522
+[; ;mcp2515_can.c: 522:                     break;
+[e $U 183  ]
+"524
+[; ;mcp2515_can.c: 524:                 case (CAN_1000KBPS):
+[e :U 203 ]
+"525
+[; ;mcp2515_can.c: 525:                     cfg1 = (0x00);
+[e = _cfg1 -> -> 0 `i `uc ]
+"526
+[; ;mcp2515_can.c: 526:                     cfg2 = (0xD0);
+[e = _cfg2 -> -> 208 `i `uc ]
+"527
+[; ;mcp2515_can.c: 527:                     cfg3 = (0x82);
+[e = _cfg3 -> -> 130 `i `uc ]
+"528
+[; ;mcp2515_can.c: 528:                     break;
+[e $U 183  ]
+"530
+[; ;mcp2515_can.c: 530:                 default:
+[e :U 204 ]
+"531
+[; ;mcp2515_can.c: 531:                     set = 0;
+[e = _set -> -> 0 `i `uc ]
+"532
+[; ;mcp2515_can.c: 532:                     break;
+[e $U 183  ]
+"533
+[; ;mcp2515_can.c: 533:             }
+}
+[e $U 183  ]
+[e :U 184 ]
+[e [\ -> _canSpeed `i , $ . `E1029 1 185
+ , $ . `E1029 2 186
+ , $ . `E1029 3 187
+ , $ . `E1029 4 188
+ , $ . `E1029 5 189
+ , $ . `E1029 6 190
+ , $ . `E1029 7 191
+ , $ . `E1029 8 192
+ , $ . `E1029 9 193
+ , $ . `E1029 10 194
+ , $ . `E1029 11 195
+ , $ . `E1029 12 196
+ , $ . `E1029 13 197
+ , $ . `E1029 14 198
+ , $ . `E1029 15 199
+ , $ . `E1029 16 200
+ , $ . `E1029 17 201
+ , $ . `E1029 18 202
+ , $ . `E1029 19 203
+ 204 ]
+[e :U 183 ]
+"534
+[; ;mcp2515_can.c: 534:             break;
+[e $U 180  ]
+"536
+[; ;mcp2515_can.c: 536:         case (MCP_12MHz) :
+[e :U 205 ]
+"537
+[; ;mcp2515_can.c: 537:             switch (canSpeed) {
+[e $U 207  ]
+{
+"538
+[; ;mcp2515_can.c: 538:                 case (CAN_20KBPS) :
+[e :U 208 ]
+"539
+[; ;mcp2515_can.c: 539:                     cfg1 = (0x0C);
+[e = _cfg1 -> -> 12 `i `uc ]
+"540
+[; ;mcp2515_can.c: 540:                     cfg2 = (0xBF);
+[e = _cfg2 -> -> 191 `i `uc ]
+"541
+[; ;mcp2515_can.c: 541:                     cfg3 = (0x05);
+[e = _cfg3 -> -> 5 `i `uc ]
+"542
+[; ;mcp2515_can.c: 542:                     break;
+[e $U 206  ]
+"544
+[; ;mcp2515_can.c: 544:                 case (CAN_25KBPS) :
+[e :U 209 ]
+"545
+[; ;mcp2515_can.c: 545:                     cfg1 = (0X0B);
+[e = _cfg1 -> -> 11 `i `uc ]
+"546
+[; ;mcp2515_can.c: 546:                     cfg2 = (0XB6);
+[e = _cfg2 -> -> 182 `i `uc ]
+"547
+[; ;mcp2515_can.c: 547:                     cfg3 = (0X04);
+[e = _cfg3 -> -> 4 `i `uc ]
+"548
+[; ;mcp2515_can.c: 548:                     break;
+[e $U 206  ]
+"550
+[; ;mcp2515_can.c: 550:                 case (CAN_31K25BPS) :
+[e :U 210 ]
+"551
+[; ;mcp2515_can.c: 551:                     cfg1 = (0x0B);
+[e = _cfg1 -> -> 11 `i `uc ]
+"552
+[; ;mcp2515_can.c: 552:                     cfg2 = (0xAC);
+[e = _cfg2 -> -> 172 `i `uc ]
+"553
+[; ;mcp2515_can.c: 553:                     cfg3 = (0x03);
+[e = _cfg3 -> -> 3 `i `uc ]
+"554
+[; ;mcp2515_can.c: 554:                     break;
+[e $U 206  ]
+"556
+[; ;mcp2515_can.c: 556:                 case (CAN_33KBPS) :
+[e :U 211 ]
+"557
+[; ;mcp2515_can.c: 557:                     cfg1 = (0x0C);
+[e = _cfg1 -> -> 12 `i `uc ]
+"558
+[; ;mcp2515_can.c: 558:                     cfg2 = (0xA4);
+[e = _cfg2 -> -> 164 `i `uc ]
+"559
+[; ;mcp2515_can.c: 559:                     cfg3 = (0x02);
+[e = _cfg3 -> -> 2 `i `uc ]
+"560
+[; ;mcp2515_can.c: 560:                     break;
+[e $U 206  ]
+"562
+[; ;mcp2515_can.c: 562:                 case (CAN_40KBPS) :
+[e :U 212 ]
+"563
+[; ;mcp2515_can.c: 563:                     cfg1 = (0x09);
+[e = _cfg1 -> -> 9 `i `uc ]
+"564
+[; ;mcp2515_can.c: 564:                     cfg2 = (0xA4);
+[e = _cfg2 -> -> 164 `i `uc ]
+"565
+[; ;mcp2515_can.c: 565:                     cfg3 = (0x03);
+[e = _cfg3 -> -> 3 `i `uc ]
+"566
+[; ;mcp2515_can.c: 566:                     break;
+[e $U 206  ]
+"568
+[; ;mcp2515_can.c: 568:                 case (CAN_50KBPS) :
+[e :U 213 ]
+"569
+[; ;mcp2515_can.c: 569:                     cfg1 = (0x05);
+[e = _cfg1 -> -> 5 `i `uc ]
+"570
+[; ;mcp2515_can.c: 570:                     cfg2 = (0xB6);
+[e = _cfg2 -> -> 182 `i `uc ]
+"571
+[; ;mcp2515_can.c: 571:                     cfg3 = (0x04);
+[e = _cfg3 -> -> 4 `i `uc ]
+"572
+[; ;mcp2515_can.c: 572:                     break;
+[e $U 206  ]
+"574
+[; ;mcp2515_can.c: 574:                 case (CAN_80KBPS) :
+[e :U 214 ]
+"575
+[; ;mcp2515_can.c: 575:                     cfg1 = (0x04);
+[e = _cfg1 -> -> 4 `i `uc ]
+"576
+[; ;mcp2515_can.c: 576:                     cfg2 = (0xA4);
+[e = _cfg2 -> -> 164 `i `uc ]
+"577
+[; ;mcp2515_can.c: 577:                     cfg3 = (0x03);
+[e = _cfg3 -> -> 3 `i `uc ]
+"578
+[; ;mcp2515_can.c: 578:                     break;
+[e $U 206  ]
+"580
+[; ;mcp2515_can.c: 580:                 case (CAN_83K3BPS) :
+[e :U 215 ]
+"581
+[; ;mcp2515_can.c: 581:                     cfg1 = (0x03);
+[e = _cfg1 -> -> 3 `i `uc ]
+"582
+[; ;mcp2515_can.c: 582:                     cfg2 = (0xB5);
+[e = _cfg2 -> -> 181 `i `uc ]
+"583
+[; ;mcp2515_can.c: 583:                     cfg3 = (0x03);
+[e = _cfg3 -> -> 3 `i `uc ]
+"584
+[; ;mcp2515_can.c: 584:                     break;
+[e $U 206  ]
+"586
+[; ;mcp2515_can.c: 586:                 case (CAN_95KBPS) :
+[e :U 216 ]
+"587
+[; ;mcp2515_can.c: 587:                     cfg1 = (0x02);
+[e = _cfg1 -> -> 2 `i `uc ]
+"588
+[; ;mcp2515_can.c: 588:                     cfg2 = (0xBE);
+[e = _cfg2 -> -> 190 `i `uc ]
+"589
+[; ;mcp2515_can.c: 589:                     cfg3 = (0x04);
+[e = _cfg3 -> -> 4 `i `uc ]
+"590
+[; ;mcp2515_can.c: 590:                     break;
+[e $U 206  ]
+"592
+[; ;mcp2515_can.c: 592:                 case (CAN_100KBPS) :
+[e :U 217 ]
+"593
+[; ;mcp2515_can.c: 593:                     cfg1 = (0x02);
+[e = _cfg1 -> -> 2 `i `uc ]
+"594
+[; ;mcp2515_can.c: 594:                     cfg2 = (0xB6);
+[e = _cfg2 -> -> 182 `i `uc ]
+"595
+[; ;mcp2515_can.c: 595:                     cfg3 = (0x04);
+[e = _cfg3 -> -> 4 `i `uc ]
+"596
+[; ;mcp2515_can.c: 596:                     break;
+[e $U 206  ]
+"598
+[; ;mcp2515_can.c: 598:                 case (CAN_125KBPS) :
+[e :U 218 ]
+"599
+[; ;mcp2515_can.c: 599:                     cfg1 = (0x01);
+[e = _cfg1 -> -> 1 `i `uc ]
+"600
+[; ;mcp2515_can.c: 600:                     cfg2 = (0xBF);
+[e = _cfg2 -> -> 191 `i `uc ]
+"601
+[; ;mcp2515_can.c: 601:                     cfg3 = (0x06);
+[e = _cfg3 -> -> 6 `i `uc ]
+"602
+[; ;mcp2515_can.c: 602:                     break;
+[e $U 206  ]
+"604
+[; ;mcp2515_can.c: 604:                 case (CAN_200KBPS) :
+[e :U 219 ]
+"605
+[; ;mcp2515_can.c: 605:                     cfg1 = (0x01);
+[e = _cfg1 -> -> 1 `i `uc ]
+"606
+[; ;mcp2515_can.c: 606:                     cfg2 = (0xA4);
+[e = _cfg2 -> -> 164 `i `uc ]
+"607
+[; ;mcp2515_can.c: 607:                     cfg3 = (0x03);
+[e = _cfg3 -> -> 3 `i `uc ]
+"608
+[; ;mcp2515_can.c: 608:                     break;
+[e $U 206  ]
+"610
+[; ;mcp2515_can.c: 610:                 case (CAN_250KBPS) :
+[e :U 220 ]
+"611
+[; ;mcp2515_can.c: 611:                     cfg1 = (0x00);
+[e = _cfg1 -> -> 0 `i `uc ]
+"612
+[; ;mcp2515_can.c: 612:                     cfg2 = (0xBF);
+[e = _cfg2 -> -> 191 `i `uc ]
+"613
+[; ;mcp2515_can.c: 613:                     cfg3 = (0x06);
+[e = _cfg3 -> -> 6 `i `uc ]
+"614
+[; ;mcp2515_can.c: 614:                     break;
+[e $U 206  ]
+"616
+[; ;mcp2515_can.c: 616:                 case (CAN_500KBPS) :
+[e :U 221 ]
+"617
+[; ;mcp2515_can.c: 617:                     cfg1 = (0x00);
+[e = _cfg1 -> -> 0 `i `uc ]
+"618
+[; ;mcp2515_can.c: 618:                     cfg2 = (0x9B);
+[e = _cfg2 -> -> 155 `i `uc ]
+"619
+[; ;mcp2515_can.c: 619:                     cfg3 = (0x02);
+[e = _cfg3 -> -> 2 `i `uc ]
+"620
+[; ;mcp2515_can.c: 620:                     break;
+[e $U 206  ]
+"622
+[; ;mcp2515_can.c: 622:                 case (CAN_666KBPS) :
+[e :U 222 ]
+"623
+[; ;mcp2515_can.c: 623:                     cfg1 = (0x00);
+[e = _cfg1 -> -> 0 `i `uc ]
+"624
+[; ;mcp2515_can.c: 624:                     cfg2 = (0x92);
+[e = _cfg2 -> -> 146 `i `uc ]
+"625
+[; ;mcp2515_can.c: 625:                     cfg3 = (0x01);
+[e = _cfg3 -> -> 1 `i `uc ]
+"626
+[; ;mcp2515_can.c: 626:                     break;
+[e $U 206  ]
+"628
+[; ;mcp2515_can.c: 628:                 case (CAN_1000KBPS) :
+[e :U 223 ]
+"629
+[; ;mcp2515_can.c: 629:                     cfg1 = (0x00);
+[e = _cfg1 -> -> 0 `i `uc ]
+"630
+[; ;mcp2515_can.c: 630:                     cfg2 = (0x88);
+[e = _cfg2 -> -> 136 `i `uc ]
+"631
+[; ;mcp2515_can.c: 631:                     cfg3 = (0x01);
+[e = _cfg3 -> -> 1 `i `uc ]
+"632
+[; ;mcp2515_can.c: 632:                     break;
+[e $U 206  ]
+"634
+[; ;mcp2515_can.c: 634:                 default:
+[e :U 224 ]
+"635
+[; ;mcp2515_can.c: 635:                     set = 0;
+[e = _set -> -> 0 `i `uc ]
+"636
+[; ;mcp2515_can.c: 636:                     break;
+[e $U 206  ]
+"637
+[; ;mcp2515_can.c: 637:             }
+}
+[e $U 206  ]
+[e :U 207 ]
+[e [\ -> _canSpeed `i , $ . `E1029 3 208
+ , $ . `E1029 4 209
+ , $ . `E1029 5 210
+ , $ . `E1029 6 211
+ , $ . `E1029 7 212
+ , $ . `E1029 8 213
+ , $ . `E1029 9 214
+ , $ . `E1029 10 215
+ , $ . `E1029 11 216
+ , $ . `E1029 12 217
+ , $ . `E1029 13 218
+ , $ . `E1029 14 219
+ , $ . `E1029 15 220
+ , $ . `E1029 16 221
+ , $ . `E1029 17 222
+ , $ . `E1029 19 223
+ 224 ]
+[e :U 206 ]
+"638
+[; ;mcp2515_can.c: 638:             break;
+[e $U 180  ]
+"639
+[; ;mcp2515_can.c: 639:         case (MCP_8MHz) :
+[e :U 225 ]
+"640
+[; ;mcp2515_can.c: 640:             switch (canSpeed) {
+[e $U 227  ]
+{
+"641
+[; ;mcp2515_can.c: 641:                 case (CAN_5KBPS) :
+[e :U 228 ]
+"642
+[; ;mcp2515_can.c: 642:                     cfg1 = (0x1f);
+[e = _cfg1 -> -> 31 `i `uc ]
+"643
+[; ;mcp2515_can.c: 643:                     cfg2 = (0xbf);
+[e = _cfg2 -> -> 191 `i `uc ]
+"644
+[; ;mcp2515_can.c: 644:                     cfg3 = (0x07);
+[e = _cfg3 -> -> 7 `i `uc ]
+"645
+[; ;mcp2515_can.c: 645:                     break;
+[e $U 226  ]
+"647
+[; ;mcp2515_can.c: 647:                 case (CAN_10KBPS) :
+[e :U 229 ]
+"648
+[; ;mcp2515_can.c: 648:                     cfg1 = (0x0f);
+[e = _cfg1 -> -> 15 `i `uc ]
+"649
+[; ;mcp2515_can.c: 649:                     cfg2 = (0xbf);
+[e = _cfg2 -> -> 191 `i `uc ]
+"650
+[; ;mcp2515_can.c: 650:                     cfg3 = (0x07);
+[e = _cfg3 -> -> 7 `i `uc ]
+"651
+[; ;mcp2515_can.c: 651:                     break;
+[e $U 226  ]
+"653
+[; ;mcp2515_can.c: 653:                 case (CAN_20KBPS) :
+[e :U 230 ]
+"654
+[; ;mcp2515_can.c: 654:                     cfg1 = (0x07);
+[e = _cfg1 -> -> 7 `i `uc ]
+"655
+[; ;mcp2515_can.c: 655:                     cfg2 = (0xbf);
+[e = _cfg2 -> -> 191 `i `uc ]
+"656
+[; ;mcp2515_can.c: 656:                     cfg3 = (0x07);
+[e = _cfg3 -> -> 7 `i `uc ]
+"657
+[; ;mcp2515_can.c: 657:                     break;
+[e $U 226  ]
+"659
+[; ;mcp2515_can.c: 659:                 case (CAN_31K25BPS) :
+[e :U 231 ]
+"660
+[; ;mcp2515_can.c: 660:                     cfg1 = (0x07);
+[e = _cfg1 -> -> 7 `i `uc ]
+"661
+[; ;mcp2515_can.c: 661:                     cfg2 = (0xa4);
+[e = _cfg2 -> -> 164 `i `uc ]
+"662
+[; ;mcp2515_can.c: 662:                     cfg3 = (0x04);
+[e = _cfg3 -> -> 4 `i `uc ]
+"663
+[; ;mcp2515_can.c: 663:                     break;
+[e $U 226  ]
+"665
+[; ;mcp2515_can.c: 665:                 case (CAN_40KBPS) :
+[e :U 232 ]
+"666
+[; ;mcp2515_can.c: 666:                     cfg1 = (0x03);
+[e = _cfg1 -> -> 3 `i `uc ]
+"667
+[; ;mcp2515_can.c: 667:                     cfg2 = (0xbf);
+[e = _cfg2 -> -> 191 `i `uc ]
+"668
+[; ;mcp2515_can.c: 668:                     cfg3 = (0x07);
+[e = _cfg3 -> -> 7 `i `uc ]
+"669
+[; ;mcp2515_can.c: 669:                     break;
+[e $U 226  ]
+"671
+[; ;mcp2515_can.c: 671:                 case (CAN_50KBPS) :
+[e :U 233 ]
+"672
+[; ;mcp2515_can.c: 672:                     cfg1 = (0x03);
+[e = _cfg1 -> -> 3 `i `uc ]
+"673
+[; ;mcp2515_can.c: 673:                     cfg2 = (0xb4);
+[e = _cfg2 -> -> 180 `i `uc ]
+"674
+[; ;mcp2515_can.c: 674:                     cfg3 = (0x06);
+[e = _cfg3 -> -> 6 `i `uc ]
+"675
+[; ;mcp2515_can.c: 675:                     break;
+[e $U 226  ]
+"677
+[; ;mcp2515_can.c: 677:                 case (CAN_80KBPS) :
+[e :U 234 ]
+"678
+[; ;mcp2515_can.c: 678:                     cfg1 = (0x01);
+[e = _cfg1 -> -> 1 `i `uc ]
+"679
+[; ;mcp2515_can.c: 679:                     cfg2 = (0xbf);
+[e = _cfg2 -> -> 191 `i `uc ]
+"680
+[; ;mcp2515_can.c: 680:                     cfg3 = (0x07);
+[e = _cfg3 -> -> 7 `i `uc ]
+"681
+[; ;mcp2515_can.c: 681:                     break;
+[e $U 226  ]
+"683
+[; ;mcp2515_can.c: 683:                 case (CAN_100KBPS) :
+[e :U 235 ]
+"684
+[; ;mcp2515_can.c: 684:                     cfg1 = (0x01);
+[e = _cfg1 -> -> 1 `i `uc ]
+"685
+[; ;mcp2515_can.c: 685:                     cfg2 = (0xb4);
+[e = _cfg2 -> -> 180 `i `uc ]
+"686
+[; ;mcp2515_can.c: 686:                     cfg3 = (0x06);
+[e = _cfg3 -> -> 6 `i `uc ]
+"687
+[; ;mcp2515_can.c: 687:                     break;
+[e $U 226  ]
+"689
+[; ;mcp2515_can.c: 689:                 case (CAN_125KBPS) :
+[e :U 236 ]
+"690
+[; ;mcp2515_can.c: 690:                     cfg1 = (0x01);
+[e = _cfg1 -> -> 1 `i `uc ]
+"691
+[; ;mcp2515_can.c: 691:                     cfg2 = (0xb1);
+[e = _cfg2 -> -> 177 `i `uc ]
+"692
+[; ;mcp2515_can.c: 692:                     cfg3 = (0x05);
+[e = _cfg3 -> -> 5 `i `uc ]
+"693
+[; ;mcp2515_can.c: 693:                     break;
+[e $U 226  ]
+"695
+[; ;mcp2515_can.c: 695:                 case (CAN_200KBPS) :
+[e :U 237 ]
+"696
+[; ;mcp2515_can.c: 696:                     cfg1 = (0x00);
+[e = _cfg1 -> -> 0 `i `uc ]
+"697
+[; ;mcp2515_can.c: 697:                     cfg2 = (0xb4);
+[e = _cfg2 -> -> 180 `i `uc ]
+"698
+[; ;mcp2515_can.c: 698:                     cfg3 = (0x06);
+[e = _cfg3 -> -> 6 `i `uc ]
+"699
+[; ;mcp2515_can.c: 699:                     break;
+[e $U 226  ]
+"701
+[; ;mcp2515_can.c: 701:                 case (CAN_250KBPS) :
+[e :U 238 ]
+"702
+[; ;mcp2515_can.c: 702:                     cfg1 = (0x00);
+[e = _cfg1 -> -> 0 `i `uc ]
+"703
+[; ;mcp2515_can.c: 703:                     cfg2 = (0xb1);
+[e = _cfg2 -> -> 177 `i `uc ]
+"704
+[; ;mcp2515_can.c: 704:                     cfg3 = (0x05);
+[e = _cfg3 -> -> 5 `i `uc ]
+"705
+[; ;mcp2515_can.c: 705:                     break;
+[e $U 226  ]
+"707
+[; ;mcp2515_can.c: 707:                 case (CAN_500KBPS) :
+[e :U 239 ]
+"708
+[; ;mcp2515_can.c: 708:                     cfg1 = (0x00);
+[e = _cfg1 -> -> 0 `i `uc ]
+"709
+[; ;mcp2515_can.c: 709:                     cfg2 = (0x90);
+[e = _cfg2 -> -> 144 `i `uc ]
+"710
+[; ;mcp2515_can.c: 710:                     cfg3 = (0x02);
+[e = _cfg3 -> -> 2 `i `uc ]
+"711
+[; ;mcp2515_can.c: 711:                     break;
+[e $U 226  ]
+"713
+[; ;mcp2515_can.c: 713:                 case (CAN_800KBPS) :
+[e :U 240 ]
+"714
+[; ;mcp2515_can.c: 714:                     cfg1 = (0x00);
+[e = _cfg1 -> -> 0 `i `uc ]
+"715
+[; ;mcp2515_can.c: 715:                     cfg2 = (0x80);
+[e = _cfg2 -> -> 128 `i `uc ]
+"716
+[; ;mcp2515_can.c: 716:                     cfg3 = (0x01);
+[e = _cfg3 -> -> 1 `i `uc ]
+"717
+[; ;mcp2515_can.c: 717:                     break;
+[e $U 226  ]
+"719
+[; ;mcp2515_can.c: 719:                 case (CAN_1000KBPS) :
+[e :U 241 ]
+"720
+[; ;mcp2515_can.c: 720:                     cfg1 = (0x00);
+[e = _cfg1 -> -> 0 `i `uc ]
+"721
+[; ;mcp2515_can.c: 721:                     cfg2 = (0x80);
+[e = _cfg2 -> -> 128 `i `uc ]
+"722
+[; ;mcp2515_can.c: 722:                     cfg3 = (0x00);
+[e = _cfg3 -> -> 0 `i `uc ]
+"723
+[; ;mcp2515_can.c: 723:                     break;
+[e $U 226  ]
+"725
+[; ;mcp2515_can.c: 725:                 default:
+[e :U 242 ]
+"726
+[; ;mcp2515_can.c: 726:                     set = 0;
+[e = _set -> -> 0 `i `uc ]
+"727
+[; ;mcp2515_can.c: 727:                     break;
+[e $U 226  ]
+"728
+[; ;mcp2515_can.c: 728:             }
+}
+[e $U 226  ]
+[e :U 227 ]
+[e [\ -> _canSpeed `i , $ . `E1029 1 228
+ , $ . `E1029 2 229
+ , $ . `E1029 3 230
+ , $ . `E1029 5 231
+ , $ . `E1029 7 232
+ , $ . `E1029 8 233
+ , $ . `E1029 9 234
+ , $ . `E1029 12 235
+ , $ . `E1029 13 236
+ , $ . `E1029 14 237
+ , $ . `E1029 15 238
+ , $ . `E1029 16 239
+ , $ . `E1029 18 240
+ , $ . `E1029 19 241
+ 242 ]
+[e :U 226 ]
+"729
+[; ;mcp2515_can.c: 729:             break;
+[e $U 180  ]
+"731
+[; ;mcp2515_can.c: 731:         default:
+[e :U 243 ]
+"732
+[; ;mcp2515_can.c: 732:             set = 0;
+[e = _set -> -> 0 `i `uc ]
+"733
+[; ;mcp2515_can.c: 733:             break;
+[e $U 180  ]
+"734
+[; ;mcp2515_can.c: 734:     }
+}
+[e $U 180  ]
+[e :U 181 ]
+[e [\ -> _clock `i , $ . `E1020 1 182
+ , $ . `E1020 2 205
+ , $ . `E1020 3 225
+ 243 ]
+[e :U 180 ]
+"736
+[; ;mcp2515_can.c: 736:     if (set) {
+[e $ ! != -> _set `i -> 0 `i 244  ]
+{
+"737
+[; ;mcp2515_can.c: 737:         mcp2515_setRegister(0x2A, cfg1);
+[e ( _mcp2515_setRegister (2 , -> -> 42 `i `uc _cfg1 ]
+"738
+[; ;mcp2515_can.c: 738:         mcp2515_setRegister(0x29, cfg2);
+[e ( _mcp2515_setRegister (2 , -> -> 41 `i `uc _cfg2 ]
+"739
+[; ;mcp2515_can.c: 739:         mcp2515_setRegister(0x28, cfg3);
+[e ( _mcp2515_setRegister (2 , -> -> 40 `i `uc _cfg3 ]
+"740
+[; ;mcp2515_can.c: 740:         return (0);
+[e ) -> -> 0 `i `uc ]
+[e $UE 179  ]
+"741
+[; ;mcp2515_can.c: 741:     } else {
+}
+[e $U 245  ]
+[e :U 244 ]
+{
+"742
+[; ;mcp2515_can.c: 742:         return (1);
+[e ) -> -> 1 `i `uc ]
+[e $UE 179  ]
+"743
+[; ;mcp2515_can.c: 743:     }
+}
+[e :U 245 ]
+"744
+[; ;mcp2515_can.c: 744: }
+[e :UE 179 ]
+}
+"750
+[; ;mcp2515_can.c: 750: void mcp2515_initCANBuffers(void) {
+[v _mcp2515_initCANBuffers `(v ~T0 @X0 1 ef ]
+{
+[e :U _mcp2515_initCANBuffers ]
+[f ]
+"751
+[; ;mcp2515_can.c: 751:     unsigned char i, a1, a2, a3;
+[v _i `uc ~T0 @X0 1 a ]
+[v _a1 `uc ~T0 @X0 1 a ]
+[v _a2 `uc ~T0 @X0 1 a ]
+[v _a3 `uc ~T0 @X0 1 a ]
+"753
+[; ;mcp2515_can.c: 753:     a1 = 0x30;
+[e = _a1 -> -> 48 `i `uc ]
+"754
+[; ;mcp2515_can.c: 754:     a2 = 0x40;
+[e = _a2 -> -> 64 `i `uc ]
+"755
+[; ;mcp2515_can.c: 755:     a3 = 0x50;
+[e = _a3 -> -> 80 `i `uc ]
+"756
+[; ;mcp2515_can.c: 756:     for (i = 0; i < 14; i++) {
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 14 `i 247  ]
+[e $U 248  ]
+[e :U 247 ]
+{
+"757
+[; ;mcp2515_can.c: 757:         mcp2515_setRegister(a1, 0);
+[e ( _mcp2515_setRegister (2 , _a1 -> -> 0 `i `uc ]
+"758
+[; ;mcp2515_can.c: 758:         mcp2515_setRegister(a2, 0);
+[e ( _mcp2515_setRegister (2 , _a2 -> -> 0 `i `uc ]
+"759
+[; ;mcp2515_can.c: 759:         mcp2515_setRegister(a3, 0);
+[e ( _mcp2515_setRegister (2 , _a3 -> -> 0 `i `uc ]
+"760
+[; ;mcp2515_can.c: 760:         a1++;
+[e ++ _a1 -> -> 1 `i `uc ]
+"761
+[; ;mcp2515_can.c: 761:         a2++;
+[e ++ _a2 -> -> 1 `i `uc ]
+"762
+[; ;mcp2515_can.c: 762:         a3++;
+[e ++ _a3 -> -> 1 `i `uc ]
+"763
+[; ;mcp2515_can.c: 763:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 14 `i 247  ]
+[e :U 248 ]
+}
+"764
+[; ;mcp2515_can.c: 764:     mcp2515_setRegister(0x60, 0);
+[e ( _mcp2515_setRegister (2 , -> -> 96 `i `uc -> -> 0 `i `uc ]
+"765
+[; ;mcp2515_can.c: 765:     mcp2515_setRegister(0x70, 0);
+[e ( _mcp2515_setRegister (2 , -> -> 112 `i `uc -> -> 0 `i `uc ]
+"766
+[; ;mcp2515_can.c: 766: }
+[e :UE 246 ]
+}
+"772
+[; ;mcp2515_can.c: 772: unsigned char mcp2515_init(const unsigned char canSpeed, const unsigned char clock) {
+[v _mcp2515_init `(uc ~T0 @X0 1 ef2`Cuc`Cuc ]
+{
+[e :U _mcp2515_init ]
+[v _canSpeed `Cuc ~T0 @X0 1 r1 ]
+[v _clock `Cuc ~T0 @X0 1 r2 ]
+[f ]
+"774
+[; ;mcp2515_can.c: 774:     unsigned char res;
+[v _res `uc ~T0 @X0 1 a ]
+"776
+[; ;mcp2515_can.c: 776:     mcp2515_reset();
+[e ( _mcp2515_reset ..  ]
+"778
+[; ;mcp2515_can.c: 778:     res = mcp2515_setCANCTRL_Mode(0x80);
+[e = _res ( _mcp2515_setCANCTRL_Mode (1 -> -> 128 `i `uc ]
+"779
+[; ;mcp2515_can.c: 779:     if (res > 0) {
+[e $ ! > -> _res `i -> 0 `i 251  ]
+{
+"783
+[; ;mcp2515_can.c: 783:         _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"785
+[; ;mcp2515_can.c: 785:         return res;
+[e ) _res ]
+[e $UE 250  ]
+"786
+[; ;mcp2515_can.c: 786:     }
+}
+[e :U 251 ]
+"790
+[; ;mcp2515_can.c: 790:     _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"794
+[; ;mcp2515_can.c: 794:     if (mcp2515_configRate(canSpeed, clock)) {
+[e $ ! != -> ( _mcp2515_configRate (2 , _canSpeed _clock `i -> 0 `i 252  ]
+{
+"798
+[; ;mcp2515_can.c: 798:         _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"800
+[; ;mcp2515_can.c: 800:         return res;
+[e ) _res ]
+[e $UE 250  ]
+"801
+[; ;mcp2515_can.c: 801:     }
+}
+[e :U 252 ]
+"805
+[; ;mcp2515_can.c: 805:     _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"808
+[; ;mcp2515_can.c: 808:     if (res == (0)) {
+[e $ ! == -> _res `i -> 0 `i 253  ]
+{
+"811
+[; ;mcp2515_can.c: 811:         mcp2515_initCANBuffers();
+[e ( _mcp2515_initCANBuffers ..  ]
+"814
+[; ;mcp2515_can.c: 814:         mcp2515_setRegister(0x2B, 0x01 | 0x02);
+[e ( _mcp2515_setRegister (2 , -> -> 43 `i `uc -> | -> 1 `i -> 2 `i `uc ]
+"825
+[; ;mcp2515_can.c: 825:         mcp2515_modifyRegister(0x60,
+[e ( _mcp2515_modifyRegister (3 , , -> -> 96 `i `uc -> | -> 96 `i << -> 1 `i -> 2 `i `uc -> | -> 0 `i << -> 1 `i -> 2 `i `uc ]
+"828
+[; ;mcp2515_can.c: 828:         mcp2515_modifyRegister(0x70, 0x60,
+[e ( _mcp2515_modifyRegister (3 , , -> -> 112 `i `uc -> -> 96 `i `uc -> -> 0 `i `uc ]
+"832
+[; ;mcp2515_can.c: 832:         res = setMode(0x00);
+[e = _res ( _setMode (1 -> -> 0 `i `uc ]
+"833
+[; ;mcp2515_can.c: 833:         if (res) {
+[e $ ! != -> _res `i -> 0 `i 254  ]
+{
+"837
+[; ;mcp2515_can.c: 837:             _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"839
+[; ;mcp2515_can.c: 839:             return res;
+[e ) _res ]
+[e $UE 250  ]
+"840
+[; ;mcp2515_can.c: 840:         }
+}
+[e :U 254 ]
+"846
+[; ;mcp2515_can.c: 846:         _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"849
+[; ;mcp2515_can.c: 849:     }
+}
+[e :U 253 ]
+"850
+[; ;mcp2515_can.c: 850:     return res;
+[e ) _res ]
+[e $UE 250  ]
+"852
+[; ;mcp2515_can.c: 852: }
+[e :UE 250 ]
+}
+"858
+[; ;mcp2515_can.c: 858: void mcp2515_id_to_buf(const unsigned char ext, const unsigned long id, unsigned char* tbufdata) {
+[v _mcp2515_id_to_buf `(v ~T0 @X0 1 ef3`Cuc`Cul`*uc ]
+{
+[e :U _mcp2515_id_to_buf ]
+[v _ext `Cuc ~T0 @X0 1 r1 ]
+[v _id `Cul ~T0 @X0 1 r2 ]
+[v _tbufdata `*uc ~T0 @X0 1 r3 ]
+[f ]
+"859
+[; ;mcp2515_can.c: 859:     uint16_t canid;
+[v _canid `us ~T0 @X0 1 a ]
+"861
+[; ;mcp2515_can.c: 861:     canid = (uint16_t)(id & 0x0FFFF);
+[e = _canid -> & _id -> -> 65535 `ui `ul `us ]
+"863
+[; ;mcp2515_can.c: 863:     if (ext == 1) {
+[e $ ! == -> _ext `i -> 1 `i 256  ]
+{
+"864
+[; ;mcp2515_can.c: 864:         tbufdata[3] = (unsigned char)(canid & 0xFF);
+[e = *U + _tbufdata * -> -> 3 `i `x -> -> # *U _tbufdata `i `x -> & -> _canid `ui -> -> 255 `i `ui `uc ]
+"865
+[; ;mcp2515_can.c: 865:         tbufdata[2] = (unsigned char)(canid >> 8);
+[e = *U + _tbufdata * -> -> 2 `i `x -> -> # *U _tbufdata `i `x -> >> -> _canid `ui -> 8 `i `uc ]
+"866
+[; ;mcp2515_can.c: 866:         canid = (uint16_t)(id >> 16);
+[e = _canid -> >> _id -> 16 `i `us ]
+"867
+[; ;mcp2515_can.c: 867:         tbufdata[1] = (unsigned char)(canid & 0x03);
+[e = *U + _tbufdata * -> -> 1 `i `x -> -> # *U _tbufdata `i `x -> & -> _canid `ui -> -> 3 `i `ui `uc ]
+"868
+[; ;mcp2515_can.c: 868:         tbufdata[1] += (unsigned char)((canid & 0x1C) << 3);
+[e =+ *U + _tbufdata * -> -> 1 `i `x -> -> # *U _tbufdata `i `x -> -> << & -> _canid `ui -> -> 28 `i `ui -> 3 `i `uc `uc ]
+"869
+[; ;mcp2515_can.c: 869:         tbufdata[1] |= 0x08;
+[e =| *U + _tbufdata * -> -> 1 `i `x -> -> # *U _tbufdata `i `x -> -> 8 `i `uc ]
+"870
+[; ;mcp2515_can.c: 870:         tbufdata[0] = (unsigned char)(canid >> 5);
+[e = *U + _tbufdata * -> -> 0 `i `x -> -> # *U _tbufdata `i `x -> >> -> _canid `ui -> 5 `i `uc ]
+"871
+[; ;mcp2515_can.c: 871:     } else {
+}
+[e $U 257  ]
+[e :U 256 ]
+{
+"872
+[; ;mcp2515_can.c: 872:         tbufdata[0] = (unsigned char)(canid >> 3);
+[e = *U + _tbufdata * -> -> 0 `i `x -> -> # *U _tbufdata `i `x -> >> -> _canid `ui -> 3 `i `uc ]
+"873
+[; ;mcp2515_can.c: 873:         tbufdata[1] = (unsigned char)((canid & 0x07) << 5);
+[e = *U + _tbufdata * -> -> 1 `i `x -> -> # *U _tbufdata `i `x -> << & -> _canid `ui -> -> 7 `i `ui -> 5 `i `uc ]
+"874
+[; ;mcp2515_can.c: 874:         tbufdata[3] = 0;
+[e = *U + _tbufdata * -> -> 3 `i `x -> -> # *U _tbufdata `i `x -> -> 0 `i `uc ]
+"875
+[; ;mcp2515_can.c: 875:         tbufdata[2] = 0;
+[e = *U + _tbufdata * -> -> 2 `i `x -> -> # *U _tbufdata `i `x -> -> 0 `i `uc ]
+"876
+[; ;mcp2515_can.c: 876:     }
+}
+[e :U 257 ]
+"877
+[; ;mcp2515_can.c: 877: }
+[e :UE 255 ]
+}
+"883
+[; ;mcp2515_can.c: 883: void mcp2515_write_id(const unsigned char mcp_addr, const unsigned char ext, const unsigned long id) {
+[v _mcp2515_write_id `(v ~T0 @X0 1 ef3`Cuc`Cuc`Cul ]
+{
+[e :U _mcp2515_write_id ]
+[v _mcp_addr `Cuc ~T0 @X0 1 r1 ]
+[v _ext `Cuc ~T0 @X0 1 r2 ]
+[v _id `Cul ~T0 @X0 1 r3 ]
+[f ]
+"884
+[; ;mcp2515_can.c: 884:     unsigned char tbufdata[4];
+[v _tbufdata `uc ~T0 @X0 -> 4 `i a ]
+"886
+[; ;mcp2515_can.c: 886:     mcp2515_id_to_buf(ext, id, tbufdata);
+[e ( _mcp2515_id_to_buf (3 , , _ext _id &U _tbufdata ]
+"887
+[; ;mcp2515_can.c: 887:     mcp2515_setRegisterS(mcp_addr, tbufdata, 4);
+[e ( _mcp2515_setRegisterS (3 , , _mcp_addr -> &U _tbufdata `*Cuc -> -> 4 `i `uc ]
+"888
+[; ;mcp2515_can.c: 888: }
+[e :UE 258 ]
+}
+"894
+[; ;mcp2515_can.c: 894: void mcp2515_read_id(const unsigned char mcp_addr, unsigned char* ext, unsigned long* id) {
+[v _mcp2515_read_id `(v ~T0 @X0 1 ef3`Cuc`*uc`*ul ]
+{
+[e :U _mcp2515_read_id ]
+[v _mcp_addr `Cuc ~T0 @X0 1 r1 ]
+[v _ext `*uc ~T0 @X0 1 r2 ]
+[v _id `*ul ~T0 @X0 1 r3 ]
+[f ]
+"895
+[; ;mcp2515_can.c: 895:     unsigned char tbufdata[4];
+[v _tbufdata `uc ~T0 @X0 -> 4 `i a ]
+"897
+[; ;mcp2515_can.c: 897:     *ext = 0;
+[e = *U _ext -> -> 0 `i `uc ]
+"898
+[; ;mcp2515_can.c: 898:     *id = 0;
+[e = *U _id -> -> -> 0 `i `l `ul ]
+"900
+[; ;mcp2515_can.c: 900:     mcp2515_readRegisterS(mcp_addr, tbufdata, 4);
+[e ( _mcp2515_readRegisterS (3 , , _mcp_addr &U _tbufdata -> -> 4 `i `uc ]
+"902
+[; ;mcp2515_can.c: 902:     *id = (tbufdata[0] << 3) + (tbufdata[1] >> 5);
+[e = *U _id -> -> + << -> *U + &U _tbufdata * -> -> -> 0 `i `ui `ux -> -> # *U &U _tbufdata `ui `ux `i -> 3 `i >> -> *U + &U _tbufdata * -> -> -> 1 `i `ui `ux -> -> # *U &U _tbufdata `ui `ux `i -> 5 `i `l `ul ]
+"904
+[; ;mcp2515_can.c: 904:     if ((tbufdata[1] & 0x08) == 0x08) {
+[e $ ! == & -> *U + &U _tbufdata * -> -> -> 1 `i `ui `ux -> -> # *U &U _tbufdata `ui `ux `i -> 8 `i -> 8 `i 260  ]
+{
+"906
+[; ;mcp2515_can.c: 906:         *id = (*id << 2) + (tbufdata[1] & 0x03);
+[e = *U _id + << *U _id -> 2 `i -> -> & -> *U + &U _tbufdata * -> -> -> 1 `i `ui `ux -> -> # *U &U _tbufdata `ui `ux `i -> 3 `i `l `ul ]
+"907
+[; ;mcp2515_can.c: 907:         *id = (*id << 8) + tbufdata[2];
+[e = *U _id + << *U _id -> 8 `i -> *U + &U _tbufdata * -> -> -> 2 `i `ui `ux -> -> # *U &U _tbufdata `ui `ux `ul ]
+"908
+[; ;mcp2515_can.c: 908:         *id = (*id << 8) + tbufdata[3];
+[e = *U _id + << *U _id -> 8 `i -> *U + &U _tbufdata * -> -> -> 3 `i `ui `ux -> -> # *U &U _tbufdata `ui `ux `ul ]
+"909
+[; ;mcp2515_can.c: 909:         *ext = 1;
+[e = *U _ext -> -> 1 `i `uc ]
+"910
+[; ;mcp2515_can.c: 910:     }
+}
+[e :U 260 ]
+"911
+[; ;mcp2515_can.c: 911: }
+[e :UE 259 ]
+}
+"918
+[; ;mcp2515_can.c: 918: void mcp2515_write_canMsg(const unsigned char buffer_sidh_addr, unsigned long id, unsigned char ext, unsigned char rtrBit, unsigned char len,
+[v _mcp2515_write_canMsg `(v ~T0 @X0 1 ef6`Cuc`ul`uc`uc`uc`*CVuc ]
+"919
+[; ;mcp2515_can.c: 919:                                    volatile const unsigned char* buf) {
+{
+[e :U _mcp2515_write_canMsg ]
+"918
+[; ;mcp2515_can.c: 918: void mcp2515_write_canMsg(const unsigned char buffer_sidh_addr, unsigned long id, unsigned char ext, unsigned char rtrBit, unsigned char len,
+[v _buffer_sidh_addr `Cuc ~T0 @X0 1 r1 ]
+[v _id `ul ~T0 @X0 1 r2 ]
+[v _ext `uc ~T0 @X0 1 r3 ]
+[v _rtrBit `uc ~T0 @X0 1 r4 ]
+[v _len `uc ~T0 @X0 1 r5 ]
+"919
+[; ;mcp2515_can.c: 919:                                    volatile const unsigned char* buf) {
+[v _buf `*CVuc ~T0 @X0 1 r6 ]
+[f ]
+"920
+[; ;mcp2515_can.c: 920:     unsigned char load_addr = txSidhToTxLoad(buffer_sidh_addr);
+[v _load_addr `uc ~T0 @X0 1 a ]
+[e = _load_addr ( _txSidhToTxLoad (1 _buffer_sidh_addr ]
+"922
+[; ;mcp2515_can.c: 922:     unsigned char tbufdata[4];
+[v _tbufdata `uc ~T0 @X0 -> 4 `i a ]
+"923
+[; ;mcp2515_can.c: 923:     unsigned char dlc = len | (rtrBit ? 0x40 : 0) ;
+[v _dlc `uc ~T0 @X0 1 a ]
+[e = _dlc -> | -> _len `i ? != -> _rtrBit `i -> 0 `i : -> 64 `i -> 0 `i `uc ]
+"924
+[; ;mcp2515_can.c: 924:     unsigned char i;
+[v _i `uc ~T0 @X0 1 a ]
+"926
+[; ;mcp2515_can.c: 926:     mcp2515_id_to_buf(ext, id, tbufdata);
+[e ( _mcp2515_id_to_buf (3 , , _ext _id &U _tbufdata ]
+"931
+[; ;mcp2515_can.c: 931:     RD0 = 0;;
+[e = _RD0 -> -> 0 `i `b ]
+"932
+[; ;mcp2515_can.c: 932:     WriteSPI(load_addr);
+[e ( _WriteSPI (1 _load_addr ]
+"933
+[; ;mcp2515_can.c: 933:     for (i = 0; i < 4; i++) {
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 262  ]
+[e $U 263  ]
+[e :U 262 ]
+{
+"934
+[; ;mcp2515_can.c: 934:         WriteSPI(tbufdata[i]);
+[e ( _WriteSPI (1 *U + &U _tbufdata * -> _i `ux -> -> # *U &U _tbufdata `ui `ux ]
+"935
+[; ;mcp2515_can.c: 935:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 262  ]
+[e :U 263 ]
+}
+"936
+[; ;mcp2515_can.c: 936:     WriteSPI(dlc);
+[e ( _WriteSPI (1 _dlc ]
+"937
+[; ;mcp2515_can.c: 937:     for (i = 0; i < len && i < (8); i++) {
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 268  ]
+[e :U 265 ]
+{
+"938
+[; ;mcp2515_can.c: 938:         WriteSPI(buf[i]);
+[e ( _WriteSPI (1 *U + _buf * -> _i `ux -> -> # *U _buf `ui `ux ]
+"939
+[; ;mcp2515_can.c: 939:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 268 ]
+[e $ && < -> _i `i -> _len `i < -> _i `i -> 8 `i 265  ]
+[e :U 266 ]
+}
+"941
+[; ;mcp2515_can.c: 941:     RD0 = 1;;
+[e = _RD0 -> -> 1 `i `b ]
+"946
+[; ;mcp2515_can.c: 946:     mcp2515_start_transmit(buffer_sidh_addr);
+[e ( _mcp2515_start_transmit (1 _buffer_sidh_addr ]
+"948
+[; ;mcp2515_can.c: 948: }
+[e :UE 261 ]
+}
+"954
+[; ;mcp2515_can.c: 954: void mcp2515_read_canMsg(const unsigned char buffer_load_addr, volatile unsigned long* id, volatile unsigned char* ext,
+[v _mcp2515_read_canMsg `(v ~T0 @X0 1 ef6`Cuc`*Vul`*Vuc`*Vuc`*Vuc`*Vuc ]
+"955
+[; ;mcp2515_can.c: 955:                                   volatile unsigned char* rtrBit, volatile unsigned char* len, volatile unsigned char* buf) {
+{
+[e :U _mcp2515_read_canMsg ]
+"954
+[; ;mcp2515_can.c: 954: void mcp2515_read_canMsg(const unsigned char buffer_load_addr, volatile unsigned long* id, volatile unsigned char* ext,
+[v _buffer_load_addr `Cuc ~T0 @X0 1 r1 ]
+[v _id `*Vul ~T0 @X0 1 r2 ]
+[v _ext `*Vuc ~T0 @X0 1 r3 ]
+"955
+[; ;mcp2515_can.c: 955:                                   volatile unsigned char* rtrBit, volatile unsigned char* len, volatile unsigned char* buf) {
+[v _rtrBit `*Vuc ~T0 @X0 1 r4 ]
+[v _len `*Vuc ~T0 @X0 1 r5 ]
+[v _buf `*Vuc ~T0 @X0 1 r6 ]
+[f ]
+"956
+[; ;mcp2515_can.c: 956:     unsigned char tbufdata[4];
+[v _tbufdata `uc ~T0 @X0 -> 4 `i a ]
+"957
+[; ;mcp2515_can.c: 957:     unsigned char i;
+[v _i `uc ~T0 @X0 1 a ]
+"959
+[; ;mcp2515_can.c: 959:     RD0 = 0;;
+[e = _RD0 -> -> 0 `i `b ]
+"960
+[; ;mcp2515_can.c: 960:     WriteSPI(buffer_load_addr);
+[e ( _WriteSPI (1 _buffer_load_addr ]
+"962
+[; ;mcp2515_can.c: 962:     for (i = 0; i < 4; i++) {
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 270  ]
+[e $U 271  ]
+[e :U 270 ]
+{
+"963
+[; ;mcp2515_can.c: 963:         tbufdata[i] = ReadSPI();
+[e = *U + &U _tbufdata * -> _i `ux -> -> # *U &U _tbufdata `ui `ux ( _ReadSPI ..  ]
+"964
+[; ;mcp2515_can.c: 964:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 270  ]
+[e :U 271 ]
+}
+"966
+[; ;mcp2515_can.c: 966:     *id = (tbufdata[0] << 3) + (tbufdata[1] >> 5);
+[e = *U _id -> -> + << -> *U + &U _tbufdata * -> -> -> 0 `i `ui `ux -> -> # *U &U _tbufdata `ui `ux `i -> 3 `i >> -> *U + &U _tbufdata * -> -> -> 1 `i `ui `ux -> -> # *U &U _tbufdata `ui `ux `i -> 5 `i `l `ul ]
+"967
+[; ;mcp2515_can.c: 967:     *ext = 0;
+[e = *U _ext -> -> 0 `i `uc ]
+"968
+[; ;mcp2515_can.c: 968:     if ((tbufdata[1] & 0x08) == 0x08) {
+[e $ ! == & -> *U + &U _tbufdata * -> -> -> 1 `i `ui `ux -> -> # *U &U _tbufdata `ui `ux `i -> 8 `i -> 8 `i 273  ]
+{
+"970
+[; ;mcp2515_can.c: 970:         *id = (*id << 2) + (tbufdata[1] & 0x03);
+[e = *U _id + << *U _id -> 2 `i -> -> & -> *U + &U _tbufdata * -> -> -> 1 `i `ui `ux -> -> # *U &U _tbufdata `ui `ux `i -> 3 `i `l `ul ]
+"971
+[; ;mcp2515_can.c: 971:         *id = (*id << 8) + tbufdata[2];
+[e = *U _id + << *U _id -> 8 `i -> *U + &U _tbufdata * -> -> -> 2 `i `ui `ux -> -> # *U &U _tbufdata `ui `ux `ul ]
+"972
+[; ;mcp2515_can.c: 972:         *id = (*id << 8) + tbufdata[3];
+[e = *U _id + << *U _id -> 8 `i -> *U + &U _tbufdata * -> -> -> 3 `i `ui `ux -> -> # *U &U _tbufdata `ui `ux `ul ]
+"973
+[; ;mcp2515_can.c: 973:         *ext = 1;
+[e = *U _ext -> -> 1 `i `uc ]
+"974
+[; ;mcp2515_can.c: 974:     }
+}
+[e :U 273 ]
+"976
+[; ;mcp2515_can.c: 976:     unsigned char pMsgSize = ReadSPI();
+[v _pMsgSize `uc ~T0 @X0 1 a ]
+[e = _pMsgSize ( _ReadSPI ..  ]
+"977
+[; ;mcp2515_can.c: 977:     *len = pMsgSize & 0x0F;
+[e = *U _len -> & -> _pMsgSize `i -> 15 `i `uc ]
+"978
+[; ;mcp2515_can.c: 978:     *rtrBit = (pMsgSize & 0x40) ? 1 : 0;
+[e = *U _rtrBit -> ? != & -> _pMsgSize `i -> 64 `i -> 0 `i : -> 1 `i -> 0 `i `uc ]
+"979
+[; ;mcp2515_can.c: 979:     for (i = 0; i < *len && i < (8); i++) {
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 277  ]
+[e :U 274 ]
+{
+"980
+[; ;mcp2515_can.c: 980:         buf[i] = ReadSPI();
+[e = *U + _buf * -> _i `ux -> -> # *U _buf `ui `ux ( _ReadSPI ..  ]
+"981
+[; ;mcp2515_can.c: 981:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 277 ]
+[e $ && < -> _i `i -> *U _len `i < -> _i `i -> 8 `i 274  ]
+[e :U 275 ]
+}
+"983
+[; ;mcp2515_can.c: 983:     RD0 = 1;;
+[e = _RD0 -> -> 1 `i `b ]
+"984
+[; ;mcp2515_can.c: 984: }
+[e :UE 269 ]
+}
+"990
+[; ;mcp2515_can.c: 990: void mcp2515_start_transmit(const unsigned char mcp_addr) {
+[v _mcp2515_start_transmit `(v ~T0 @X0 1 ef1`Cuc ]
+{
+[e :U _mcp2515_start_transmit ]
+[v _mcp_addr `Cuc ~T0 @X0 1 r1 ]
+[f ]
+"994
+[; ;mcp2515_can.c: 994:     RD0 = 0;;
+[e = _RD0 -> -> 0 `i `b ]
+"995
+[; ;mcp2515_can.c: 995:     WriteSPI(txSidhToRTS(mcp_addr));
+[e ( _WriteSPI (1 ( _txSidhToRTS (1 _mcp_addr ]
+"996
+[; ;mcp2515_can.c: 996:     RD0 = 1;;
+[e = _RD0 -> -> 1 `i `b ]
+"1000
+[; ;mcp2515_can.c: 1000: }
+[e :UE 278 ]
+}
+"1006
+[; ;mcp2515_can.c: 1006: unsigned char mcp2515_isTXBufFree(unsigned char* txbuf_n, unsigned char iBuf) {
+[v _mcp2515_isTXBufFree `(uc ~T0 @X0 1 ef2`*uc`uc ]
+{
+[e :U _mcp2515_isTXBufFree ]
+[v _txbuf_n `*uc ~T0 @X0 1 r1 ]
+[v _iBuf `uc ~T0 @X0 1 r2 ]
+[f ]
+"1007
+[; ;mcp2515_can.c: 1007:     *txbuf_n = 0x00;
+[e = *U _txbuf_n -> -> 0 `i `uc ]
+"1009
+[; ;mcp2515_can.c: 1009:     if (iBuf >= (3) ||
+[e $ ! || >= -> _iBuf `i -> 3 `i != & -> ( _mcp2515_readStatus ..  `i -> ( _txStatusPendingFlag (1 _iBuf `i -> 0 `i 280  ]
+"1010
+[; ;mcp2515_can.c: 1010:             (mcp2515_readStatus() & txStatusPendingFlag(iBuf)) != 0) {
+{
+"1011
+[; ;mcp2515_can.c: 1011:         return (2);
+[e ) -> -> 2 `i `uc ]
+[e $UE 279  ]
+"1012
+[; ;mcp2515_can.c: 1012:     }
+}
+[e :U 280 ]
+"1014
+[; ;mcp2515_can.c: 1014:     *txbuf_n = txCtrlReg(iBuf) + 1;
+[e = *U _txbuf_n -> + -> ( _txCtrlReg (1 _iBuf `i -> 1 `i `uc ]
+"1015
+[; ;mcp2515_can.c: 1015:     mcp2515_modifyRegister(0x2C, txIfFlag(iBuf), 0);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 44 `i `uc ( _txIfFlag (1 _iBuf -> -> 0 `i `uc ]
+"1017
+[; ;mcp2515_can.c: 1017:     return (0);
+[e ) -> -> 0 `i `uc ]
+[e $UE 279  ]
+"1018
+[; ;mcp2515_can.c: 1018: }
+[e :UE 279 ]
+}
+"1024
+[; ;mcp2515_can.c: 1024: unsigned char mcp2515_getNextFreeTXBuf(unsigned char* txbuf_n) {
+[v _mcp2515_getNextFreeTXBuf `(uc ~T0 @X0 1 ef1`*uc ]
+{
+[e :U _mcp2515_getNextFreeTXBuf ]
+[v _txbuf_n `*uc ~T0 @X0 1 r1 ]
+[f ]
+"1025
+[; ;mcp2515_can.c: 1025:     unsigned char status = mcp2515_readStatus() & (0x54);
+[v _status `uc ~T0 @X0 1 a ]
+[e = _status -> & -> ( _mcp2515_readStatus ..  `i -> 84 `i `uc ]
+"1026
+[; ;mcp2515_can.c: 1026:     unsigned char i;
+[v _i `uc ~T0 @X0 1 a ]
+"1028
+[; ;mcp2515_can.c: 1028:     *txbuf_n = 0x00;
+[e = *U _txbuf_n -> -> 0 `i `uc ]
+"1030
+[; ;mcp2515_can.c: 1030:     if (status == (0x54)) {
+[e $ ! == -> _status `i -> 84 `i 282  ]
+{
+"1031
+[; ;mcp2515_can.c: 1031:         return (2);
+[e ) -> -> 2 `i `uc ]
+[e $UE 281  ]
+"1032
+[; ;mcp2515_can.c: 1032:     }
+}
+[e :U 282 ]
+"1035
+[; ;mcp2515_can.c: 1035:     for (i = 0; i < (3) - nReservedTx; i++) {
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 286  ]
+[e :U 283 ]
+{
+"1036
+[; ;mcp2515_can.c: 1036:         if ((status & txStatusPendingFlag(i)) == 0) {
+[e $ ! == & -> _status `i -> ( _txStatusPendingFlag (1 _i `i -> 0 `i 287  ]
+{
+"1037
+[; ;mcp2515_can.c: 1037:             *txbuf_n = txCtrlReg(i) + 1;
+[e = *U _txbuf_n -> + -> ( _txCtrlReg (1 _i `i -> 1 `i `uc ]
+"1038
+[; ;mcp2515_can.c: 1038:             mcp2515_modifyRegister(0x2C, txIfFlag(i), 0);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 44 `i `uc ( _txIfFlag (1 _i -> -> 0 `i `uc ]
+"1039
+[; ;mcp2515_can.c: 1039:             return (0);
+[e ) -> -> 0 `i `uc ]
+[e $UE 281  ]
+"1040
+[; ;mcp2515_can.c: 1040:         }
+}
+[e :U 287 ]
+"1041
+[; ;mcp2515_can.c: 1041:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 286 ]
+[e $ < -> _i `i - -> 3 `i -> _nReservedTx `i 283  ]
+[e :U 284 ]
+}
+"1043
+[; ;mcp2515_can.c: 1043:     return (2);
+[e ) -> -> 2 `i `uc ]
+[e $UE 281  ]
+"1044
+[; ;mcp2515_can.c: 1044: }
+[e :UE 281 ]
+}
+"1049
+[; ;mcp2515_can.c: 1049: unsigned char begin(uint32_t speedset, const unsigned char clockset) {
+[v _begin `(uc ~T0 @X0 1 ef2`ul`Cuc ]
+{
+[e :U _begin ]
+[v _speedset `ul ~T0 @X0 1 r1 ]
+[v _clockset `Cuc ~T0 @X0 1 r2 ]
+[f ]
+"1050
+[; ;mcp2515_can.c: 1050:     OpenSPI(0, 0, 0x80);
+[e ( _OpenSPI (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 128 `i `uc ]
+"1051
+[; ;mcp2515_can.c: 1051:     unsigned char res = mcp2515_init((unsigned char)speedset, clockset);
+[v _res `uc ~T0 @X0 1 a ]
+[e = _res ( _mcp2515_init (2 , -> _speedset `uc _clockset ]
+"1053
+[; ;mcp2515_can.c: 1053:     return ((res == (0)) ? (0) : (1));
+[e ) -> ? == -> _res `i -> 0 `i : -> 0 `i -> 1 `i `uc ]
+[e $UE 288  ]
+"1054
+[; ;mcp2515_can.c: 1054: }
+[e :UE 288 ]
+}
+"1060
+[; ;mcp2515_can.c: 1060: void enableTxInterrupt(unsigned char enable) {
+[v _enableTxInterrupt `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _enableTxInterrupt ]
+[v _enable `uc ~T0 @X0 1 r1 ]
+[f ]
+"1061
+[; ;mcp2515_can.c: 1061:     unsigned char interruptStatus = mcp2515_readRegister(0x2B);
+[v _interruptStatus `uc ~T0 @X0 1 a ]
+[e = _interruptStatus ( _mcp2515_readRegister (1 -> -> 43 `i `uc ]
+"1063
+[; ;mcp2515_can.c: 1063:     if (enable) {
+[e $ ! != -> _enable `i -> 0 `i 290  ]
+{
+"1064
+[; ;mcp2515_can.c: 1064:         interruptStatus |= 0x1C;
+[e =| _interruptStatus -> -> 28 `i `uc ]
+"1065
+[; ;mcp2515_can.c: 1065:     } else {
+}
+[e $U 291  ]
+[e :U 290 ]
+{
+"1066
+[; ;mcp2515_can.c: 1066:         interruptStatus &= ~0x1C;
+[e =& _interruptStatus -> ~ -> 28 `i `uc ]
+"1067
+[; ;mcp2515_can.c: 1067:     }
+}
+[e :U 291 ]
+"1069
+[; ;mcp2515_can.c: 1069:     mcp2515_setRegister(0x2B, interruptStatus);
+[e ( _mcp2515_setRegister (2 , -> -> 43 `i `uc _interruptStatus ]
+"1070
+[; ;mcp2515_can.c: 1070: }
+[e :UE 289 ]
+}
+"1076
+[; ;mcp2515_can.c: 1076: unsigned char init_Mask(unsigned char num, unsigned char ext, unsigned long ulData) {
+[v _init_Mask `(uc ~T0 @X0 1 ef3`uc`uc`ul ]
+{
+[e :U _init_Mask ]
+[v _num `uc ~T0 @X0 1 r1 ]
+[v _ext `uc ~T0 @X0 1 r2 ]
+[v _ulData `ul ~T0 @X0 1 r3 ]
+[f ]
+"1077
+[; ;mcp2515_can.c: 1077:     unsigned char res = (0);
+[v _res `uc ~T0 @X0 1 a ]
+[e = _res -> -> 0 `i `uc ]
+"1081
+[; ;mcp2515_can.c: 1081:     _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1083
+[; ;mcp2515_can.c: 1083:     res = mcp2515_setCANCTRL_Mode(0x80);
+[e = _res ( _mcp2515_setCANCTRL_Mode (1 -> -> 128 `i `uc ]
+"1084
+[; ;mcp2515_can.c: 1084:     if (res > 0) {
+[e $ ! > -> _res `i -> 0 `i 293  ]
+{
+"1088
+[; ;mcp2515_can.c: 1088:         _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1090
+[; ;mcp2515_can.c: 1090:         return res;
+[e ) _res ]
+[e $UE 292  ]
+"1091
+[; ;mcp2515_can.c: 1091:     }
+}
+[e :U 293 ]
+"1093
+[; ;mcp2515_can.c: 1093:     if (num == 0) {
+[e $ ! == -> _num `i -> 0 `i 294  ]
+{
+"1094
+[; ;mcp2515_can.c: 1094:         mcp2515_write_id(0x20, ext, ulData);
+[e ( _mcp2515_write_id (3 , , -> -> 32 `i `uc _ext _ulData ]
+"1096
+[; ;mcp2515_can.c: 1096:     } else if (num == 1) {
+}
+[e $U 295  ]
+[e :U 294 ]
+[e $ ! == -> _num `i -> 1 `i 296  ]
+{
+"1097
+[; ;mcp2515_can.c: 1097:         mcp2515_write_id(0x24, ext, ulData);
+[e ( _mcp2515_write_id (3 , , -> -> 36 `i `uc _ext _ulData ]
+"1098
+[; ;mcp2515_can.c: 1098:     } else {
+}
+[e $U 297  ]
+[e :U 296 ]
+{
+"1099
+[; ;mcp2515_can.c: 1099:         res = (1);
+[e = _res -> -> 1 `i `uc ]
+"1100
+[; ;mcp2515_can.c: 1100:     }
+}
+[e :U 297 ]
+[e :U 295 ]
+"1102
+[; ;mcp2515_can.c: 1102:     res = mcp2515_setCANCTRL_Mode(mcpMode);
+[e = _res ( _mcp2515_setCANCTRL_Mode (1 _mcpMode ]
+"1103
+[; ;mcp2515_can.c: 1103:     if (res > 0) {
+[e $ ! > -> _res `i -> 0 `i 298  ]
+{
+"1107
+[; ;mcp2515_can.c: 1107:         _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1109
+[; ;mcp2515_can.c: 1109:         return res;
+[e ) _res ]
+[e $UE 292  ]
+"1110
+[; ;mcp2515_can.c: 1110:     }
+}
+[e :U 298 ]
+"1114
+[; ;mcp2515_can.c: 1114:     _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1116
+[; ;mcp2515_can.c: 1116:     return res;
+[e ) _res ]
+[e $UE 292  ]
+"1117
+[; ;mcp2515_can.c: 1117: }
+[e :UE 292 ]
+}
+"1123
+[; ;mcp2515_can.c: 1123: unsigned char init_Filt(unsigned char num, unsigned char ext, unsigned long ulData) {
+[v _init_Filt `(uc ~T0 @X0 1 ef3`uc`uc`ul ]
+{
+[e :U _init_Filt ]
+[v _num `uc ~T0 @X0 1 r1 ]
+[v _ext `uc ~T0 @X0 1 r2 ]
+[v _ulData `ul ~T0 @X0 1 r3 ]
+[f ]
+"1124
+[; ;mcp2515_can.c: 1124:     unsigned char res = (0);
+[v _res `uc ~T0 @X0 1 a ]
+[e = _res -> -> 0 `i `uc ]
+"1128
+[; ;mcp2515_can.c: 1128:     _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1130
+[; ;mcp2515_can.c: 1130:     res = mcp2515_setCANCTRL_Mode(0x80);
+[e = _res ( _mcp2515_setCANCTRL_Mode (1 -> -> 128 `i `uc ]
+"1131
+[; ;mcp2515_can.c: 1131:     if (res > 0) {
+[e $ ! > -> _res `i -> 0 `i 300  ]
+{
+"1135
+[; ;mcp2515_can.c: 1135:         _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1137
+[; ;mcp2515_can.c: 1137:         return res;
+[e ) _res ]
+[e $UE 299  ]
+"1138
+[; ;mcp2515_can.c: 1138:     }
+}
+[e :U 300 ]
+"1140
+[; ;mcp2515_can.c: 1140:     switch (num) {
+[e $U 302  ]
+{
+"1141
+[; ;mcp2515_can.c: 1141:         case 0:
+[e :U 303 ]
+"1142
+[; ;mcp2515_can.c: 1142:             mcp2515_write_id(0x00, ext, ulData);
+[e ( _mcp2515_write_id (3 , , -> -> 0 `i `uc _ext _ulData ]
+"1143
+[; ;mcp2515_can.c: 1143:             break;
+[e $U 301  ]
+"1145
+[; ;mcp2515_can.c: 1145:         case 1:
+[e :U 304 ]
+"1146
+[; ;mcp2515_can.c: 1146:             mcp2515_write_id(0x04, ext, ulData);
+[e ( _mcp2515_write_id (3 , , -> -> 4 `i `uc _ext _ulData ]
+"1147
+[; ;mcp2515_can.c: 1147:             break;
+[e $U 301  ]
+"1149
+[; ;mcp2515_can.c: 1149:         case 2:
+[e :U 305 ]
+"1150
+[; ;mcp2515_can.c: 1150:             mcp2515_write_id(0x08, ext, ulData);
+[e ( _mcp2515_write_id (3 , , -> -> 8 `i `uc _ext _ulData ]
+"1151
+[; ;mcp2515_can.c: 1151:             break;
+[e $U 301  ]
+"1153
+[; ;mcp2515_can.c: 1153:         case 3:
+[e :U 306 ]
+"1154
+[; ;mcp2515_can.c: 1154:             mcp2515_write_id(0x10, ext, ulData);
+[e ( _mcp2515_write_id (3 , , -> -> 16 `i `uc _ext _ulData ]
+"1155
+[; ;mcp2515_can.c: 1155:             break;
+[e $U 301  ]
+"1157
+[; ;mcp2515_can.c: 1157:         case 4:
+[e :U 307 ]
+"1158
+[; ;mcp2515_can.c: 1158:             mcp2515_write_id(0x14, ext, ulData);
+[e ( _mcp2515_write_id (3 , , -> -> 20 `i `uc _ext _ulData ]
+"1159
+[; ;mcp2515_can.c: 1159:             break;
+[e $U 301  ]
+"1161
+[; ;mcp2515_can.c: 1161:         case 5:
+[e :U 308 ]
+"1162
+[; ;mcp2515_can.c: 1162:             mcp2515_write_id(0x18, ext, ulData);
+[e ( _mcp2515_write_id (3 , , -> -> 24 `i `uc _ext _ulData ]
+"1163
+[; ;mcp2515_can.c: 1163:             break;
+[e $U 301  ]
+"1165
+[; ;mcp2515_can.c: 1165:         default:
+[e :U 309 ]
+"1166
+[; ;mcp2515_can.c: 1166:             res = (1);
+[e = _res -> -> 1 `i `uc ]
+"1167
+[; ;mcp2515_can.c: 1167:     }
+}
+[e $U 301  ]
+[e :U 302 ]
+[e [\ -> _num `i , $ -> 0 `i 303
+ , $ -> 1 `i 304
+ , $ -> 2 `i 305
+ , $ -> 3 `i 306
+ , $ -> 4 `i 307
+ , $ -> 5 `i 308
+ 309 ]
+[e :U 301 ]
+"1169
+[; ;mcp2515_can.c: 1169:     res = mcp2515_setCANCTRL_Mode(mcpMode);
+[e = _res ( _mcp2515_setCANCTRL_Mode (1 _mcpMode ]
+"1170
+[; ;mcp2515_can.c: 1170:     if (res > 0) {
+[e $ ! > -> _res `i -> 0 `i 310  ]
+{
+"1174
+[; ;mcp2515_can.c: 1174:         _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1176
+[; ;mcp2515_can.c: 1176:         return res;
+[e ) _res ]
+[e $UE 299  ]
+"1177
+[; ;mcp2515_can.c: 1177:     }
+}
+[e :U 310 ]
+"1181
+[; ;mcp2515_can.c: 1181:     _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1184
+[; ;mcp2515_can.c: 1184:     return res;
+[e ) _res ]
+[e $UE 299  ]
+"1185
+[; ;mcp2515_can.c: 1185: }
+[e :UE 299 ]
+}
+"1192
+[; ;mcp2515_can.c: 1192: unsigned char sendMsgBuf1(unsigned char status, unsigned long id, unsigned char ext, unsigned char rtrBit, unsigned char len, volatile const unsigned char* buf) {
+[v _sendMsgBuf1 `(uc ~T0 @X0 1 ef6`uc`ul`uc`uc`uc`*CVuc ]
+{
+[e :U _sendMsgBuf1 ]
+[v _status `uc ~T0 @X0 1 r1 ]
+[v _id `ul ~T0 @X0 1 r2 ]
+[v _ext `uc ~T0 @X0 1 r3 ]
+[v _rtrBit `uc ~T0 @X0 1 r4 ]
+[v _len `uc ~T0 @X0 1 r5 ]
+[v _buf `*CVuc ~T0 @X0 1 r6 ]
+[f ]
+"1193
+[; ;mcp2515_can.c: 1193:     unsigned char txbuf_n = statusToTxSidh(status);
+[v _txbuf_n `uc ~T0 @X0 1 a ]
+[e = _txbuf_n ( _statusToTxSidh (1 _status ]
+"1195
+[; ;mcp2515_can.c: 1195:     if (txbuf_n == 0) {
+[e $ ! == -> _txbuf_n `i -> 0 `i 312  ]
+{
+"1196
+[; ;mcp2515_can.c: 1196:         return (2);
+[e ) -> -> 2 `i `uc ]
+[e $UE 311  ]
+"1197
+[; ;mcp2515_can.c: 1197:     }
+}
+[e :U 312 ]
+"1199
+[; ;mcp2515_can.c: 1199:     mcp2515_modifyRegister(0x2C, status, 0);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 44 `i `uc _status -> -> 0 `i `uc ]
+"1200
+[; ;mcp2515_can.c: 1200:     mcp2515_write_canMsg(txbuf_n, id, ext, rtrBit, len, buf);
+[e ( _mcp2515_write_canMsg (4 , , , , , _txbuf_n _id _ext _rtrBit _len _buf ]
+"1202
+[; ;mcp2515_can.c: 1202:     return (0);
+[e ) -> -> 0 `i `uc ]
+[e $UE 311  ]
+"1203
+[; ;mcp2515_can.c: 1203: }
+[e :UE 311 ]
+}
+"1209
+[; ;mcp2515_can.c: 1209: unsigned char trySendMsgBuf(unsigned long id, unsigned char ext, unsigned char rtrBit, unsigned char len, const unsigned char* buf, unsigned char iTxBuf) {
+[v _trySendMsgBuf `(uc ~T0 @X0 1 ef6`ul`uc`uc`uc`*Cuc`uc ]
+{
+[e :U _trySendMsgBuf ]
+[v _id `ul ~T0 @X0 1 r1 ]
+[v _ext `uc ~T0 @X0 1 r2 ]
+[v _rtrBit `uc ~T0 @X0 1 r3 ]
+[v _len `uc ~T0 @X0 1 r4 ]
+[v _buf `*Cuc ~T0 @X0 1 r5 ]
+[v _iTxBuf `uc ~T0 @X0 1 r6 ]
+[f ]
+"1210
+[; ;mcp2515_can.c: 1210:     unsigned char txbuf_n;
+[v _txbuf_n `uc ~T0 @X0 1 a ]
+"1212
+[; ;mcp2515_can.c: 1212:     if (iTxBuf < (3)) {
+[e $ ! < -> _iTxBuf `i -> 3 `i 314  ]
+{
+"1213
+[; ;mcp2515_can.c: 1213:         if (mcp2515_isTXBufFree(&txbuf_n, iTxBuf) != (0)) {
+[e $ ! != -> ( _mcp2515_isTXBufFree (2 , &U _txbuf_n _iTxBuf `i -> 0 `i 315  ]
+{
+"1214
+[; ;mcp2515_can.c: 1214:             return (2);
+[e ) -> -> 2 `i `uc ]
+[e $UE 313  ]
+"1215
+[; ;mcp2515_can.c: 1215:         }
+}
+[e :U 315 ]
+"1216
+[; ;mcp2515_can.c: 1216:     } else {
+}
+[e $U 316  ]
+[e :U 314 ]
+{
+"1217
+[; ;mcp2515_can.c: 1217:         if (mcp2515_getNextFreeTXBuf(&txbuf_n) != (0)) {
+[e $ ! != -> ( _mcp2515_getNextFreeTXBuf (1 &U _txbuf_n `i -> 0 `i 317  ]
+{
+"1218
+[; ;mcp2515_can.c: 1218:             return (2);
+[e ) -> -> 2 `i `uc ]
+[e $UE 313  ]
+"1219
+[; ;mcp2515_can.c: 1219:         }
+}
+[e :U 317 ]
+"1220
+[; ;mcp2515_can.c: 1220:     }
+}
+[e :U 316 ]
+"1222
+[; ;mcp2515_can.c: 1222:     mcp2515_write_canMsg(txbuf_n, id, ext, rtrBit, len, buf);
+[e ( _mcp2515_write_canMsg (4 , , , , , _txbuf_n _id _ext _rtrBit _len -> _buf `*CVuc ]
+"1224
+[; ;mcp2515_can.c: 1224:     return (0);
+[e ) -> -> 0 `i `uc ]
+[e $UE 313  ]
+"1225
+[; ;mcp2515_can.c: 1225: }
+[e :UE 313 ]
+}
+"1231
+[; ;mcp2515_can.c: 1231: unsigned char sendMsg(unsigned long id, unsigned char ext, unsigned char rtrBit, unsigned char len, const unsigned char* buf, unsigned char wait_sent) {
+[v _sendMsg `(uc ~T0 @X0 1 ef6`ul`uc`uc`uc`*Cuc`uc ]
+{
+[e :U _sendMsg ]
+[v _id `ul ~T0 @X0 1 r1 ]
+[v _ext `uc ~T0 @X0 1 r2 ]
+[v _rtrBit `uc ~T0 @X0 1 r3 ]
+[v _len `uc ~T0 @X0 1 r4 ]
+[v _buf `*Cuc ~T0 @X0 1 r5 ]
+[v _wait_sent `uc ~T0 @X0 1 r6 ]
+[f ]
+"1232
+[; ;mcp2515_can.c: 1232:     unsigned char res, res1, txbuf_n;
+[v _res `uc ~T0 @X0 1 a ]
+[v _res1 `uc ~T0 @X0 1 a ]
+[v _txbuf_n `uc ~T0 @X0 1 a ]
+"1233
+[; ;mcp2515_can.c: 1233:     uint16_t uiTimeOut = 0;
+[v _uiTimeOut `us ~T0 @X0 1 a ]
+[e = _uiTimeOut -> -> 0 `i `us ]
+"1235
+[; ;mcp2515_can.c: 1235:     can_id = id;
+[e = _can_id _id ]
+"1236
+[; ;mcp2515_can.c: 1236:     ext_flg = ext;
+[e = _ext_flg _ext ]
+"1237
+[; ;mcp2515_can.c: 1237:     rtr = rtrBit;
+[e = _rtr _rtrBit ]
+"1239
+[; ;mcp2515_can.c: 1239:     do {
+[e :U 321 ]
+{
+"1240
+[; ;mcp2515_can.c: 1240:         if (uiTimeOut > 0) {
+[e $ ! > -> _uiTimeOut `ui -> -> 0 `i `ui 322  ]
+{
+"1241
+[; ;mcp2515_can.c: 1241:             _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1242
+[; ;mcp2515_can.c: 1242:         }
+}
+[e :U 322 ]
+"1243
+[; ;mcp2515_can.c: 1243:         res = mcp2515_getNextFreeTXBuf(&txbuf_n);
+[e = _res ( _mcp2515_getNextFreeTXBuf (1 &U _txbuf_n ]
+"1244
+[; ;mcp2515_can.c: 1244:         uiTimeOut++;
+[e ++ _uiTimeOut -> -> 1 `i `us ]
+"1245
+[; ;mcp2515_can.c: 1245:     } while (res == (2) && (uiTimeOut < 50));
+}
+[e $ && == -> _res `i -> 2 `i < -> _uiTimeOut `ui -> -> 50 `i `ui 321  ]
+[e :U 320 ]
+"1247
+[; ;mcp2515_can.c: 1247:     if (uiTimeOut == 50) {
+[e $ ! == -> _uiTimeOut `ui -> -> 50 `i `ui 323  ]
+{
+"1248
+[; ;mcp2515_can.c: 1248:         return (6);
+[e ) -> -> 6 `i `uc ]
+[e $UE 318  ]
+"1249
+[; ;mcp2515_can.c: 1249:     }
+}
+[e :U 323 ]
+"1250
+[; ;mcp2515_can.c: 1250:     mcp2515_write_canMsg(txbuf_n, id, ext, rtrBit, len, buf);
+[e ( _mcp2515_write_canMsg (4 , , , , , _txbuf_n _id _ext _rtrBit _len -> _buf `*CVuc ]
+"1252
+[; ;mcp2515_can.c: 1252:     if (wait_sent) {
+[e $ ! != -> _wait_sent `i -> 0 `i 324  ]
+{
+"1253
+[; ;mcp2515_can.c: 1253:         uiTimeOut = 0;
+[e = _uiTimeOut -> -> 0 `i `us ]
+"1254
+[; ;mcp2515_can.c: 1254:         do {
+[e :U 327 ]
+{
+"1255
+[; ;mcp2515_can.c: 1255:             if (uiTimeOut > 0) {
+[e $ ! > -> _uiTimeOut `ui -> -> 0 `i `ui 328  ]
+{
+"1256
+[; ;mcp2515_can.c: 1256:                 _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1257
+[; ;mcp2515_can.c: 1257:             }
+}
+[e :U 328 ]
+"1258
+[; ;mcp2515_can.c: 1258:             uiTimeOut++;
+[e ++ _uiTimeOut -> -> 1 `i `us ]
+"1259
+[; ;mcp2515_can.c: 1259:             res1 = mcp2515_readRegister(txbuf_n - 1);
+[e = _res1 ( _mcp2515_readRegister (1 -> - -> _txbuf_n `i -> 1 `i `uc ]
+"1260
+[; ;mcp2515_can.c: 1260:             res1 = res1 & 0x08;
+[e = _res1 -> & -> _res1 `i -> 8 `i `uc ]
+"1261
+[; ;mcp2515_can.c: 1261:         } while (res1 && (uiTimeOut < 50));
+}
+[e $ && != -> _res1 `i -> 0 `i < -> _uiTimeOut `ui -> -> 50 `i `ui 327  ]
+[e :U 326 ]
+"1263
+[; ;mcp2515_can.c: 1263:         if (uiTimeOut == 50) {
+[e $ ! == -> _uiTimeOut `ui -> -> 50 `i `ui 329  ]
+{
+"1264
+[; ;mcp2515_can.c: 1264:             return (7);
+[e ) -> -> 7 `i `uc ]
+[e $UE 318  ]
+"1265
+[; ;mcp2515_can.c: 1265:         }
+}
+[e :U 329 ]
+"1266
+[; ;mcp2515_can.c: 1266:     }
+}
+[e :U 324 ]
+"1268
+[; ;mcp2515_can.c: 1268:     return (0);
+[e ) -> -> 0 `i `uc ]
+[e $UE 318  ]
+"1270
+[; ;mcp2515_can.c: 1270: }
+[e :UE 318 ]
+}
+"1276
+[; ;mcp2515_can.c: 1276: unsigned char sendMsgBuf(unsigned long id, unsigned char ext, unsigned char rtrBit, unsigned char len, const unsigned char* buf, unsigned char wait_sent) {
+[v _sendMsgBuf `(uc ~T0 @X0 1 ef6`ul`uc`uc`uc`*Cuc`uc ]
+{
+[e :U _sendMsgBuf ]
+[v _id `ul ~T0 @X0 1 r1 ]
+[v _ext `uc ~T0 @X0 1 r2 ]
+[v _rtrBit `uc ~T0 @X0 1 r3 ]
+[v _len `uc ~T0 @X0 1 r4 ]
+[v _buf `*Cuc ~T0 @X0 1 r5 ]
+[v _wait_sent `uc ~T0 @X0 1 r6 ]
+[f ]
+"1277
+[; ;mcp2515_can.c: 1277:     return sendMsg(id, ext, rtrBit, len, buf, wait_sent);
+[e ) ( _sendMsg (4 , , , , , _id _ext _rtrBit _len _buf _wait_sent ]
+[e $UE 330  ]
+"1278
+[; ;mcp2515_can.c: 1278: }
+[e :UE 330 ]
+}
+"1285
+[; ;mcp2515_can.c: 1285: unsigned char readMsgBufID(unsigned char status, volatile unsigned long* id, volatile unsigned char* ext, volatile unsigned char* rtrBit,
+[v _readMsgBufID `(uc ~T0 @X0 1 ef6`uc`*Vul`*Vuc`*Vuc`*Vuc`*Vuc ]
+"1286
+[; ;mcp2515_can.c: 1286:                            volatile unsigned char* len, volatile unsigned char* buf) {
+{
+[e :U _readMsgBufID ]
+"1285
+[; ;mcp2515_can.c: 1285: unsigned char readMsgBufID(unsigned char status, volatile unsigned long* id, volatile unsigned char* ext, volatile unsigned char* rtrBit,
+[v _status `uc ~T0 @X0 1 r1 ]
+[v _id `*Vul ~T0 @X0 1 r2 ]
+[v _ext `*Vuc ~T0 @X0 1 r3 ]
+[v _rtrBit `*Vuc ~T0 @X0 1 r4 ]
+"1286
+[; ;mcp2515_can.c: 1286:                            volatile unsigned char* len, volatile unsigned char* buf) {
+[v _len `*Vuc ~T0 @X0 1 r5 ]
+[v _buf `*Vuc ~T0 @X0 1 r6 ]
+[f ]
+"1287
+[; ;mcp2515_can.c: 1287:     unsigned char rc = (4);
+[v _rc `uc ~T0 @X0 1 a ]
+[e = _rc -> -> 4 `i `uc ]
+"1289
+[; ;mcp2515_can.c: 1289:     if (status & 0x01) {
+[e $ ! != & -> _status `i -> 1 `i -> 0 `i 332  ]
+{
+"1290
+[; ;mcp2515_can.c: 1290:         mcp2515_read_canMsg(0x90, id, ext, rtrBit, len, buf);
+[e ( _mcp2515_read_canMsg (4 , , , , , -> -> 144 `i `uc _id _ext _rtrBit _len _buf ]
+"1291
+[; ;mcp2515_can.c: 1291:         rc = (0);
+[e = _rc -> -> 0 `i `uc ]
+"1292
+[; ;mcp2515_can.c: 1292:     } else if (status & 0x02) {
+}
+[e $U 333  ]
+[e :U 332 ]
+[e $ ! != & -> _status `i -> 2 `i -> 0 `i 334  ]
+{
+"1293
+[; ;mcp2515_can.c: 1293:         mcp2515_read_canMsg(0x94, id, ext, rtrBit, len, buf);
+[e ( _mcp2515_read_canMsg (4 , , , , , -> -> 148 `i `uc _id _ext _rtrBit _len _buf ]
+"1294
+[; ;mcp2515_can.c: 1294:         rc = (0);
+[e = _rc -> -> 0 `i `uc ]
+"1295
+[; ;mcp2515_can.c: 1295:     }
+}
+[e :U 334 ]
+[e :U 333 ]
+"1297
+[; ;mcp2515_can.c: 1297:     if (rc == (0)) {
+[e $ ! == -> _rc `i -> 0 `i 335  ]
+{
+"1298
+[; ;mcp2515_can.c: 1298:         rtr = *rtrBit;
+[e = _rtr *U _rtrBit ]
+"1300
+[; ;mcp2515_can.c: 1300:         ext_flg = *ext;
+[e = _ext_flg *U _ext ]
+"1301
+[; ;mcp2515_can.c: 1301:         can_id = *id;
+[e = _can_id *U _id ]
+"1302
+[; ;mcp2515_can.c: 1302:     } else {
+}
+[e $U 336  ]
+[e :U 335 ]
+{
+"1303
+[; ;mcp2515_can.c: 1303:         *len = 0;
+[e = *U _len -> -> 0 `i `uc ]
+"1304
+[; ;mcp2515_can.c: 1304:     }
+}
+[e :U 336 ]
+"1306
+[; ;mcp2515_can.c: 1306:     return rc;
+[e ) _rc ]
+[e $UE 331  ]
+"1307
+[; ;mcp2515_can.c: 1307: }
+[e :UE 331 ]
+}
+"1316
+[; ;mcp2515_can.c: 1316: unsigned char readRxTxStatus(void) {
+[v _readRxTxStatus `(uc ~T0 @X0 1 ef ]
+{
+[e :U _readRxTxStatus ]
+[f ]
+"1317
+[; ;mcp2515_can.c: 1317:     unsigned char ret = (mcp2515_readStatus() & ((0xA8) | (0x03)));
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> & -> ( _mcp2515_readStatus ..  `i | -> 168 `i -> 3 `i `uc ]
+"1318
+[; ;mcp2515_can.c: 1318:     ret = (ret & (0x08) ? 0x04 : 0) |
+[e = _ret -> | | | ? != & -> _ret `i -> 8 `i -> 0 `i : -> 4 `i -> 0 `i ? != & -> _ret `i -> 32 `i -> 0 `i : -> 8 `i -> 0 `i ? != & -> _ret `i -> 128 `i -> 0 `i : -> 16 `i -> 0 `i & -> _ret `i -> 3 `i `uc ]
+"1322
+[; ;mcp2515_can.c: 1322:     return ret;
+[e ) _ret ]
+[e $UE 337  ]
+"1323
+[; ;mcp2515_can.c: 1323: }
+[e :UE 337 ]
+}
+"1331
+[; ;mcp2515_can.c: 1331: unsigned char checkClearRxStatus(unsigned char* status) {
+[v _checkClearRxStatus `(uc ~T0 @X0 1 ef1`*uc ]
+{
+[e :U _checkClearRxStatus ]
+[v _status `*uc ~T0 @X0 1 r1 ]
+[f ]
+"1332
+[; ;mcp2515_can.c: 1332:     unsigned char ret;
+[v _ret `uc ~T0 @X0 1 a ]
+"1334
+[; ;mcp2515_can.c: 1334:     ret = *status & 0x01; *status &= ~0x01;
+[e = _ret -> & -> *U _status `i -> 1 `i `uc ]
+[e =& *U _status -> ~ -> 1 `i `uc ]
+"1336
+[; ;mcp2515_can.c: 1336:     if (ret == 0) {
+[e $ ! == -> _ret `i -> 0 `i 339  ]
+{
+"1337
+[; ;mcp2515_can.c: 1337:         ret = *status & 0x02;
+[e = _ret -> & -> *U _status `i -> 2 `i `uc ]
+"1338
+[; ;mcp2515_can.c: 1338:         *status &= ~0x02;
+[e =& *U _status -> ~ -> 2 `i `uc ]
+"1339
+[; ;mcp2515_can.c: 1339:     }
+}
+[e :U 339 ]
+"1341
+[; ;mcp2515_can.c: 1341:     return ret;
+[e ) _ret ]
+[e $UE 338  ]
+"1342
+[; ;mcp2515_can.c: 1342: }
+[e :UE 338 ]
+}
+"1350
+[; ;mcp2515_can.c: 1350: unsigned char checkClearTxStatus(unsigned char* status, unsigned char iTxBuf) {
+[v _checkClearTxStatus `(uc ~T0 @X0 1 ef2`*uc`uc ]
+{
+[e :U _checkClearTxStatus ]
+[v _status `*uc ~T0 @X0 1 r1 ]
+[v _iTxBuf `uc ~T0 @X0 1 r2 ]
+[f ]
+"1351
+[; ;mcp2515_can.c: 1351:     unsigned char ret;
+[v _ret `uc ~T0 @X0 1 a ]
+"1353
+[; ;mcp2515_can.c: 1353:     if (iTxBuf < (3)) {
+[e $ ! < -> _iTxBuf `i -> 3 `i 341  ]
+{
+"1354
+[; ;mcp2515_can.c: 1354:         ret = *status & txIfFlag(iTxBuf); *status &= ~txIfFlag(iTxBuf);
+[e = _ret -> & -> *U _status `i -> ( _txIfFlag (1 _iTxBuf `i `uc ]
+[e =& *U _status -> ~ -> ( _txIfFlag (1 _iTxBuf `i `uc ]
+"1355
+[; ;mcp2515_can.c: 1355:     } else {
+}
+[e $U 342  ]
+[e :U 341 ]
+{
+"1356
+[; ;mcp2515_can.c: 1356:         ret = 0;
+[e = _ret -> -> 0 `i `uc ]
+"1357
+[; ;mcp2515_can.c: 1357:         for (unsigned char i = 0; i < (3) - nReservedTx; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $U 346  ]
+[e :U 343 ]
+{
+"1358
+[; ;mcp2515_can.c: 1358:             ret = *status & txIfFlag(i);
+[e = _ret -> & -> *U _status `i -> ( _txIfFlag (1 _i `i `uc ]
+"1359
+[; ;mcp2515_can.c: 1359:             if (ret != 0) {
+[e $ ! != -> _ret `i -> 0 `i 347  ]
+{
+"1360
+[; ;mcp2515_can.c: 1360:                 *status &= ~txIfFlag(i);
+[e =& *U _status -> ~ -> ( _txIfFlag (1 _i `i `uc ]
+"1361
+[; ;mcp2515_can.c: 1361:                 return ret;
+[e ) _ret ]
+[e $UE 340  ]
+"1362
+[; ;mcp2515_can.c: 1362:             }
+}
+[e :U 347 ]
+"1363
+[; ;mcp2515_can.c: 1363:         };
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 346 ]
+[e $ < -> _i `i - -> 3 `i -> _nReservedTx `i 343  ]
+[e :U 344 ]
+}
+"1364
+[; ;mcp2515_can.c: 1364:     }
+}
+[e :U 342 ]
+"1366
+[; ;mcp2515_can.c: 1366:     return ret;
+[e ) _ret ]
+[e $UE 340  ]
+"1367
+[; ;mcp2515_can.c: 1367: }
+[e :UE 340 ]
+}
+"1375
+[; ;mcp2515_can.c: 1375: void clearBufferTransmitIfFlags(unsigned char flags) {
+[v _clearBufferTransmitIfFlags `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _clearBufferTransmitIfFlags ]
+[v _flags `uc ~T0 @X0 1 r1 ]
+[f ]
+"1376
+[; ;mcp2515_can.c: 1376:     flags &= 0x1C;
+[e =& _flags -> -> 28 `i `uc ]
+"1377
+[; ;mcp2515_can.c: 1377:     if (flags == 0) {
+[e $ ! == -> _flags `i -> 0 `i 349  ]
+{
+"1378
+[; ;mcp2515_can.c: 1378:         return;
+[e $UE 348  ]
+"1379
+[; ;mcp2515_can.c: 1379:     }
+}
+[e :U 349 ]
+"1380
+[; ;mcp2515_can.c: 1380:     mcp2515_modifyRegister(0x2C, flags, 0);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 44 `i `uc _flags -> -> 0 `i `uc ]
+"1381
+[; ;mcp2515_can.c: 1381: }
+[e :UE 348 ]
+}
+"1387
+[; ;mcp2515_can.c: 1387: unsigned char checkReceive(void) {
+[v _checkReceive `(uc ~T0 @X0 1 ef ]
+{
+[e :U _checkReceive ]
+[f ]
+"1388
+[; ;mcp2515_can.c: 1388:     unsigned char res;
+[v _res `uc ~T0 @X0 1 a ]
+"1389
+[; ;mcp2515_can.c: 1389:     res = mcp2515_readStatus();
+[e = _res ( _mcp2515_readStatus ..  ]
+"1390
+[; ;mcp2515_can.c: 1390:     return ((res & (0x03)) ? (3) : (4));
+[e ) -> ? != & -> _res `i -> 3 `i -> 0 `i : -> 3 `i -> 4 `i `uc ]
+[e $UE 350  ]
+"1391
+[; ;mcp2515_can.c: 1391: }
+[e :UE 350 ]
+}
+"1397
+[; ;mcp2515_can.c: 1397: unsigned char checkError(unsigned char* err_ptr) {
+[v _checkError `(uc ~T0 @X0 1 ef1`*uc ]
+{
+[e :U _checkError ]
+[v _err_ptr `*uc ~T0 @X0 1 r1 ]
+[f ]
+"1398
+[; ;mcp2515_can.c: 1398:     unsigned char eflg = mcp2515_readRegister(0x2D);
+[v _eflg `uc ~T0 @X0 1 a ]
+[e = _eflg ( _mcp2515_readRegister (1 -> -> 45 `i `uc ]
+"1399
+[; ;mcp2515_can.c: 1399:     if (err_ptr) {
+[e $ ! != _err_ptr -> -> 0 `i `*uc 352  ]
+{
+"1400
+[; ;mcp2515_can.c: 1400:         *err_ptr = eflg;
+[e = *U _err_ptr _eflg ]
+"1401
+[; ;mcp2515_can.c: 1401:     }
+}
+[e :U 352 ]
+"1402
+[; ;mcp2515_can.c: 1402:     return ((eflg & (0xF8)) ? (5) : (0));
+[e ) -> ? != & -> _eflg `i -> 248 `i -> 0 `i : -> 5 `i -> 0 `i `uc ]
+[e $UE 351  ]
+"1403
+[; ;mcp2515_can.c: 1403: }
+[e :UE 351 ]
+}
+"1410
+[; ;mcp2515_can.c: 1410: unsigned char mcpPinMode(const unsigned char pin, const unsigned char mode) {
+[v _mcpPinMode `(uc ~T0 @X0 1 ef2`Cuc`Cuc ]
+{
+[e :U _mcpPinMode ]
+[v _pin `Cuc ~T0 @X0 1 r1 ]
+[v _mode `Cuc ~T0 @X0 1 r2 ]
+[f ]
+"1411
+[; ;mcp2515_can.c: 1411:     unsigned char res;
+[v _res `uc ~T0 @X0 1 a ]
+"1412
+[; ;mcp2515_can.c: 1412:     unsigned char ret = 1;
+[v _ret `uc ~T0 @X0 1 a ]
+[e = _ret -> -> 1 `i `uc ]
+"1414
+[; ;mcp2515_can.c: 1414:     switch (pin) {
+[e $U 355  ]
+{
+"1415
+[; ;mcp2515_can.c: 1415:         case (0):
+[e :U 356 ]
+"1416
+[; ;mcp2515_can.c: 1416:             switch (mode) {
+[e $U 358  ]
+{
+"1417
+[; ;mcp2515_can.c: 1417:                 case (0):
+[e :U 359 ]
+"1418
+[; ;mcp2515_can.c: 1418:                     mcp2515_modifyRegister(0x0C, 0x04, 0);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 12 `i `uc -> -> 4 `i `uc -> -> 0 `i `uc ]
+"1419
+[; ;mcp2515_can.c: 1419:                     break;
+[e $U 357  ]
+"1420
+[; ;mcp2515_can.c: 1420:                 case (1):
+[e :U 360 ]
+"1421
+[; ;mcp2515_can.c: 1421:                     mcp2515_modifyRegister(0x0C, 0x01 | 0x04, 0x01 | 0x04);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 12 `i `uc -> | -> 1 `i -> 4 `i `uc -> | -> 1 `i -> 4 `i `uc ]
+"1422
+[; ;mcp2515_can.c: 1422:                     break;
+[e $U 357  ]
+"1423
+[; ;mcp2515_can.c: 1423:                 case (2):
+[e :U 361 ]
+"1424
+[; ;mcp2515_can.c: 1424:                     mcp2515_modifyRegister(0x0C, 0x01 | 0x04, 0x04);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 12 `i `uc -> | -> 1 `i -> 4 `i `uc -> -> 4 `i `uc ]
+"1425
+[; ;mcp2515_can.c: 1425:                     break;
+[e $U 357  ]
+"1426
+[; ;mcp2515_can.c: 1426:                 default:
+[e :U 362 ]
+"1430
+[; ;mcp2515_can.c: 1430:                     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 353  ]
+"1431
+[; ;mcp2515_can.c: 1431:             }
+}
+[e $U 357  ]
+[e :U 358 ]
+[e [\ -> _mode `i , $ -> 0 `i 359
+ , $ -> 1 `i 360
+ , $ -> 2 `i 361
+ 362 ]
+[e :U 357 ]
+"1432
+[; ;mcp2515_can.c: 1432:             return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 353  ]
+"1433
+[; ;mcp2515_can.c: 1433:             break;
+[e $U 354  ]
+"1434
+[; ;mcp2515_can.c: 1434:         case (1):
+[e :U 363 ]
+"1435
+[; ;mcp2515_can.c: 1435:             switch (mode) {
+[e $U 365  ]
+{
+"1436
+[; ;mcp2515_can.c: 1436:                 case (0):
+[e :U 366 ]
+"1437
+[; ;mcp2515_can.c: 1437:                     mcp2515_modifyRegister(0x0C, 0x08, 0);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 12 `i `uc -> -> 8 `i `uc -> -> 0 `i `uc ]
+"1438
+[; ;mcp2515_can.c: 1438:                     break;
+[e $U 364  ]
+"1439
+[; ;mcp2515_can.c: 1439:                 case (1):
+[e :U 367 ]
+"1440
+[; ;mcp2515_can.c: 1440:                     mcp2515_modifyRegister(0x0C, 0x02 | 0x08, 0x02 | 0x08);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 12 `i `uc -> | -> 2 `i -> 8 `i `uc -> | -> 2 `i -> 8 `i `uc ]
+"1441
+[; ;mcp2515_can.c: 1441:                     break;
+[e $U 364  ]
+"1442
+[; ;mcp2515_can.c: 1442:                 case (2):
+[e :U 368 ]
+"1443
+[; ;mcp2515_can.c: 1443:                     mcp2515_modifyRegister(0x0C, 0x02 | 0x08, 0x08);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 12 `i `uc -> | -> 2 `i -> 8 `i `uc -> -> 8 `i `uc ]
+"1444
+[; ;mcp2515_can.c: 1444:                     break;
+[e $U 364  ]
+"1445
+[; ;mcp2515_can.c: 1445:                 default:
+[e :U 369 ]
+"1449
+[; ;mcp2515_can.c: 1449:                     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 353  ]
+"1450
+[; ;mcp2515_can.c: 1450:             }
+}
+[e $U 364  ]
+[e :U 365 ]
+[e [\ -> _mode `i , $ -> 0 `i 366
+ , $ -> 1 `i 367
+ , $ -> 2 `i 368
+ 369 ]
+[e :U 364 ]
+"1451
+[; ;mcp2515_can.c: 1451:             return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 353  ]
+"1452
+[; ;mcp2515_can.c: 1452:             break;
+[e $U 354  ]
+"1453
+[; ;mcp2515_can.c: 1453:         case (2):
+[e :U 370 ]
+"1454
+[; ;mcp2515_can.c: 1454:             res = mcp2515_setCANCTRL_Mode(0x80);
+[e = _res ( _mcp2515_setCANCTRL_Mode (1 -> -> 128 `i `uc ]
+"1455
+[; ;mcp2515_can.c: 1455:             if (res > 0) {
+[e $ ! > -> _res `i -> 0 `i 371  ]
+{
+"1459
+[; ;mcp2515_can.c: 1459:                 _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1461
+[; ;mcp2515_can.c: 1461:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 353  ]
+"1462
+[; ;mcp2515_can.c: 1462:             }
+}
+[e :U 371 ]
+"1463
+[; ;mcp2515_can.c: 1463:             switch (mode) {
+[e $U 373  ]
+{
+"1464
+[; ;mcp2515_can.c: 1464:                 case (1):
+[e :U 374 ]
+"1465
+[; ;mcp2515_can.c: 1465:                     mcp2515_modifyRegister(0x0D, 0x01, 0x01);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 13 `i `uc -> -> 1 `i `uc -> -> 1 `i `uc ]
+"1466
+[; ;mcp2515_can.c: 1466:                     break;
+[e $U 372  ]
+"1467
+[; ;mcp2515_can.c: 1467:                 case (3):
+[e :U 375 ]
+"1468
+[; ;mcp2515_can.c: 1468:                     mcp2515_modifyRegister(0x0D, 0x01, 0);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 13 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc ]
+"1469
+[; ;mcp2515_can.c: 1469:                     break;
+[e $U 372  ]
+"1470
+[; ;mcp2515_can.c: 1470:                 default:
+[e :U 376 ]
+"1474
+[; ;mcp2515_can.c: 1474:                     ret = 0;
+[e = _ret -> -> 0 `i `uc ]
+"1475
+[; ;mcp2515_can.c: 1475:             }
+}
+[e $U 372  ]
+[e :U 373 ]
+[e [\ -> _mode `i , $ -> 1 `i 374
+ , $ -> 3 `i 375
+ 376 ]
+[e :U 372 ]
+"1476
+[; ;mcp2515_can.c: 1476:             res = mcp2515_setCANCTRL_Mode(mcpMode);
+[e = _res ( _mcp2515_setCANCTRL_Mode (1 _mcpMode ]
+"1477
+[; ;mcp2515_can.c: 1477:             if (res) {
+[e $ ! != -> _res `i -> 0 `i 377  ]
+{
+"1481
+[; ;mcp2515_can.c: 1481:                 _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1483
+[; ;mcp2515_can.c: 1483:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 353  ]
+"1484
+[; ;mcp2515_can.c: 1484:             }
+}
+[e :U 377 ]
+"1485
+[; ;mcp2515_can.c: 1485:             return ret;
+[e ) _ret ]
+[e $UE 353  ]
+"1486
+[; ;mcp2515_can.c: 1486:             break;
+[e $U 354  ]
+"1487
+[; ;mcp2515_can.c: 1487:         case (3):
+[e :U 378 ]
+"1488
+[; ;mcp2515_can.c: 1488:             res = mcp2515_setCANCTRL_Mode(0x80);
+[e = _res ( _mcp2515_setCANCTRL_Mode (1 -> -> 128 `i `uc ]
+"1489
+[; ;mcp2515_can.c: 1489:             if (res > 0) {
+[e $ ! > -> _res `i -> 0 `i 379  ]
+{
+"1493
+[; ;mcp2515_can.c: 1493:                 _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1495
+[; ;mcp2515_can.c: 1495:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 353  ]
+"1496
+[; ;mcp2515_can.c: 1496:             }
+}
+[e :U 379 ]
+"1497
+[; ;mcp2515_can.c: 1497:             switch (mode) {
+[e $U 381  ]
+{
+"1498
+[; ;mcp2515_can.c: 1498:                 case (1):
+[e :U 382 ]
+"1499
+[; ;mcp2515_can.c: 1499:                     mcp2515_modifyRegister(0x0D, 0x02, 0x02);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 13 `i `uc -> -> 2 `i `uc -> -> 2 `i `uc ]
+"1500
+[; ;mcp2515_can.c: 1500:                     break;
+[e $U 380  ]
+"1501
+[; ;mcp2515_can.c: 1501:                 case (3):
+[e :U 383 ]
+"1502
+[; ;mcp2515_can.c: 1502:                     mcp2515_modifyRegister(0x0D, 0x02, 0);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 13 `i `uc -> -> 2 `i `uc -> -> 0 `i `uc ]
+"1503
+[; ;mcp2515_can.c: 1503:                     break;
+[e $U 380  ]
+"1504
+[; ;mcp2515_can.c: 1504:                 default:
+[e :U 384 ]
+"1508
+[; ;mcp2515_can.c: 1508:                     ret = 0;
+[e = _ret -> -> 0 `i `uc ]
+"1509
+[; ;mcp2515_can.c: 1509:             }
+}
+[e $U 380  ]
+[e :U 381 ]
+[e [\ -> _mode `i , $ -> 1 `i 382
+ , $ -> 3 `i 383
+ 384 ]
+[e :U 380 ]
+"1510
+[; ;mcp2515_can.c: 1510:             res = mcp2515_setCANCTRL_Mode(mcpMode);
+[e = _res ( _mcp2515_setCANCTRL_Mode (1 _mcpMode ]
+"1511
+[; ;mcp2515_can.c: 1511:             if (res) {
+[e $ ! != -> _res `i -> 0 `i 385  ]
+{
+"1515
+[; ;mcp2515_can.c: 1515:                 _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1517
+[; ;mcp2515_can.c: 1517:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 353  ]
+"1518
+[; ;mcp2515_can.c: 1518:             }
+}
+[e :U 385 ]
+"1519
+[; ;mcp2515_can.c: 1519:             return ret;
+[e ) _ret ]
+[e $UE 353  ]
+"1520
+[; ;mcp2515_can.c: 1520:             break;
+[e $U 354  ]
+"1521
+[; ;mcp2515_can.c: 1521:         case (4):
+[e :U 386 ]
+"1522
+[; ;mcp2515_can.c: 1522:             res = mcp2515_setCANCTRL_Mode(0x80);
+[e = _res ( _mcp2515_setCANCTRL_Mode (1 -> -> 128 `i `uc ]
+"1523
+[; ;mcp2515_can.c: 1523:             if (res > 0) {
+[e $ ! > -> _res `i -> 0 `i 387  ]
+{
+"1527
+[; ;mcp2515_can.c: 1527:                 _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1529
+[; ;mcp2515_can.c: 1529:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 353  ]
+"1530
+[; ;mcp2515_can.c: 1530:             }
+}
+[e :U 387 ]
+"1531
+[; ;mcp2515_can.c: 1531:             switch (mode) {
+[e $U 389  ]
+{
+"1532
+[; ;mcp2515_can.c: 1532:                 case (1):
+[e :U 390 ]
+"1533
+[; ;mcp2515_can.c: 1533:                     mcp2515_modifyRegister(0x0D, 0x04, 0x04);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 13 `i `uc -> -> 4 `i `uc -> -> 4 `i `uc ]
+"1534
+[; ;mcp2515_can.c: 1534:                     break;
+[e $U 388  ]
+"1535
+[; ;mcp2515_can.c: 1535:                 case (3):
+[e :U 391 ]
+"1536
+[; ;mcp2515_can.c: 1536:                     mcp2515_modifyRegister(0x0D, 0x04, 0);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 13 `i `uc -> -> 4 `i `uc -> -> 0 `i `uc ]
+"1537
+[; ;mcp2515_can.c: 1537:                     break;
+[e $U 388  ]
+"1538
+[; ;mcp2515_can.c: 1538:                 default:
+[e :U 392 ]
+"1542
+[; ;mcp2515_can.c: 1542:                     ret = 0;
+[e = _ret -> -> 0 `i `uc ]
+"1543
+[; ;mcp2515_can.c: 1543:             }
+}
+[e $U 388  ]
+[e :U 389 ]
+[e [\ -> _mode `i , $ -> 1 `i 390
+ , $ -> 3 `i 391
+ 392 ]
+[e :U 388 ]
+"1544
+[; ;mcp2515_can.c: 1544:             res = mcp2515_setCANCTRL_Mode(mcpMode);
+[e = _res ( _mcp2515_setCANCTRL_Mode (1 _mcpMode ]
+"1545
+[; ;mcp2515_can.c: 1545:             if (res) {
+[e $ ! != -> _res `i -> 0 `i 393  ]
+{
+"1549
+[; ;mcp2515_can.c: 1549:                 _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"1551
+[; ;mcp2515_can.c: 1551:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 353  ]
+"1552
+[; ;mcp2515_can.c: 1552:             }
+}
+[e :U 393 ]
+"1553
+[; ;mcp2515_can.c: 1553:             return ret;
+[e ) _ret ]
+[e $UE 353  ]
+"1554
+[; ;mcp2515_can.c: 1554:             break;
+[e $U 354  ]
+"1555
+[; ;mcp2515_can.c: 1555:         default:
+[e :U 394 ]
+"1559
+[; ;mcp2515_can.c: 1559:             return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 353  ]
+"1560
+[; ;mcp2515_can.c: 1560:     }
+}
+[e $U 354  ]
+[e :U 355 ]
+[e [\ -> _pin `i , $ -> 0 `i 356
+ , $ -> 1 `i 363
+ , $ -> 2 `i 370
+ , $ -> 3 `i 378
+ , $ -> 4 `i 386
+ 394 ]
+[e :U 354 ]
+"1561
+[; ;mcp2515_can.c: 1561: }
+[e :UE 353 ]
+}
+"1567
+[; ;mcp2515_can.c: 1567: unsigned char mcpDigitalWrite(const unsigned char pin, const unsigned char mode) {
+[v _mcpDigitalWrite `(uc ~T0 @X0 1 ef2`Cuc`Cuc ]
+{
+[e :U _mcpDigitalWrite ]
+[v _pin `Cuc ~T0 @X0 1 r1 ]
+[v _mode `Cuc ~T0 @X0 1 r2 ]
+[f ]
+"1568
+[; ;mcp2515_can.c: 1568:     switch (pin) {
+[e $U 397  ]
+{
+"1569
+[; ;mcp2515_can.c: 1569:         case (0):
+[e :U 398 ]
+"1570
+[; ;mcp2515_can.c: 1570:             switch (mode) {
+[e $U 400  ]
+{
+"1571
+[; ;mcp2515_can.c: 1571:                 case 1:
+[e :U 401 ]
+"1572
+[; ;mcp2515_can.c: 1572:                     mcp2515_modifyRegister(0x0C, 0x10, 0x10);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 12 `i `uc -> -> 16 `i `uc -> -> 16 `i `uc ]
+"1573
+[; ;mcp2515_can.c: 1573:                     return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 395  ]
+"1574
+[; ;mcp2515_can.c: 1574:                     break;
+[e $U 399  ]
+"1575
+[; ;mcp2515_can.c: 1575:                 default:
+[e :U 402 ]
+"1576
+[; ;mcp2515_can.c: 1576:                     mcp2515_modifyRegister(0x0C, 0x10, 0);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 12 `i `uc -> -> 16 `i `uc -> -> 0 `i `uc ]
+"1577
+[; ;mcp2515_can.c: 1577:                     return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 395  ]
+"1578
+[; ;mcp2515_can.c: 1578:             }
+}
+[e $U 399  ]
+[e :U 400 ]
+[e [\ -> _mode `i , $ -> 1 `i 401
+ 402 ]
+[e :U 399 ]
+"1579
+[; ;mcp2515_can.c: 1579:             break;
+[e $U 396  ]
+"1580
+[; ;mcp2515_can.c: 1580:         case (1):
+[e :U 403 ]
+"1581
+[; ;mcp2515_can.c: 1581:             switch (mode) {
+[e $U 405  ]
+{
+"1582
+[; ;mcp2515_can.c: 1582:                 case 1:
+[e :U 406 ]
+"1583
+[; ;mcp2515_can.c: 1583:                     mcp2515_modifyRegister(0x0C, 0x20, 0x20);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 12 `i `uc -> -> 32 `i `uc -> -> 32 `i `uc ]
+"1584
+[; ;mcp2515_can.c: 1584:                     return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 395  ]
+"1585
+[; ;mcp2515_can.c: 1585:                     break;
+[e $U 404  ]
+"1586
+[; ;mcp2515_can.c: 1586:                 default:
+[e :U 407 ]
+"1587
+[; ;mcp2515_can.c: 1587:                     mcp2515_modifyRegister(0x0C, 0x20, 0);
+[e ( _mcp2515_modifyRegister (3 , , -> -> 12 `i `uc -> -> 32 `i `uc -> -> 0 `i `uc ]
+"1588
+[; ;mcp2515_can.c: 1588:                     return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 395  ]
+"1589
+[; ;mcp2515_can.c: 1589:             }
+}
+[e $U 404  ]
+[e :U 405 ]
+[e [\ -> _mode `i , $ -> 1 `i 406
+ 407 ]
+[e :U 404 ]
+"1590
+[; ;mcp2515_can.c: 1590:             break;
+[e $U 396  ]
+"1591
+[; ;mcp2515_can.c: 1591:         default:
+[e :U 408 ]
+"1595
+[; ;mcp2515_can.c: 1595:             return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 395  ]
+"1596
+[; ;mcp2515_can.c: 1596:     }
+}
+[e $U 396  ]
+[e :U 397 ]
+[e [\ -> _pin `i , $ -> 0 `i 398
+ , $ -> 1 `i 403
+ 408 ]
+[e :U 396 ]
+"1597
+[; ;mcp2515_can.c: 1597: }
+[e :UE 395 ]
+}
+"1603
+[; ;mcp2515_can.c: 1603: unsigned char mcpDigitalRead(const unsigned char pin) {
+[v _mcpDigitalRead `(uc ~T0 @X0 1 ef1`Cuc ]
+{
+[e :U _mcpDigitalRead ]
+[v _pin `Cuc ~T0 @X0 1 r1 ]
+[f ]
+"1604
+[; ;mcp2515_can.c: 1604:     switch (pin) {
+[e $U 411  ]
+{
+"1605
+[; ;mcp2515_can.c: 1605:         case (0):
+[e :U 412 ]
+"1606
+[; ;mcp2515_can.c: 1606:             if ((mcp2515_readRegister(0x0C) & 0x10) > 0) {
+[e $ ! > & -> ( _mcp2515_readRegister (1 -> -> 12 `i `uc `i -> 16 `i -> 0 `i 413  ]
+{
+"1607
+[; ;mcp2515_can.c: 1607:                 return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 409  ]
+"1608
+[; ;mcp2515_can.c: 1608:             } else {
+}
+[e $U 414  ]
+[e :U 413 ]
+{
+"1609
+[; ;mcp2515_can.c: 1609:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 409  ]
+"1610
+[; ;mcp2515_can.c: 1610:             }
+}
+[e :U 414 ]
+"1611
+[; ;mcp2515_can.c: 1611:             break;
+[e $U 410  ]
+"1612
+[; ;mcp2515_can.c: 1612:         case (1):
+[e :U 415 ]
+"1613
+[; ;mcp2515_can.c: 1613:             if ((mcp2515_readRegister(0x0C) & 0x20) > 0) {
+[e $ ! > & -> ( _mcp2515_readRegister (1 -> -> 12 `i `uc `i -> 32 `i -> 0 `i 416  ]
+{
+"1614
+[; ;mcp2515_can.c: 1614:                 return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 409  ]
+"1615
+[; ;mcp2515_can.c: 1615:             } else {
+}
+[e $U 417  ]
+[e :U 416 ]
+{
+"1616
+[; ;mcp2515_can.c: 1616:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 409  ]
+"1617
+[; ;mcp2515_can.c: 1617:             }
+}
+[e :U 417 ]
+"1618
+[; ;mcp2515_can.c: 1618:             break;
+[e $U 410  ]
+"1619
+[; ;mcp2515_can.c: 1619:         case (2):
+[e :U 418 ]
+"1620
+[; ;mcp2515_can.c: 1620:             if ((mcp2515_readRegister(0x0D) & 0x08) > 0) {
+[e $ ! > & -> ( _mcp2515_readRegister (1 -> -> 13 `i `uc `i -> 8 `i -> 0 `i 419  ]
+{
+"1621
+[; ;mcp2515_can.c: 1621:                 return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 409  ]
+"1622
+[; ;mcp2515_can.c: 1622:             } else {
+}
+[e $U 420  ]
+[e :U 419 ]
+{
+"1623
+[; ;mcp2515_can.c: 1623:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 409  ]
+"1624
+[; ;mcp2515_can.c: 1624:             }
+}
+[e :U 420 ]
+"1625
+[; ;mcp2515_can.c: 1625:             break;
+[e $U 410  ]
+"1626
+[; ;mcp2515_can.c: 1626:         case (3):
+[e :U 421 ]
+"1627
+[; ;mcp2515_can.c: 1627:             if ((mcp2515_readRegister(0x0D) & 0x10) > 0) {
+[e $ ! > & -> ( _mcp2515_readRegister (1 -> -> 13 `i `uc `i -> 16 `i -> 0 `i 422  ]
+{
+"1628
+[; ;mcp2515_can.c: 1628:                 return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 409  ]
+"1629
+[; ;mcp2515_can.c: 1629:             } else {
+}
+[e $U 423  ]
+[e :U 422 ]
+{
+"1630
+[; ;mcp2515_can.c: 1630:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 409  ]
+"1631
+[; ;mcp2515_can.c: 1631:             }
+}
+[e :U 423 ]
+"1632
+[; ;mcp2515_can.c: 1632:             break;
+[e $U 410  ]
+"1633
+[; ;mcp2515_can.c: 1633:         case (4):
+[e :U 424 ]
+"1634
+[; ;mcp2515_can.c: 1634:             if ((mcp2515_readRegister(0x0D) & 0x20) > 0) {
+[e $ ! > & -> ( _mcp2515_readRegister (1 -> -> 13 `i `uc `i -> 32 `i -> 0 `i 425  ]
+{
+"1635
+[; ;mcp2515_can.c: 1635:                 return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 409  ]
+"1636
+[; ;mcp2515_can.c: 1636:             } else {
+}
+[e $U 426  ]
+[e :U 425 ]
+{
+"1637
+[; ;mcp2515_can.c: 1637:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 409  ]
+"1638
+[; ;mcp2515_can.c: 1638:             }
+}
+[e :U 426 ]
+"1639
+[; ;mcp2515_can.c: 1639:             break;
+[e $U 410  ]
+"1640
+[; ;mcp2515_can.c: 1640:         default:
+[e :U 427 ]
+"1644
+[; ;mcp2515_can.c: 1644:             return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 409  ]
+"1645
+[; ;mcp2515_can.c: 1645:     }
+}
+[e $U 410  ]
+[e :U 411 ]
+[e [\ -> _pin `i , $ -> 0 `i 412
+ , $ -> 1 `i 415
+ , $ -> 2 `i 418
+ , $ -> 3 `i 421
+ , $ -> 4 `i 424
+ 427 ]
+[e :U 410 ]
+"1646
+[; ;mcp2515_can.c: 1646: }
+[e :UE 409 ]
+}
