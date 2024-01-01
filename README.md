@@ -5,5 +5,5 @@
 
  MPLAB X IDE and XC8 compiler are used for to test this application.
 
-![Circuit Diagram](media/Circuit-Diagram.jpg)
+![Circuit Diagram](media/Circuit-Diagram0.jpg)
 
