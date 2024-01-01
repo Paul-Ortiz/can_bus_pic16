@@ -3,7 +3,7 @@
 
  This project is a library modification of https://github.com/Seeed-Studio/Seeed_Arduino_CAN. 
 
-<img src="media/MCP2515.jpg" width="128"/>
+<img src="media/MCP2515.jpg" width="512"/>
 
  MPLAB X IDE and XC8 compiler are used for to test this application.
 
