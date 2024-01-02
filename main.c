@@ -13,7 +13,7 @@
 #pragma config CPD = OFF // EEPROM
 #pragma config CP = OFF  // CODE PORTECTION
 #pragma config FOSC = HS
-//#define _XTAL_FREQ 4000000 // 4Mhz
+//#define _XTAL_FREQ 4000000 // 4Mhz init in "mcp_can.h"
 
 #define LED RD3
 
@@ -27,26 +27,23 @@ unsigned char readMsgBuf(unsigned char *len, unsigned char *buf) {
 unsigned long getCanId(void) { return can_id; }
 
 void main(void) {
-    //TRISD = 0xb11100000;    // 0 Outputs, 1 Inputs
-    //TRISBbits.TRISB5 = 1;
+
     TRISDbits.TRISD3 = 0;
-    //TRISDbits.TRISD2 = 0;
+
     LED = 0; //Initial condition
     
-    init_CS();  
+    init_CS();  // init chip select 
     
     while (CAN_OK != begin(CAN_500KBPS, MCP_8MHz)) {             // init can bus : baudrate = 500k
-        //SERIAL_PORT_MONITOR.println("CAN init fail, retry...");
         __delay_ms(100);
     }
     
     while(1){       
-        // send data:  id = 0x70, standard frame, rtrBit = 0, data len = 8, stmp: data buf
-        //LED = 1;
+        // send data:  id = 0x04, standard frame, rtrBit = 0, data len = 8, stmp: data buf
+
         sendMsgBuf(0x04, 0, 0, 8, stmp, 1);
         __delay_ms(1000);
-        //LED = 0;
-        //__delay_ms(100);
+
         
         // receive data
         unsigned char len = 0;
