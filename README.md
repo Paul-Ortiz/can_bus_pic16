@@ -8,5 +8,5 @@
 
  MPLAB X IDE and XC8 compiler are used for to test this application with PIC16F877A from microchip.
 
-![Circuit Diagram](media/Circuit-Diagram0.jpg)
+![Circuit Diagram](media/Circuit-Diagram.jpg)
 
