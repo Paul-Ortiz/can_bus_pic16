@@ -5,7 +5,7 @@
 //#include "SPI.h"
 #include <xc.h>
 #include "spi16.h"
-#define _XTAL_FREQ 20000000 // 4Mhz
+#define _XTAL_FREQ 20000000 // 20Mhz
 //#include <inttypes.h>
 
 #define CAN_OK              (0)

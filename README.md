@@ -6,7 +6,7 @@
 
 <img src="media/MCP2515.jpg" width="512"/>
 
- MPLAB X IDE and XC8 compiler are used for to test this application with PIC16F877A from microchip.
+ MPLAB X IDE and XC8 compiler are used for to test this application with PIC16F877A from microchip. Default Crystal 20Mhz.
 
 ![Circuit Diagram](media/Circuit-Diagram.jpg)
 
