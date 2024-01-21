@@ -1902,7 +1902,6 @@ extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 2 3
 # 7 "./mcp_can.h" 2
-
 # 1 "./spi16.h" 1
 # 61 "./spi16.h"
 void CloseSPI( void );
@@ -1912,7 +1911,7 @@ void OpenSPI( unsigned char sync_mode, unsigned char bus_mode, unsigned char smp
 unsigned char WriteSPI( unsigned char data_out );
 void getsSPI( unsigned char *rdptr, unsigned char length );
 void putsSPI( unsigned char *wrptr );
-# 9 "./mcp_can.h" 2
+# 8 "./mcp_can.h" 2
 # 22 "./mcp_can.h"
 typedef enum {
     MCP_NO_MHz,

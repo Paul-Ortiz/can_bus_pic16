@@ -557,8 +557,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcp2515_can.c: 161:     RD0 = 1;;
 [e = _RD0 -> -> 1 `i `b ]
 "165
-[; ;mcp2515_can.c: 165:     _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 165:     _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "166
 [; ;mcp2515_can.c: 166: }
 [e :UE 142 ]
@@ -1008,8 +1008,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 177 ]
 {
 "400
-[; ;mcp2515_can.c: 400:             _delay((unsigned long)((1)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 400:             _delay((unsigned long)((1)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "401
 [; ;mcp2515_can.c: 401:             Count++;
 [e ++ _Count -> 1 `i ]
@@ -2051,8 +2051,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! > -> _res `i -> 0 `i 251  ]
 {
 "783
-[; ;mcp2515_can.c: 783:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 783:         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "785
 [; ;mcp2515_can.c: 785:         return res;
 [e ) _res ]
@@ -2062,15 +2062,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 251 ]
 "790
-[; ;mcp2515_can.c: 790:     _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 790:     _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "794
 [; ;mcp2515_can.c: 794:     if (mcp2515_configRate(canSpeed, clock)) {
 [e $ ! != -> ( _mcp2515_configRate (2 , _canSpeed _clock `i -> 0 `i 252  ]
 {
 "798
-[; ;mcp2515_can.c: 798:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 798:         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "800
 [; ;mcp2515_can.c: 800:         return res;
 [e ) _res ]
@@ -2080,8 +2080,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 252 ]
 "805
-[; ;mcp2515_can.c: 805:     _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 805:     _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "808
 [; ;mcp2515_can.c: 808:     if (res == (0)) {
 [e $ ! == -> _res `i -> 0 `i 253  ]
@@ -2106,8 +2106,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! != -> _res `i -> 0 `i 254  ]
 {
 "837
-[; ;mcp2515_can.c: 837:             _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 837:             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "839
 [; ;mcp2515_can.c: 839:             return res;
 [e ) _res ]
@@ -2117,8 +2117,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 254 ]
 "846
-[; ;mcp2515_can.c: 846:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 846:         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "849
 [; ;mcp2515_can.c: 849:     }
 }
@@ -2670,8 +2670,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _res `uc ~T0 @X0 1 a ]
 [e = _res -> -> 0 `i `uc ]
 "1081
-[; ;mcp2515_can.c: 1081:     _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1081:     _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1083
 [; ;mcp2515_can.c: 1083:     res = mcp2515_setCANCTRL_Mode(0x80);
 [e = _res ( _mcp2515_setCANCTRL_Mode (1 -> -> 128 `i `uc ]
@@ -2680,8 +2680,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! > -> _res `i -> 0 `i 293  ]
 {
 "1088
-[; ;mcp2515_can.c: 1088:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1088:         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1090
 [; ;mcp2515_can.c: 1090:         return res;
 [e ) _res ]
@@ -2729,8 +2729,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! > -> _res `i -> 0 `i 298  ]
 {
 "1107
-[; ;mcp2515_can.c: 1107:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1107:         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1109
 [; ;mcp2515_can.c: 1109:         return res;
 [e ) _res ]
@@ -2740,8 +2740,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 298 ]
 "1114
-[; ;mcp2515_can.c: 1114:     _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1114:     _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1116
 [; ;mcp2515_can.c: 1116:     return res;
 [e ) _res ]
@@ -2764,8 +2764,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _res `uc ~T0 @X0 1 a ]
 [e = _res -> -> 0 `i `uc ]
 "1128
-[; ;mcp2515_can.c: 1128:     _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1128:     _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1130
 [; ;mcp2515_can.c: 1130:     res = mcp2515_setCANCTRL_Mode(0x80);
 [e = _res ( _mcp2515_setCANCTRL_Mode (1 -> -> 128 `i `uc ]
@@ -2774,8 +2774,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! > -> _res `i -> 0 `i 300  ]
 {
 "1135
-[; ;mcp2515_can.c: 1135:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1135:         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1137
 [; ;mcp2515_can.c: 1137:         return res;
 [e ) _res ]
@@ -2869,8 +2869,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! > -> _res `i -> 0 `i 310  ]
 {
 "1174
-[; ;mcp2515_can.c: 1174:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1174:         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1176
 [; ;mcp2515_can.c: 1176:         return res;
 [e ) _res ]
@@ -2880,8 +2880,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 310 ]
 "1181
-[; ;mcp2515_can.c: 1181:     _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1181:     _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1184
 [; ;mcp2515_can.c: 1184:     return res;
 [e ) _res ]
@@ -3035,8 +3035,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! > -> _uiTimeOut `ui -> -> 0 `i `ui 322  ]
 {
 "1241
-[; ;mcp2515_can.c: 1241:             _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1241:             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1242
 [; ;mcp2515_can.c: 1242:         }
 }
@@ -3083,8 +3083,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! > -> _uiTimeOut `ui -> -> 0 `i `ui 328  ]
 {
 "1256
-[; ;mcp2515_can.c: 1256:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1256:                 _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1257
 [; ;mcp2515_can.c: 1257:             }
 }
@@ -3586,8 +3586,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! > -> _res `i -> 0 `i 371  ]
 {
 "1459
-[; ;mcp2515_can.c: 1459:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1459:                 _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1461
 [; ;mcp2515_can.c: 1461:                 return 0;
 [e ) -> -> 0 `i `uc ]
@@ -3641,8 +3641,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! != -> _res `i -> 0 `i 377  ]
 {
 "1481
-[; ;mcp2515_can.c: 1481:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1481:                 _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1483
 [; ;mcp2515_can.c: 1483:                 return 0;
 [e ) -> -> 0 `i `uc ]
@@ -3669,8 +3669,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! > -> _res `i -> 0 `i 379  ]
 {
 "1493
-[; ;mcp2515_can.c: 1493:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1493:                 _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1495
 [; ;mcp2515_can.c: 1495:                 return 0;
 [e ) -> -> 0 `i `uc ]
@@ -3724,8 +3724,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! != -> _res `i -> 0 `i 385  ]
 {
 "1515
-[; ;mcp2515_can.c: 1515:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1515:                 _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1517
 [; ;mcp2515_can.c: 1517:                 return 0;
 [e ) -> -> 0 `i `uc ]
@@ -3752,8 +3752,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! > -> _res `i -> 0 `i 387  ]
 {
 "1527
-[; ;mcp2515_can.c: 1527:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1527:                 _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1529
 [; ;mcp2515_can.c: 1529:                 return 0;
 [e ) -> -> 0 `i `uc ]
@@ -3807,8 +3807,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! != -> _res `i -> 0 `i 393  ]
 {
 "1549
-[; ;mcp2515_can.c: 1549:                 _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;mcp2515_can.c: 1549:                 _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "1551
 [; ;mcp2515_can.c: 1551:                 return 0;
 [e ) -> -> 0 `i `uc ]

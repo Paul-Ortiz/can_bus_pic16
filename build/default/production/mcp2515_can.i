@@ -1905,7 +1905,6 @@ extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 2 3
 # 7 "./mcp_can.h" 2
-
 # 1 "./spi16.h" 1
 # 61 "./spi16.h"
 void CloseSPI( void );
@@ -1915,7 +1914,7 @@ void OpenSPI( unsigned char sync_mode, unsigned char bus_mode, unsigned char smp
 unsigned char WriteSPI( unsigned char data_out );
 void getsSPI( unsigned char *rdptr, unsigned char length );
 void putsSPI( unsigned char *wrptr );
-# 9 "./mcp_can.h" 2
+# 8 "./mcp_can.h" 2
 # 22 "./mcp_can.h"
 typedef enum {
     MCP_NO_MHz,
@@ -2147,7 +2146,7 @@ void mcp2515_reset(void) {
 
 
 
-    _delay((unsigned long)((10)*(4000000/4000.0)));
+    _delay((unsigned long)((10)*(20000000/4000.0)));
 }
 
 
@@ -2382,7 +2381,7 @@ unsigned char mcp2515_requestNewMode(const unsigned char newmode) {
         } else if ( Count > 200) {
             return (1);
         } else {
-            _delay((unsigned long)((1)*(4000000/4000.0)));
+            _delay((unsigned long)((1)*(20000000/4000.0)));
             Count++;
         }
     }
@@ -2765,14 +2764,14 @@ unsigned char mcp2515_init(const unsigned char canSpeed, const unsigned char clo
 
 
 
-        _delay((unsigned long)((10)*(4000000/4000.0)));
+        _delay((unsigned long)((10)*(20000000/4000.0)));
 
         return res;
     }
 
 
 
-    _delay((unsigned long)((10)*(4000000/4000.0)));
+    _delay((unsigned long)((10)*(20000000/4000.0)));
 
 
 
@@ -2780,14 +2779,14 @@ unsigned char mcp2515_init(const unsigned char canSpeed, const unsigned char clo
 
 
 
-        _delay((unsigned long)((10)*(4000000/4000.0)));
+        _delay((unsigned long)((10)*(20000000/4000.0)));
 
         return res;
     }
 
 
 
-    _delay((unsigned long)((10)*(4000000/4000.0)));
+    _delay((unsigned long)((10)*(20000000/4000.0)));
 
 
     if (res == (0)) {
@@ -2810,7 +2809,7 @@ unsigned char mcp2515_init(const unsigned char canSpeed, const unsigned char clo
 
 
 
-            _delay((unsigned long)((10)*(4000000/4000.0)));
+            _delay((unsigned long)((10)*(20000000/4000.0)));
 
             return res;
         }
@@ -2819,7 +2818,7 @@ unsigned char mcp2515_init(const unsigned char canSpeed, const unsigned char clo
 
 
 
-        _delay((unsigned long)((10)*(4000000/4000.0)));
+        _delay((unsigned long)((10)*(20000000/4000.0)));
 
 
     }
@@ -3054,14 +3053,14 @@ unsigned char init_Mask(unsigned char num, unsigned char ext, unsigned long ulDa
 
 
 
-    _delay((unsigned long)((10)*(4000000/4000.0)));
+    _delay((unsigned long)((10)*(20000000/4000.0)));
 
     res = mcp2515_setCANCTRL_Mode(0x80);
     if (res > 0) {
 
 
 
-        _delay((unsigned long)((10)*(4000000/4000.0)));
+        _delay((unsigned long)((10)*(20000000/4000.0)));
 
         return res;
     }
@@ -3080,14 +3079,14 @@ unsigned char init_Mask(unsigned char num, unsigned char ext, unsigned long ulDa
 
 
 
-        _delay((unsigned long)((10)*(4000000/4000.0)));
+        _delay((unsigned long)((10)*(20000000/4000.0)));
 
         return res;
     }
 
 
 
-    _delay((unsigned long)((10)*(4000000/4000.0)));
+    _delay((unsigned long)((10)*(20000000/4000.0)));
 
     return res;
 }
@@ -3101,14 +3100,14 @@ unsigned char init_Filt(unsigned char num, unsigned char ext, unsigned long ulDa
 
 
 
-    _delay((unsigned long)((10)*(4000000/4000.0)));
+    _delay((unsigned long)((10)*(20000000/4000.0)));
 
     res = mcp2515_setCANCTRL_Mode(0x80);
     if (res > 0) {
 
 
 
-        _delay((unsigned long)((10)*(4000000/4000.0)));
+        _delay((unsigned long)((10)*(20000000/4000.0)));
 
         return res;
     }
@@ -3147,14 +3146,14 @@ unsigned char init_Filt(unsigned char num, unsigned char ext, unsigned long ulDa
 
 
 
-        _delay((unsigned long)((10)*(4000000/4000.0)));
+        _delay((unsigned long)((10)*(20000000/4000.0)));
 
         return res;
     }
 
 
 
-    _delay((unsigned long)((10)*(4000000/4000.0)));
+    _delay((unsigned long)((10)*(20000000/4000.0)));
 
 
     return res;
@@ -3214,7 +3213,7 @@ unsigned char sendMsg(unsigned long id, unsigned char ext, unsigned char rtrBit,
 
     do {
         if (uiTimeOut > 0) {
-            _delay((unsigned long)((10)*(4000000/4000.0)));
+            _delay((unsigned long)((10)*(20000000/4000.0)));
         }
         res = mcp2515_getNextFreeTXBuf(&txbuf_n);
         uiTimeOut++;
@@ -3229,7 +3228,7 @@ unsigned char sendMsg(unsigned long id, unsigned char ext, unsigned char rtrBit,
         uiTimeOut = 0;
         do {
             if (uiTimeOut > 0) {
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+                _delay((unsigned long)((10)*(20000000/4000.0)));
             }
             uiTimeOut++;
             res1 = mcp2515_readRegister(txbuf_n - 1);
@@ -3425,7 +3424,7 @@ unsigned char mcpPinMode(const unsigned char pin, const unsigned char mode) {
 
 
 
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+                _delay((unsigned long)((10)*(20000000/4000.0)));
 
                 return 0;
             }
@@ -3447,7 +3446,7 @@ unsigned char mcpPinMode(const unsigned char pin, const unsigned char mode) {
 
 
 
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+                _delay((unsigned long)((10)*(20000000/4000.0)));
 
                 return 0;
             }
@@ -3459,7 +3458,7 @@ unsigned char mcpPinMode(const unsigned char pin, const unsigned char mode) {
 
 
 
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+                _delay((unsigned long)((10)*(20000000/4000.0)));
 
                 return 0;
             }
@@ -3481,7 +3480,7 @@ unsigned char mcpPinMode(const unsigned char pin, const unsigned char mode) {
 
 
 
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+                _delay((unsigned long)((10)*(20000000/4000.0)));
 
                 return 0;
             }
@@ -3493,7 +3492,7 @@ unsigned char mcpPinMode(const unsigned char pin, const unsigned char mode) {
 
 
 
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+                _delay((unsigned long)((10)*(20000000/4000.0)));
 
                 return 0;
             }
@@ -3515,7 +3514,7 @@ unsigned char mcpPinMode(const unsigned char pin, const unsigned char mode) {
 
 
 
-                _delay((unsigned long)((10)*(4000000/4000.0)));
+                _delay((unsigned long)((10)*(20000000/4000.0)));
 
                 return 0;
             }

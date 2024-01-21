@@ -1,0 +1,1272 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\CAN_BUS_PIC16.X.production.o
+cinit CODE 0 7E6 7E6 1A 2 1
+text1 CODE 0 E50 E50 1A 2 1
+text2 CODE 0 2E9 2E9 A6 2 1
+text3 CODE 0 1DC 1DC 7D 2 1
+text4 CODE 0 EF8 EF8 1D 2 1
+text5 CODE 0 DB7 DB7 13 2 1
+text6 CODE 0 EDB EDB 1D 2 1
+text7 CODE 0 161 161 7B 2 1
+text8 CODE 0 A A 4A 2 1
+text9 CODE 0 EBE EBE 1D 2 1
+text10 CODE 0 EA1 EA1 1D 2 1
+text11 CODE 0 E85 E85 1C 2 1
+text12 CODE 0 E1E E1E 18 2 1
+text13 CODE 0 F53 F53 30 2 1
+text14 CODE 0 54 54 54 2 1
+text15 CODE 0 471 471 148 2 1
+text16 CODE 0 3 3 7 2 1
+text17 CODE 0 D7C D7C B 2 1
+text18 CODE 0 E07 E07 17 2 1
+text19 CODE 0 DDD DDD 14 2 1
+text20 CODE 0 F15 F15 1E 2 1
+text21 CODE 0 259 259 90 2 1
+text22 CODE 0 DA5 DA5 12 2 1
+text23 CODE 0 104 104 5D 2 1
+text24 CODE 0 F83 F83 3C 2 1
+text25 CODE 0 F33 F33 20 2 1
+text26 CODE 0 D6C D6C 8 2 1
+text27 CODE 0 E6A E6A 1B 2 1
+text28 CODE 0 D87 D87 D 2 1
+text29 CODE 0 DF1 DF1 16 2 1
+text30 CODE 0 FBF FBF 41 2 1
+text31 CODE 0 5B9 5B9 22D 2 1
+text32 CODE 0 E36 E36 1A 2 1
+text33 CODE 0 D94 D94 11 2 1
+text34 CODE 0 A8 A8 5C 2 1
+maintext CODE 0 38F 38F E2 2 1
+cstackCOMMON COMMON 1 70 70 E 1 1
+cstackBANK0 BANK0 1 20 20 3D 1 1
+inittext CODE 0 DCA DCA 13 2 1
+bssBANK0 BANK0 1 5D 5D 8 1 1
+idataBANK0 CODE 0 D74 D74 8 2 1
+dataBANK0 BANK0 1 65 65 8 1 1
+config CONFIG 4 2007 2007 1 2 1
+$C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+end_init CODE 0 0 0 3 2 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 6D-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 6D-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 800-D6B 2
+CONST 1000-1FFF 2
+ENTRY 800-D6B 2
+ENTRY 1000-1FFF 2
+IDLOC 2000-2003 2
+CODE 800-D6B 2
+CODE 1000-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+EEDATA 2100-21FF 2
+STRCODE 800-D6B 2
+STRCODE 1000-1FFF 2
+STRING 800-D6B 2
+STRING 1000-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\CAN_BUS_PIC16.X.production.o
+7E6 cinit CODE >816:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7E6 cinit CODE >819:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7E6 cinit CODE >878:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7E7 cinit CODE >879:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7E8 cinit CODE >880:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7E9 cinit CODE >881:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7EA cinit CODE >882:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7EB cinit CODE >883:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7EC cinit CODE >884:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7ED cinit CODE >885:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7EE cinit CODE >886:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7EF cinit CODE >887:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7F4 cinit CODE >891:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7F5 cinit CODE >892:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7F6 cinit CODE >893:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7F7 cinit CODE >894:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7F8 cinit CODE >895:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7F9 cinit CODE >896:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7FA cinit CODE >897:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7FB cinit CODE >898:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7FC cinit CODE >904:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7FC cinit CODE >906:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+7FD cinit CODE >907:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+A8 text34 CODE >106:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+A9 text34 CODE >108:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+AC text34 CODE >109:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+AF text34 CODE >111:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+B3 text34 CODE >112:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+B9 text34 CODE >114:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+BA text34 CODE >116:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+BA text34 CODE >117:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+BD text34 CODE >118:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+C0 text34 CODE >119:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+C1 text34 CODE >120:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+C1 text34 CODE >121:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+C4 text34 CODE >122:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+C7 text34 CODE >123:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+C8 text34 CODE >124:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+C8 text34 CODE >125:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+CB text34 CODE >126:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+CE text34 CODE >127:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+CF text34 CODE >130:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+D4 text34 CODE >130:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+D9 text34 CODE >130:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+DC text34 CODE >130:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+DF text34 CODE >130:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+E2 text34 CODE >134:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+E2 text34 CODE >135:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+E5 text34 CODE >136:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+E5 text34 CODE >137:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+E8 text34 CODE >138:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+E9 text34 CODE >139:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+EA text34 CODE >140:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+EA text34 CODE >141:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+ED text34 CODE >142:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+EE text34 CODE >143:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+F3 text34 CODE >143:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+F8 text34 CODE >143:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+FB text34 CODE >143:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+FE text34 CODE >145:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+FF text34 CODE >146:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+100 text34 CODE >147:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+103 text34 CODE >148:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+D94 text33 CODE >192:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+D95 text33 CODE >194:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+D99 text33 CODE >195:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+D9E text33 CODE >199:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+DA4 text33 CODE >202:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+E36 text32 CODE >216:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E37 text32 CODE >220:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E3A text32 CODE >221:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E40 text32 CODE >222:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E46 text32 CODE >223:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E4C text32 CODE >224:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E4F text32 CODE >228:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5B9 text31 CODE >410:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5BA text31 CODE >412:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5BC text31 CODE >413:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5BD text31 CODE >417:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5BF text31 CODE >418:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5C1 text31 CODE >419:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5C3 text31 CODE >420:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5C4 text31 CODE >423:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5C6 text31 CODE >424:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5C8 text31 CODE >425:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5CA text31 CODE >426:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5CB text31 CODE >429:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5CD text31 CODE >430:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5CF text31 CODE >431:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5D1 text31 CODE >432:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5D2 text31 CODE >435:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5D4 text31 CODE >436:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5D6 text31 CODE >437:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5D8 text31 CODE >438:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5D9 text31 CODE >441:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5DB text31 CODE >442:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5DD text31 CODE >443:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5DF text31 CODE >444:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5E0 text31 CODE >447:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5E2 text31 CODE >448:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5E4 text31 CODE >449:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5E6 text31 CODE >450:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5E7 text31 CODE >453:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5E9 text31 CODE >454:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5EB text31 CODE >455:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5ED text31 CODE >456:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5EE text31 CODE >459:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5F0 text31 CODE >460:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5F2 text31 CODE >461:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5F4 text31 CODE >462:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5F5 text31 CODE >465:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5F7 text31 CODE >466:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5F9 text31 CODE >467:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5FB text31 CODE >468:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5FC text31 CODE >471:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5FE text31 CODE >472:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+600 text31 CODE >473:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+602 text31 CODE >474:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+603 text31 CODE >477:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+605 text31 CODE >478:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+607 text31 CODE >479:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+609 text31 CODE >480:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+60A text31 CODE >483:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+60C text31 CODE >484:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+60E text31 CODE >485:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+610 text31 CODE >486:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+611 text31 CODE >489:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+613 text31 CODE >490:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+615 text31 CODE >491:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+617 text31 CODE >492:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+618 text31 CODE >494:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+618 text31 CODE >495:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+61A text31 CODE >496:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+61C text31 CODE >497:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+61E text31 CODE >498:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+61F text31 CODE >501:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+621 text31 CODE >502:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+623 text31 CODE >503:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+625 text31 CODE >504:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+626 text31 CODE >507:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+627 text31 CODE >508:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+629 text31 CODE >509:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+62B text31 CODE >510:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+62C text31 CODE >513:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+62D text31 CODE >514:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+62F text31 CODE >515:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+631 text31 CODE >516:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+632 text31 CODE >519:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+634 text31 CODE >520:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+636 text31 CODE >521:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+638 text31 CODE >522:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+639 text31 CODE >525:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+63A text31 CODE >526:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+63C text31 CODE >527:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+63E text31 CODE >528:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+63F text31 CODE >531:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+640 text31 CODE >532:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+641 text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+646 text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+64B text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+64E text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+651 text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+654 text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+657 text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+65A text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+65D text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+660 text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+663 text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+666 text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+669 text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+66C text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+66F text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+672 text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+675 text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+678 text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+67B text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+67E text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+681 text31 CODE >533:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+684 text31 CODE >539:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+686 text31 CODE >540:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+688 text31 CODE >541:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+68A text31 CODE >542:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+68B text31 CODE >545:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+68D text31 CODE >546:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+68F text31 CODE >547:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+691 text31 CODE >548:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+692 text31 CODE >551:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+694 text31 CODE >552:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+696 text31 CODE >553:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+698 text31 CODE >554:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+699 text31 CODE >557:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+69B text31 CODE >558:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+69D text31 CODE >559:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+69F text31 CODE >560:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6A0 text31 CODE >563:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6A2 text31 CODE >564:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6A4 text31 CODE >565:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6A6 text31 CODE >566:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6A7 text31 CODE >569:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6A9 text31 CODE >570:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6AB text31 CODE >571:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6AD text31 CODE >572:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6AE text31 CODE >575:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6B0 text31 CODE >576:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6B2 text31 CODE >577:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6B4 text31 CODE >578:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6B5 text31 CODE >581:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6B7 text31 CODE >582:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6B9 text31 CODE >583:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6BB text31 CODE >584:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6BC text31 CODE >587:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6BE text31 CODE >588:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6C0 text31 CODE >589:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6C2 text31 CODE >590:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6C3 text31 CODE >593:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6C5 text31 CODE >594:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6C7 text31 CODE >595:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6C9 text31 CODE >596:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6CA text31 CODE >598:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6CA text31 CODE >599:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6CC text31 CODE >600:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6CE text31 CODE >601:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6D0 text31 CODE >602:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6D1 text31 CODE >604:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6D1 text31 CODE >605:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6D3 text31 CODE >606:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6D5 text31 CODE >607:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6D7 text31 CODE >608:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6D8 text31 CODE >611:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6D9 text31 CODE >612:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6DB text31 CODE >613:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6DD text31 CODE >614:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6DE text31 CODE >617:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6DF text31 CODE >618:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6E1 text31 CODE >619:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6E3 text31 CODE >620:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6E4 text31 CODE >623:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6E5 text31 CODE >624:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6E7 text31 CODE >625:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6E9 text31 CODE >626:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6EA text31 CODE >629:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6EB text31 CODE >630:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6EE text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6F3 text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6F8 text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6FB text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6FE text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+701 text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+704 text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+707 text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+70A text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+70D text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+710 text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+713 text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+716 text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+719 text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+71C text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+71F text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+722 text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+725 text31 CODE >637:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+728 text31 CODE >642:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+72A text31 CODE >643:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+72C text31 CODE >644:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+72E text31 CODE >645:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+72F text31 CODE >648:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+731 text31 CODE >649:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+733 text31 CODE >650:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+735 text31 CODE >651:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+736 text31 CODE >654:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+738 text31 CODE >655:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+73A text31 CODE >656:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+73C text31 CODE >657:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+73D text31 CODE >660:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+73F text31 CODE >661:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+741 text31 CODE >662:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+743 text31 CODE >663:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+744 text31 CODE >666:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+746 text31 CODE >667:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+748 text31 CODE >668:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+74A text31 CODE >669:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+74B text31 CODE >672:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+74D text31 CODE >673:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+74F text31 CODE >674:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+751 text31 CODE >675:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+752 text31 CODE >677:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+752 text31 CODE >678:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+754 text31 CODE >679:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+756 text31 CODE >680:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+758 text31 CODE >681:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+759 text31 CODE >683:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+759 text31 CODE >684:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+75B text31 CODE >685:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+75D text31 CODE >686:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+75F text31 CODE >687:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+760 text31 CODE >689:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+760 text31 CODE >690:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+762 text31 CODE >691:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+764 text31 CODE >692:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+766 text31 CODE >693:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+767 text31 CODE >696:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+768 text31 CODE >697:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+76B text31 CODE >702:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+76C text31 CODE >703:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+76E text31 CODE >704:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+770 text31 CODE >705:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+771 text31 CODE >708:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+772 text31 CODE >709:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+775 text31 CODE >714:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+776 text31 CODE >715:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+779 text31 CODE >720:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+77A text31 CODE >721:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+77C text31 CODE >722:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+77D text31 CODE >723:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+77E text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+783 text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+788 text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+78B text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+78E text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+791 text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+794 text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+797 text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+79A text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+79D text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7A0 text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7A3 text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7A6 text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7A9 text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7AC text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7AF text31 CODE >728:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7B2 text31 CODE >734:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7B7 text31 CODE >734:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7BC text31 CODE >734:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7BF text31 CODE >734:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7C2 text31 CODE >734:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7C5 text31 CODE >736:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7CA text31 CODE >737:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7D2 text31 CODE >738:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7DA text31 CODE >739:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7E2 text31 CODE >740:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7E4 text31 CODE >742:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+7E5 text31 CODE >744:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FBF text30 CODE >750:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FBF text30 CODE >753:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FC1 text30 CODE >754:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FC3 text30 CODE >755:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FC5 text30 CODE >756:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FC6 text30 CODE >757:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FCD text30 CODE >758:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FD4 text30 CODE >759:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FDB text30 CODE >760:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FDF text30 CODE >761:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FE3 text30 CODE >762:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FE7 text30 CODE >763:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FED text30 CODE >763:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FF1 text30 CODE >764:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FF8 text30 CODE >765:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FFF text30 CODE >766:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DF1 text29 CODE >155:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DF1 text29 CODE >159:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DF4 text29 CODE >160:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DFA text29 CODE >161:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DFD text29 CODE >165:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E06 text29 CODE >166:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+D87 text28 CODE >176:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+D87 text28 CODE >178:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+D8A text28 CODE >179:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+D90 text28 CODE >180:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+D93 text28 CODE >181:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\spi16.c
+E6A text27 CODE >172:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E6B text27 CODE >178:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E6E text27 CODE >179:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E74 text27 CODE >180:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E7A text27 CODE >181:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E80 text27 CODE >182:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E83 text27 CODE >187:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E84 text27 CODE >188:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+D6C text26 CODE >338:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+D6C text26 CODE >339:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+D73 text26 CODE >340:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F33 text25 CODE >256:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F34 text25 CODE >260:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F37 text25 CODE >261:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F3D text25 CODE >262:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F43 text25 CODE >263:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F49 text25 CODE >264:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F4F text25 CODE >265:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F52 text25 CODE >269:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F83 text24 CODE >386:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F84 text24 CODE >387:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F86 text24 CODE >392:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F90 text24 CODE >394:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F97 text24 CODE >395:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F9A text24 CODE >395:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F9E text24 CODE >396:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FA0 text24 CODE >397:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FA5 text24 CODE >397:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FA9 text24 CODE >397:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FAD text24 CODE >398:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FAF text24 CODE >400:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FB7 text24 CODE >401:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FB9 text24 CODE >401:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+FBE text24 CODE >404:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+104 text23 CODE >346:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+105 text23 CODE >350:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+10B text23 CODE >350:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+115 text23 CODE >352:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+11D text23 CODE >353:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+122 text23 CODE >354:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+12C text23 CODE >355:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+12C text23 CODE >358:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+136 text23 CODE >366:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+13D text23 CODE >366:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+141 text23 CODE >367:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+143 text23 CODE >371:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+148 text23 CODE >372:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+151 text23 CODE >374:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+151 text23 CODE >377:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+15A text23 CODE >379:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+160 text23 CODE >380:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DA5 text22 CODE >328:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DA8 text22 CODE >329:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DAE text22 CODE >330:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DB0 text22 CODE >331:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DB6 text22 CODE >332:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+259 text21 CODE >772:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+25C text21 CODE >776:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+261 text21 CODE >778:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+26A text21 CODE >779:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+26F text21 CODE >783:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+27A text21 CODE >785:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+27E text21 CODE >790:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+289 text21 CODE >794:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+294 text21 CODE >794:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+299 text21 CODE >805:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2A4 text21 CODE >808:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2AB text21 CODE >811:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2B0 text21 CODE >814:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2B8 text21 CODE >825:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2C2 text21 CODE >828:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2CB text21 CODE >832:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2D4 text21 CODE >833:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2DA text21 CODE >846:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2E5 text21 CODE >849:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2E5 text21 CODE >850:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2E8 text21 CODE >852:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F15 text20 CODE >1049:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F15 text20 CODE >1050:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F1E text20 CODE >1051:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F2B text20 CODE >1053:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F32 text20 CODE >1054:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DDD text19 CODE >275:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DDD text19 CODE >280:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DE0 text19 CODE >281:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DE6 text19 CODE >282:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DEC text19 CODE >283:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DEF text19 CODE >288:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DF0 text19 CODE >289:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E07 text18 CODE >1387:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E07 text18 CODE >1389:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E0D text18 CODE >1390:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E1D text18 CODE >1391:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+D7C text17 CODE >32:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+3 text16 CODE >17:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp_can.c
+3 text16 CODE >23:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp_can.c
+6 text16 CODE >24:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp_can.c
+9 text16 CODE >26:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp_can.c
+471 text15 CODE >954:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+472 text15 CODE >959:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+475 text15 CODE >960:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+47B text15 CODE >962:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+47C text15 CODE >963:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+485 text15 CODE >964:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+48B text15 CODE >964:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+48F text15 CODE >966:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+494 text15 CODE >966:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+497 text15 CODE >966:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+49C text15 CODE >966:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+49F text15 CODE >966:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+4A2 text15 CODE >966:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+4A9 text15 CODE >966:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+4C4 text15 CODE >967:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+4C7 text15 CODE >968:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+4CB text15 CODE >970:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+4DF text15 CODE >970:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+4E5 text15 CODE >970:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+4EA text15 CODE >970:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+4F0 text15 CODE >970:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+4F6 text15 CODE >970:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+506 text15 CODE >971:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+519 text15 CODE >971:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+51F text15 CODE >971:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+524 text15 CODE >971:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+52A text15 CODE >971:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+530 text15 CODE >971:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+540 text15 CODE >972:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+553 text15 CODE >972:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+559 text15 CODE >972:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+55E text15 CODE >972:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+564 text15 CODE >972:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+56A text15 CODE >972:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+57A text15 CODE >973:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+57E text15 CODE >976:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+584 text15 CODE >977:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+58A text15 CODE >978:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+593 text15 CODE >979:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+595 text15 CODE >980:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5A3 text15 CODE >981:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5AB text15 CODE >981:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5B1 text15 CODE >981:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5B5 text15 CODE >983:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5B8 text15 CODE >984:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+54 text14 CODE >1285:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+57 text14 CODE >1287:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+59 text14 CODE >1289:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+5D text14 CODE >1290:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+6D text14 CODE >1291:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+70 text14 CODE >1292:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+75 text14 CODE >1293:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+86 text14 CODE >1297:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+8B text14 CODE >1298:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+90 text14 CODE >1300:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+94 text14 CODE >1301:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+A1 text14 CODE >1302:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+A2 text14 CODE >1303:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+A6 text14 CODE >1306:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+A7 text14 CODE >1307:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F53 text13 CODE >1316:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F53 text13 CODE >1317:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F5A text13 CODE >1318:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F81 text13 CODE >1322:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F82 text13 CODE >1323:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E1E text12 CODE >28:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+E21 text12 CODE >29:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+E35 text12 CODE >30:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+E85 text11 CODE >62:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E86 text11 CODE >63:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E87 text11 CODE >64:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E89 text11 CODE >65:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E8B text11 CODE >66:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E8D text11 CODE >67:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E92 text11 CODE >67:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E97 text11 CODE >67:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E9A text11 CODE >67:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E9D text11 CODE >67:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EA0 text11 CODE >69:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EA1 text10 CODE >129:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EA2 text10 CODE >130:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EA3 text10 CODE >131:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EA5 text10 CODE >132:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EA7 text10 CODE >133:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EA9 text10 CODE >134:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EAE text10 CODE >134:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EB3 text10 CODE >134:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EB6 text10 CODE >134:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EB9 text10 CODE >134:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EBC text10 CODE >135:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EBD text10 CODE >136:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EBE text9 CODE >142:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EBF text9 CODE >143:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EC0 text9 CODE >144:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EC2 text9 CODE >145:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EC4 text9 CODE >146:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EC6 text9 CODE >147:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+ECB text9 CODE >147:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+ED0 text9 CODE >147:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+ED3 text9 CODE >147:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+ED6 text9 CODE >147:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+ED9 text9 CODE >148:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EDA text9 CODE >149:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+A text8 CODE >1024:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+B text8 CODE >1025:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+12 text8 CODE >1028:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+16 text8 CODE >1030:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1C text8 CODE >1031:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1E text8 CODE >1035:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+20 text8 CODE >1036:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2B text8 CODE >1037:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+38 text8 CODE >1038:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+46 text8 CODE >1039:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+48 text8 CODE >1041:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+4E text8 CODE >1041:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+53 text8 CODE >1044:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+161 text7 CODE >858:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+162 text7 CODE >861:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+166 text7 CODE >863:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+16B text7 CODE >864:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+171 text7 CODE >865:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+176 text7 CODE >866:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+17F text7 CODE >866:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+185 text7 CODE >866:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+18B text7 CODE >867:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+190 text7 CODE >868:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+194 text7 CODE >868:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+197 text7 CODE >868:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+199 text7 CODE >868:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1A0 text7 CODE >869:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1A3 text7 CODE >870:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1AA text7 CODE >870:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1AE text7 CODE >870:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1B2 text7 CODE >871:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1B3 text7 CODE >872:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1B9 text7 CODE >872:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1BC text7 CODE >872:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1BF text7 CODE >872:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1C5 text7 CODE >873:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1CB text7 CODE >873:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1CE text7 CODE >873:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1D0 text7 CODE >873:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1D3 text7 CODE >874:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1D7 text7 CODE >875:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1DB text7 CODE >877:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EDB text6 CODE >103:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EDC text6 CODE >104:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EDD text6 CODE >105:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EDF text6 CODE >106:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EE1 text6 CODE >107:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EE3 text6 CODE >108:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EE8 text6 CODE >108:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EED text6 CODE >108:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EF0 text6 CODE >108:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EF3 text6 CODE >108:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EF6 text6 CODE >109:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EF7 text6 CODE >110:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DB7 text5 CODE >990:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DB8 text5 CODE >994:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DBB text5 CODE >995:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DC6 text5 CODE >996:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+DC9 text5 CODE >1000:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EF8 text4 CODE >116:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EF9 text4 CODE >117:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EFA text4 CODE >118:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EFC text4 CODE >119:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+EFE text4 CODE >120:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F00 text4 CODE >121:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F05 text4 CODE >121:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F0A text4 CODE >121:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F0D text4 CODE >121:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F10 text4 CODE >121:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F13 text4 CODE >122:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+F14 text4 CODE >123:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1DC text3 CODE >918:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1DF text3 CODE >920:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1E8 text3 CODE >923:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+1F7 text3 CODE >926:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+207 text3 CODE >931:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+20A text3 CODE >932:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+210 text3 CODE >933:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+213 text3 CODE >934:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+21D text3 CODE >935:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+225 text3 CODE >935:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+229 text3 CODE >936:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+22F text3 CODE >937:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+233 text3 CODE >938:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+23F text3 CODE >939:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+247 text3 CODE >939:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+24D text3 CODE >939:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+251 text3 CODE >941:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+252 text3 CODE >946:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+258 text3 CODE >948:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2E9 text2 CODE >1231:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2E9 text2 CODE >1233:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2ED text2 CODE >1235:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2F5 text2 CODE >1236:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2F7 text2 CODE >1237:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2F9 text2 CODE >1240:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+2FF text2 CODE >1241:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+30A text2 CODE >1243:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+313 text2 CODE >1244:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+315 text2 CODE >1244:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+319 text2 CODE >1245:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+322 text2 CODE >1245:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+324 text2 CODE >1245:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+328 text2 CODE >1247:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+32F text2 CODE >1248:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+331 text2 CODE >1250:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+347 text2 CODE >1252:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+34E text2 CODE >1253:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+350 text2 CODE >1255:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+356 text2 CODE >1256:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+361 text2 CODE >1257:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+361 text2 CODE >1258:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+365 text2 CODE >1258:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+369 text2 CODE >1259:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+373 text2 CODE >1260:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+376 text2 CODE >1261:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+37E text2 CODE >1261:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+380 text2 CODE >1261:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+384 text2 CODE >1263:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+38B text2 CODE >1264:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+38D text2 CODE >1268:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+38E text2 CODE >1270:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E50 text1 CODE >1276:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E50 text1 CODE >1277:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+E69 text1 CODE >1278:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\mcp2515_can.c
+38F maintext CODE >34:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+38F maintext CODE >36:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+392 maintext CODE >38:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+395 maintext CODE >40:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+39A maintext CODE >42:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+39B maintext CODE >43:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+3A9 maintext CODE >42:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+3BB maintext CODE >42:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+3BF maintext CODE >45:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+3C2 maintext CODE >46:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+3D1 maintext CODE >47:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+3D4 maintext CODE >50:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+3EB maintext CODE >51:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+3FA maintext CODE >54:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+3FD maintext CODE >57:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+403 maintext CODE >57:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+407 maintext CODE >58:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+40F maintext CODE >60:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+41E maintext CODE >62:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+421 maintext CODE >64:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+438 maintext CODE >65:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+439 maintext CODE >66:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+447 maintext CODE >67:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+44A maintext CODE >68:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+458 maintext CODE >69:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+458 maintext CODE >71:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+45C maintext CODE >71:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+465 maintext CODE >71:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+469 maintext CODE >71:C:\Users\Paul\MPLABXProjects\CAN_BUS_PIC16.X\main.c
+DCA inittext CODE >852:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DCA inittext CODE >853:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DCB inittext CODE >854:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DCC inittext CODE >855:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DCD inittext CODE >856:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DCE inittext CODE >863:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DCE inittext CODE >864:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DD3 inittext CODE >865:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DD4 inittext CODE >866:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DD5 inittext CODE >867:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DD6 inittext CODE >868:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DD7 inittext CODE >869:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DD8 inittext CODE >870:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DD9 inittext CODE >871:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DDA inittext CODE >872:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DDB inittext CODE >873:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+DDC inittext CODE >874:C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+_txIfFlag 1D42 0 CODE 0 text10 dist/default/production\CAN_BUS_PIC16.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 1000 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+mcp2515_getNextFreeTXBuf@status 76 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+sendMsg@rtrBit 37 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+setMode@opMode 20 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_setRegister@value 71 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_txIfFlag 1D7C 0 CODE 0 text10 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+mcp2515_init@canSpeed 24 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_initCANBuffers@a1 73 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_initCANBuffers@a2 74 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_initCANBuffers@a3 75 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+_BF 4A0 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+sendMsgBuf@id 42 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+main@i 5A 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+begin@speedset 26 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+_mcp2515_read_canMsg 8E2 0 CODE 0 text15 dist/default/production\CAN_BUS_PIC16.X.production.o
+_WCOL A7 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+_main 71E 0 CODE 0 maintext dist/default/production\CAN_BUS_PIC16.X.production.o
+_stmp 65 0 BANK0 1 dataBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+start 0 0 CODE 0 init C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+_mcp2515_reset 1BE2 0 CODE 0 text29 dist/default/production\CAN_BUS_PIC16.X.production.o
+txCtrlReg@i 72 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+OpenSPI@sync_mode 74 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_read_canMsg@id 71 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+_getMode 1AD8 0 CODE 0 text26 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_write_canMsg@load_addr 2A 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_readMsgBufID 150 0 CODE 0 text14 dist/default/production\CAN_BUS_PIC16.X.production.o
+readRxTxStatus@ret 78 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+__end_of_mcp2515_init 5D2 0 CODE 0 text21 dist/default/production\CAN_BUS_PIC16.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+__end_of_checkReceive 1C3C 0 CODE 0 text18 dist/default/production\CAN_BUS_PIC16.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_mcp2515_readRegister 1D0A 0 CODE 0 text27 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+mcp2515_readStatus@i 71 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_id_to_buf@canid 7A 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+_mcp2515_setCANCTRL_Mode 208 0 CODE 0 text23 dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_mcp2515_start_transmit 1B94 0 CODE 0 text5 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_mcp2515_setCANCTRL_Mode 2C2 0 CODE 0 text23 dist/default/production\CAN_BUS_PIC16.X.production.o
+begin@clockset 2A 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+_mcp2515_modifyRegister 1E66 0 CODE 0 text25 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_init@res 25 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_requestNewMode@Count 78 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_setRegister@address 72 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+main@buf 4E 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+main@len 5C 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of_mcp2515_read_canMsg B72 0 CODE 0 text15 dist/default/production\CAN_BUS_PIC16.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+mcp2515_read_canMsg@pMsgSize 7B 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+WriteSPI@data_out 70 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+sendMsg@id 32 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_read_canMsg@tbufdata 77 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+start_initialization FCC 0 CODE 0 cinit dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_sendMsg 71E 0 CODE 0 text2 dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_setMode 1B6E 0 CODE 0 text22 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_modifyRegister@data 74 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_modifyRegister@mask 73 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_mcp2515_reset 1C0E 0 CODE 0 text29 dist/default/production\CAN_BUS_PIC16.X.production.o
+txIfFlag@i 72 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_mcp2515_readStatus 1BE2 0 CODE 0 text19 dist/default/production\CAN_BUS_PIC16.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+_SSPBUF 13 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+_SSPCON 14 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+txStatusPendingFlag@i 72 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+_TRISA5 42D 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+_TRISC3 43B 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+_TRISC4 43C 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+_TRISC5 43D 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+_TRISD0 440 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+_TRISD3 443 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_requestNewMode@statReg 7A 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_write_canMsg@rtrBit 25 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_write_canMsg@tbufdata 2C 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_ReadSPI 1B28 0 CODE 0 text28 dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_init_CS 14 0 CODE 0 text16 dist/default/production\CAN_BUS_PIC16.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+_mcp2515_write_canMsg 3B8 0 CODE 0 text3 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+sendMsg@wait_sent 3A 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+sendMsg@txbuf_n 3F 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Hstack 0 0 STACK 2 stack -
+_txSidhToTxLoad 1DF0 0 CODE 0 text4 dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_txCtrlReg 1D42 0 CODE 0 text11 dist/default/production\CAN_BUS_PIC16.X.production.o
+txSidhToRTS@sidh 72 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__end_of_mcp2515_id_to_buf 3B8 0 CODE 0 text7 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_modifyRegister@address 75 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_id_to_buf@tbufdata 74 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_setCANCTRL_Mode@wakeIntEnabled 7D 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+readMsgBufID@rtrBit 2B 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+readMsgBufID@status 2E 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+_mcp2515_readStatus 1BBA 0 CODE 0 text19 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FCC 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+_mcp2515_getNextFreeTXBuf 14 0 CODE 0 text8 dist/default/production\CAN_BUS_PIC16.X.production.o
+txSidhToTxLoad@sidh 72 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_read_canMsg@buf 75 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_read_canMsg@ext 72 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_read_canMsg@len 74 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+_mcp2515_setRegister 1C6C 0 CODE 0 text32 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Linittext 0 0 ABS 0 inittext -
+_PORTDbits 8 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_mcp2515_configRate FCC 0 CODE 0 text31 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+sendMsg@uiTimeOut 40 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+_txCtrlReg 1D0A 0 CODE 0 text11 dist/default/production\CAN_BUS_PIC16.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__end_of_mcp2515_modifyRegister 1EA6 0 CODE 0 text25 dist/default/production\CAN_BUS_PIC16.X.production.o
+_txStatusPendingFlag 1D7C 0 CODE 0 text9 dist/default/production\CAN_BUS_PIC16.X.production.o
+_CKE 4A6 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+_CKP A4 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+_RD0 40 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+_SMP 4A7 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+__S0 1000 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_rtr 63 0 BANK0 1 bssBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+_readMsgBuf 1C3C 0 CODE 0 text12 dist/default/production\CAN_BUS_PIC16.X.production.o
+_sendMsgBuf 1CA0 0 CODE 0 text1 dist/default/production\CAN_BUS_PIC16.X.production.o
+_mcp2515_initCANBuffers 1F7E 0 CODE 0 text30 dist/default/production\CAN_BUS_PIC16.X.production.o
+_can_id 5F 0 BANK0 1 bssBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_read_canMsg@rtrBit 73 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_txSidhToTxLoad 1E2A 0 CODE 0 text4 dist/default/production\CAN_BUS_PIC16.X.production.o
+_txSidhToRTS 1DB6 0 CODE 0 text6 dist/default/production\CAN_BUS_PIC16.X.production.o
+_readRxTxStatus$305 72 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+_readRxTxStatus$306 74 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+_readRxTxStatus$307 76 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+_mcp2515_configRate B72 0 CODE 0 text31 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+OpenSPI@smp_phase 71 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+checkReceive@res 74 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__pdataBANK0 65 0 BANK0 1 dataBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+_mcp2515_readRegister 1CD4 0 CODE 0 text27 dist/default/production\CAN_BUS_PIC16.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+mcp2515_configRate@canSpeed 77 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_configRate@clock 73 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_OpenSPI 208 0 CODE 0 text34 dist/default/production\CAN_BUS_PIC16.X.production.o
+_mcp2515_id_to_buf 2C2 0 CODE 0 text7 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext10 1D42 0 CODE 0 text10 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext11 1D0A 0 CODE 0 text11 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext12 1C3C 0 CODE 0 text12 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext13 1EA6 0 CODE 0 text13 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext14 A8 0 CODE 0 text14 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext15 8E2 0 CODE 0 text15 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext16 6 0 CODE 0 text16 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext17 1AF8 0 CODE 0 text17 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext18 1C0E 0 CODE 0 text18 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext19 1BBA 0 CODE 0 text19 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext20 1E2A 0 CODE 0 text20 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext21 4B2 0 CODE 0 text21 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext22 1B4A 0 CODE 0 text22 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext23 208 0 CODE 0 text23 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext24 1F06 0 CODE 0 text24 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext25 1E66 0 CODE 0 text25 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext26 1AD8 0 CODE 0 text26 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext27 1CD4 0 CODE 0 text27 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext28 1B0E 0 CODE 0 text28 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext29 1BE2 0 CODE 0 text29 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext30 1F7E 0 CODE 0 text30 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext31 B72 0 CODE 0 text31 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext32 1C6C 0 CODE 0 text32 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext33 1B28 0 CODE 0 text33 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext34 150 0 CODE 0 text34 dist/default/production\CAN_BUS_PIC16.X.production.o
+__pmaintext 71E 0 CODE 0 maintext dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_readMsgBuf 1C6C 0 CODE 0 text12 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_write_canMsg@i 31 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__end_of_sendMsgBuf 1CD4 0 CODE 0 text1 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Hinittext 0 0 ABS 0 inittext -
+sendMsgBuf@buf 49 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+sendMsgBuf@ext 46 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+sendMsgBuf@len 48 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+_ext_flg 64 0 BANK0 1 bssBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_configRate@cfg1 78 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_configRate@cfg2 79 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_configRate@cfg3 7A 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_mcp2515_setRegister 1CA0 0 CODE 0 text32 dist/default/production\CAN_BUS_PIC16.X.production.o
+main@canId 56 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+readMsgBufID@buf 2D 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+readMsgBufID@ext 2A 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+readMsgBufID@len 2C 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+_getCanId 1AF8 0 CODE 0 text17 dist/default/production\CAN_BUS_PIC16.X.production.o
+_mcp2515_requestNewMode 1F06 0 CODE 0 text24 dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_txStatusPendingFlag 1DB6 0 CODE 0 text9 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_write_canMsg@buf 27 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_write_canMsg@dlc 2B 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_write_canMsg@ext 24 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_write_canMsg@len 26 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+_sendMsg 5D2 0 CODE 0 text2 dist/default/production\CAN_BUS_PIC16.X.production.o
+_setMode 1B4A 0 CODE 0 text22 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_id_to_buf@id 70 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__end_of_getCanId 1B0E 0 CODE 0 text17 dist/default/production\CAN_BUS_PIC16.X.production.o
+begin@res 2B 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+init_fetch0 1B94 0 CODE 0 inittext dist/default/production\CAN_BUS_PIC16.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 0 0 CODE 0 end_init -
+readMsgBufID@id 29 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+readMsgBufID@rc 2F 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_getMode 1AE8 0 CODE 0 text26 dist/default/production\CAN_BUS_PIC16.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\CAN_BUS_PIC16.X.production.o
+_WriteSPI 1B28 0 CODE 0 text33 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+mcp2515_setCANCTRL_Mode@newmode 7C 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_requestNewMode@newmode 7B 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+mcp2515_write_canMsg@id 20 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+mcp2515_readRegister@ret 72 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_initCANBuffers@i 76 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_WriteSPI 1B4A 0 CODE 0 text33 dist/default/production\CAN_BUS_PIC16.X.production.o
+_ReadSPI 1B0E 0 CODE 0 text28 dist/default/production\CAN_BUS_PIC16.X.production.o
+_init_CS 6 0 CODE 0 text16 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext1 1CA0 0 CODE 0 text1 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext2 5D2 0 CODE 0 text2 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext3 3B8 0 CODE 0 text3 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext4 1DF0 0 CODE 0 text4 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext5 1B6E 0 CODE 0 text5 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext6 1DB6 0 CODE 0 text6 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext7 2C2 0 CODE 0 text7 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext8 14 0 CODE 0 text8 dist/default/production\CAN_BUS_PIC16.X.production.o
+__ptext9 1D7C 0 CODE 0 text9 dist/default/production\CAN_BUS_PIC16.X.production.o
+sendMsg@res1 3E 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_read_canMsg@i 7C 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+_checkReceive$320 72 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_read_canMsg@buffer_load_addr 76 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+sendMsgBuf@rtrBit 47 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+mcp2515_configRate@set 76 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_mcp2515_initCANBuffers 2000 0 CODE 0 text30 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_readRxTxStatus 1EA6 0 CODE 0 text13 dist/default/production\CAN_BUS_PIC16.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\CAN_BUS_PIC16.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 1AE8 0 CODE 0 idataBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_getNextFreeTXBuf@txbuf_n 77 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+_mcp2515_start_transmit 1B6E 0 CODE 0 text5 dist/default/production\CAN_BUS_PIC16.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__end_of_mcp2515_getNextFreeTXBuf A8 0 CODE 0 text8 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_start_transmit@mcp_addr 73 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+_mcpMode 5E 0 BANK0 1 bssBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_readRegister@address 71 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_write_canMsg@buffer_sidh_addr 30 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+_SSPSTAT 94 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+init_ram0 1B9C 0 CODE 0 inittext dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_main 8E2 0 CODE 0 maintext dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_begin 1E66 0 CODE 0 text20 dist/default/production\CAN_BUS_PIC16.X.production.o
+_SSPEN A5 0 ABS 0 - dist/default/production\CAN_BUS_PIC16.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_begin 1E2A 0 CODE 0 text20 dist/default/production\CAN_BUS_PIC16.X.production.o
+_readMsgBufID A8 0 CODE 0 text14 dist/default/production\CAN_BUS_PIC16.X.production.o
+readMsgBuf@buf 7D 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+readMsgBuf@len 30 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+?_getCanId 70 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_readRxTxStatus 1F06 0 CODE 0 text13 dist/default/production\CAN_BUS_PIC16.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+OpenSPI@bus_mode 70 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_txSidhToRTS 1DF0 0 CODE 0 text6 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_init@clock 21 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+__initialization FCC 0 CODE 0 cinit dist/default/production\CAN_BUS_PIC16.X.production.o
+_mcp2515_write_canMsg$210 28 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+__pbssBANK0 5D 0 BANK0 1 bssBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+_OpenSPI 150 0 CODE 0 text34 dist/default/production\CAN_BUS_PIC16.X.production.o
+sendMsgBuf@wait_sent 4A 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+_mcp2515_init 4B2 0 CODE 0 text21 dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_mcp2515_write_canMsg 4B2 0 CODE 0 text3 dist/default/production\CAN_BUS_PIC16.X.production.o
+mcp2515_id_to_buf@ext 79 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+__end_of_mcp2515_requestNewMode 1F7E 0 CODE 0 text24 dist/default/production\CAN_BUS_PIC16.X.production.o
+_checkReceive 1C0E 0 CODE 0 text18 dist/default/production\CAN_BUS_PIC16.X.production.o
+sendMsg@buf 39 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+sendMsg@ext 36 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+sendMsg@len 38 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+sendMsg@res 3D 0 BANK0 1 cstackBANK0 dist/default/production\CAN_BUS_PIC16.X.production.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\Paul\AppData\Local\Temp\xcAsb5s.\driver_tmp_12.o
+mcp2515_getNextFreeTXBuf@i 78 0 COMMON 1 cstackCOMMON dist/default/production\CAN_BUS_PIC16.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7E6 FCC 1A 2
+text1 0 E50 1CA0 1A 2
+text2 0 2E9 5D2 A6 2
+text3 0 1DC 3B8 7D 2
+text4 0 EF8 1DF0 1D 2
+text5 0 DB7 1B6E 13 2
+text6 0 EDB 1DB6 1D 2
+text7 0 161 2C2 7B 2
+text8 0 A 14 4A 2
+text9 0 EBE 1D7C 1D 2
+text10 0 EA1 1D42 1D 2
+text11 0 E85 1D0A 1C 2
+text12 0 E1E 1C3C 18 2
+text13 0 F53 1EA6 30 2
+text14 0 54 A8 54 2
+text15 0 471 8E2 148 2
+text17 0 D7C 1AF8 B 2
+text18 0 E07 1C0E 17 2
+text19 0 DDD 1BBA 14 2
+text20 0 F15 1E2A 1E 2
+text21 0 259 4B2 90 2
+text22 0 DA5 1B4A 12 2
+text23 0 104 208 5D 2
+text24 0 F83 1F06 3C 2
+text25 0 F33 1E66 20 2
+text26 0 D6C 1AD8 8 2
+text27 0 E6A 1CD4 1B 2
+text28 0 D87 1B0E D 2
+text29 0 DF1 1BE2 16 2
+text30 0 FBF 1F7E 41 2
+text31 0 5B9 B72 22D 2
+text32 0 E36 1C6C 1A 2
+text33 0 D94 1B28 11 2
+text34 0 A8 150 5C 2
+maintext 0 38F 71E E2 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 4D 1
+inittext 0 DCA 1B94 13 2
+reset_vec 0 0 0 A 2
+idataBANK0 0 D74 1AE8 8 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

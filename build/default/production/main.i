@@ -1903,7 +1903,6 @@ extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\\pic\\include\\xc.h" 2 3
 # 7 "./mcp_can.h" 2
-
 # 1 "./spi16.h" 1
 # 61 "./spi16.h"
 void CloseSPI( void );
@@ -1913,7 +1912,7 @@ void OpenSPI( unsigned char sync_mode, unsigned char bus_mode, unsigned char smp
 unsigned char WriteSPI( unsigned char data_out );
 void getsSPI( unsigned char *rdptr, unsigned char length );
 void putsSPI( unsigned char *wrptr );
-# 9 "./mcp_can.h" 2
+# 8 "./mcp_can.h" 2
 # 22 "./mcp_can.h"
 typedef enum {
     MCP_NO_MHz,
@@ -2045,10 +2044,15 @@ unsigned char mcpDigitalWrite(const unsigned char pin, const unsigned char mode)
 unsigned char mcpDigitalRead(const unsigned char pin);
 # 11 "main.c" 2
 
-#pragma config WDTE = OFF
-#pragma config CPD = OFF
-#pragma config CP = OFF
 #pragma config FOSC = HS
+#pragma config WDTE = OFF
+#pragma config PWRTE = OFF
+#pragma config BOREN = ON
+#pragma config LVP = OFF
+#pragma config CPD = OFF
+#pragma config WRT = OFF
+#pragma config CP = OFF
+
 
 
 
@@ -2064,25 +2068,22 @@ unsigned long getCanId(void) { return can_id; }
 
 void main(void) {
 
+    TRISD3 = 0;
 
-    TRISDbits.TRISD3 = 0;
-
-    RD3 = 0;
+    PORTDbits.RD3 = 0;
 
     init_CS();
 
     while ((0) != begin(CAN_500KBPS, MCP_8MHz)) {
-
-        _delay((unsigned long)((100)*(4000000/4000.0)));
+        _delay((unsigned long)((100)*(20000000/4000.0)));
     }
-
+    PORTDbits.RD3 = 1;
+    _delay((unsigned long)((1000)*(20000000/4000.0)));
+    PORTDbits.RD3 = 0;
     while(1){
 
-
         sendMsgBuf(0x04, 0, 0, 8, stmp, 1);
-        _delay((unsigned long)((1000)*(4000000/4000.0)));
-
-
+        _delay((unsigned long)((1000)*(20000000/4000.0)));
 
 
         unsigned char len = 0;
@@ -2096,10 +2097,10 @@ void main(void) {
             for (int i = 0; i < len; i++) {
 
                 if ((canId == 0x00000005) & (buf[i] == 0x72)){
-                    RD3 =1;
-                    _delay((unsigned long)((100)*(4000000/4000.0)));
-                    RD3 = 0;
-                    _delay((unsigned long)((100)*(4000000/4000.0)));
+                    PORTDbits.RD3 =1;
+                    _delay((unsigned long)((100)*(20000000/4000.0)));
+                    PORTDbits.RD3 = 0;
+                    _delay((unsigned long)((100)*(20000000/4000.0)));
                 }
 
             }

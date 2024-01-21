@@ -9,7 +9,7 @@
 //#include <xc.h>
 #include "mcp_can.h"
 #include "mcp2515_can.h"
-#pragma config FOSC = XT        // Oscillator Selection bits (HS oscillator)
+#pragma config FOSC = HS        // Oscillator Selection bits (HS oscillator)
 #pragma config WDTE = OFF       // Watchdog Timer Enable bit (WDT disabled)
 #pragma config PWRTE = OFF       // Power-up Timer Enable bit (PWRT enabled)
 #pragma config BOREN = ON       // Brown-out Reset Enable bit (BOR enabled)
@@ -18,9 +18,9 @@
 #pragma config WRT = OFF        // Flash Program Memory Write Enable bits (Write protection off; all program memory may be written to by EECON control)
 #pragma config CP = OFF         // Flash Program Memory Code Protection bit (Code protection off)
 
-//#define _XTAL_FREQ 4000000 // 4Mhz init in "mcp_can.h"
+//#define _XTAL_FREQ 4000000 // 4Mhz
 
-#define LED RD3
+#define LED PORTDbits.RD3
 
 
 unsigned char stmp[8] = {1, 1, 2, 3, 0, 5, 6, 7};
@@ -33,23 +33,23 @@ unsigned long getCanId(void) { return can_id; }
 
 void main(void) {
 
-    TRISDbits.TRISD3 = 0;
+    TRISD3 = 0;
 
     LED = 0; //Initial condition
     
-    init_CS();  // init chip select 
+    init_CS();  
     
     while (CAN_OK != begin(CAN_500KBPS, MCP_8MHz)) {             // init can bus : baudrate = 500k
         __delay_ms(100);
     }
-    
+    LED = 1;
+    __delay_ms(1000);
+    LED = 0;
     while(1){       
         // send data:  id = 0x04, standard frame, rtrBit = 0, data len = 8, stmp: data buf
-
         sendMsgBuf(0x04, 0, 0, 8, stmp, 1);
         __delay_ms(1000);
-
-        
+ 
         // receive data
         unsigned char len = 0;
         unsigned char buf[8];

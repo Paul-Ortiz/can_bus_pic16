@@ -6,20 +6,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./mcp2515_can.h: 105: unsigned char readRxTxStatus(void);
 [v _readRxTxStatus `(uc ~T0 @X0 0 ef ]
 [p mainexit ]
-"1505 E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h
-[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1505:     struct {
-[s S64 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S64 . TRISD0 TRISD1 TRISD2 TRISD3 TRISD4 TRISD5 TRISD6 TRISD7 ]
-"1504
-[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1504: typedef union {
-[u S63 `S64 1 ]
-[n S63 . . ]
-"1516
-[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 1516: extern volatile TRISDbits_t TRISDbits __attribute__((address(0x088)));
-[v _TRISDbits `VS63 ~T0 @X0 0 e@136 ]
-"2762
-[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2762: extern volatile __bit RD3 __attribute__((address(0x43)));
-[v _RD3 `Vb ~T0 @X0 0 e@67 ]
+"2996 E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 2996: extern volatile __bit TRISD3 __attribute__((address(0x443)));
+[v _TRISD3 `Vb ~T0 @X0 0 e@1091 ]
+"346
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 346:     struct {
+[s S16 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S16 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
+"345
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 345: typedef union {
+[u S15 `S16 1 ]
+[n S15 . . ]
+"357
+[; ;E:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc\pic16f877a.h: 357: extern volatile PORTDbits_t PORTDbits __attribute__((address(0x008)));
+[v _PORTDbits `VS15 ~T0 @X0 0 e@8 ]
 "66 ./mcp_can.h
 [; ;./mcp_can.h: 66: void init_CS(void);
 [v _init_CS `(v ~T0 @X0 0 ef ]
@@ -30,8 +30,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "96 ./mcp2515_can.h
 [; ;./mcp2515_can.h: 96: unsigned char begin(uint32_t speedset, const unsigned char clockset);
 [v _begin `(uc ~T0 @X0 0 ef2`ul`Cuc ]
-"38 main.c
-[; ;main.c: 38:         if ((3) == checkReceive()) {
+"42 main.c
+[; ;main.c: 42: 
 [c E1029 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 .. ]
 [n E1029 . CAN_NOBPS CAN_5KBPS CAN_10KBPS CAN_20KBPS CAN_25KBPS CAN_31K25BPS CAN_33KBPS CAN_40KBPS CAN_50KBPS CAN_80KBPS CAN_83K3BPS CAN_95KBPS CAN_100KBPS CAN_125KBPS CAN_200KBPS CAN_250KBPS CAN_500KBPS CAN_666KBPS CAN_800KBPS CAN_1000KBPS  ]
 [c E1020 0 1 2 3 1 2 3 .. ]
@@ -241,19 +241,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> ? < -> 0 `i -> 3 `i : -> 0 `i - -> 3 `i -> 1 `i `uc
 ]
 "12 main.c
-[; ;main.c: 12: void main(void) {
-[p x WDTE  =  OFF  ]
+[; ;main.c: 12: 
+[p x FOSC  =  HS         ]
 "13
-[; ;main.c: 13: 
-[p x CPD  =  OFF  ]
+[; ;main.c: 13: void main(void) {
+[p x WDTE  =  OFF        ]
 "14
 [; ;main.c: 14: 
-[p x CP  =  OFF   ]
+[p x PWRTE  =  OFF        ]
 "15
-[; ;main.c: 15:     TRISDbits.TRISD3 = 0;
-[p x FOSC  =  HS ]
-"21
-[; ;main.c: 21:     while ((0) != begin(CAN_500KBPS, MCP_8MHz)) {
+[; ;main.c: 15:     TRISD3 = 0;
+[p x BOREN  =  ON        ]
+"16
+[; ;main.c: 16: 
+[p x LVP  =  OFF         ]
+"17
+[; ;main.c: 17:     PORTDbits.RD3 = 0;
+[p x CPD  =  OFF         ]
+"18
+[; ;main.c: 18: 
+[p x WRT  =  OFF         ]
+"19
+[; ;main.c: 19:     init_CS();
+[p x CP  =  OFF          ]
+"26
+[; ;main.c: 26:     PORTDbits.RD3 = 0;
 [v _stmp `uc ~T0 @X0 -> 8 `i e ]
 [i _stmp
 :U ..
@@ -267,24 +279,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 7 `i `uc
 ..
 ]
-"23
-[; ;main.c: 23:         _delay((unsigned long)((100)*(4000000/4000.0)));
+"28
+[; ;main.c: 28: 
 [v _readMsgBuf `(uc ~T0 @X0 1 ef2`*uc`*uc ]
 {
 [e :U _readMsgBuf ]
 [v _len `*uc ~T0 @X0 1 r1 ]
 [v _buf `*uc ~T0 @X0 1 r2 ]
 [f ]
-"24
-[; ;main.c: 24:     }
+"29
+[; ;main.c: 29:         sendMsgBuf(0x04, 0, 0, 8, stmp, 1);
 [e ) ( _readMsgBufID (4 , , , , , ( _readRxTxStatus ..  -> &U _can_id `*Vul -> &U _ext_flg `*Vuc -> &U _rtr `*Vuc -> _len `*Vuc -> _buf `*Vuc ]
 [e $UE 100  ]
-"25
-[; ;main.c: 25: 
+"30
+[; ;main.c: 30:         _delay((unsigned long)((1000)*(20000000/4000.0)));
 [e :UE 100 ]
 }
-"27
-[; ;main.c: 27: 
+"32
+[; ;main.c: 32: 
 [v _getCanId `(ul ~T0 @X0 1 ef ]
 {
 [e :U _getCanId ]
@@ -294,102 +306,109 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 101 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"29
-[; ;main.c: 29:         sendMsgBuf(0x04, 0, 0, 8, stmp, 1);
+"34
+[; ;main.c: 34:         unsigned char buf[8];
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"32
-[; ;main.c: 32: 
-[e = . . _TRISDbits 0 3 -> -> 0 `i `uc ]
-"34
-[; ;main.c: 34: 
-[e = _RD3 -> -> 0 `i `b ]
 "36
-[; ;main.c: 36:         unsigned char buf[8];
-[e ( _init_CS ..  ]
+[; ;main.c: 36:         if ((3) == checkReceive()) {
+[e = _TRISD3 -> -> 0 `i `b ]
 "38
-[; ;main.c: 38:         if ((3) == checkReceive()) {
+[; ;main.c: 38: 
+[e = . . _PORTDbits 0 3 -> -> 0 `i `uc ]
+"40
+[; ;main.c: 40: 
+[e ( _init_CS ..  ]
+"42
+[; ;main.c: 42: 
 [e $U 103  ]
 [e :U 104 ]
 {
-"40
-[; ;main.c: 40: 
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"41
-[; ;main.c: 41:             unsigned long canId = getCanId();
+"43
+[; ;main.c: 43:                 if ((canId == 0x00000005) & (buf[i] == 0x72)){
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"44
+[; ;main.c: 44:                     PORTDbits.RD3 =1;
 }
 [e :U 103 ]
-"38
-[; ;main.c: 38:         if ((3) == checkReceive()) {
+"42
+[; ;main.c: 42: 
 [e $ != -> 0 `i -> ( _begin (2 , -> -> . `E1029 16 `l `ul -> . `E1020 3 `uc `i 104  ]
 [e :U 105 ]
-"43
-[; ;main.c: 43:             for (int i = 0; i < len; i++) {
+"45
+[; ;main.c: 45:                     _delay((unsigned long)((100)*(20000000/4000.0)));
+[e = . . _PORTDbits 0 3 -> -> 1 `i `uc ]
+"46
+[; ;main.c: 46:                     PORTDbits.RD3 = 0;
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"47
+[; ;main.c: 47:                     _delay((unsigned long)((100)*(20000000/4000.0)));
+[e = . . _PORTDbits 0 3 -> -> 0 `i `uc ]
+"48
+[; ;main.c: 48:                 }
 [e :U 107 ]
 {
-"46
-[; ;main.c: 46:                     RD3 =1;
+"50
+[; ;main.c: 50:             }
 [e ( _sendMsgBuf (4 , , , , , -> -> -> 4 `i `l `ul -> -> 0 `i `uc -> -> 0 `i `uc -> -> 8 `i `uc -> &U _stmp `*Cuc -> -> 1 `i `uc ]
-"47
-[; ;main.c: 47:                     _delay((unsigned long)((100)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"52
-[; ;main.c: 52:             }
+"51
+[; ;main.c: 51:         }
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"54
+[; ;main.c: 54:     return;
 [v _len `uc ~T0 @X0 1 a ]
 [e = _len -> -> 0 `i `uc ]
-"53
-[; ;main.c: 53:         }
-[v _buf `uc ~T0 @X0 -> 8 `i a ]
 "55
-[; ;main.c: 55:     }
+[; ;main.c: 55: }
+[v _buf `uc ~T0 @X0 -> 8 `i a ]
+"57
 [e $ ! == -> 3 `i -> ( _checkReceive ..  `i 109  ]
 {
-"56
-[; ;main.c: 56:     return;
-[e ( _readMsgBuf (2 , &U _len &U _buf ]
 "58
+[e ( _readMsgBuf (2 , &U _len &U _buf ]
+"60
 [v _canId `ul ~T0 @X0 1 a ]
 [e = _canId ( _getCanId ..  ]
-"60
+"62
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [e $U 113  ]
 [e :U 110 ]
 {
-"62
+"64
 [e $ ! & == _canId -> -> -> 5 `i `l `ul == -> *U + &U _buf * -> -> _i `ui `ux -> -> # *U &U _buf `ui `ux `i -> 114 `i 114  ]
 {
-"63
-[e = _RD3 -> -> 1 `i `b ]
-"64
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "65
-[e = _RD3 -> -> 0 `i `b ]
+[e = . . _PORTDbits 0 3 -> -> 1 `i `uc ]
 "66
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "67
+[e = . . _PORTDbits 0 3 -> -> 0 `i `uc ]
+"68
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"69
 }
 [e :U 114 ]
-"69
+"71
 }
 [e ++ _i -> 1 `i ]
 [e :U 113 ]
 [e $ < _i -> _len `i 110  ]
 [e :U 111 ]
 }
-"70
+"72
 }
 [e :U 109 ]
-"72
+"74
 }
 [e :U 106 ]
 [e $U 107  ]
 [e :U 108 ]
-"73
+"75
 [e $UE 102  ]
-"74
+"76
 [e :UE 102 ]
 }
